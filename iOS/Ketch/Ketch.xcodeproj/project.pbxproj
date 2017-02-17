@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385661E56E0DF0081EB69 /* AppDelegate.swift */; };
+		B96385691E56E0DF0081EB69 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385681E56E0DF0081EB69 /* FirstViewController.swift */; };
+		B963856B1E56E0DF0081EB69 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963856A1E56E0DF0081EB69 /* SecondViewController.swift */; };
+		B963856E1E56E0DF0081EB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B963856C1E56E0DF0081EB69 /* Main.storyboard */; };
+		B96385701E56E0DF0081EB69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B963856F1E56E0DF0081EB69 /* Assets.xcassets */; };
+		B96385731E56E0DF0081EB69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */; };
+		B963857E1E56E0E00081EB69 /* KetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963857D1E56E0E00081EB69 /* KetchTests.swift */; };
+		B96385891E56E0E00081EB69 /* KetchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385881E56E0E00081EB69 /* KetchUITests.swift */; };
+		B96385971E56E1B00081EB69 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385961E56E1B00081EB69 /* ThirdViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B963857A1E56E0E00081EB69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B963855B1E56E0DF0081EB69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B96385621E56E0DF0081EB69;
+			remoteInfo = Ketch;
+		};
+		B96385851E56E0E00081EB69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B963855B1E56E0DF0081EB69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B96385621E56E0DF0081EB69;
+			remoteInfo = Ketch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B96385631E56E0DF0081EB69 /* Ketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96385661E56E0DF0081EB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B96385681E56E0DF0081EB69 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B963856A1E56E0DF0081EB69 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B963856D1E56E0DF0081EB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B963856F1E56E0DF0081EB69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B96385721E56E0DF0081EB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B96385741E56E0DF0081EB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96385791E56E0E00081EB69 /* KetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B963857D1E56E0E00081EB69 /* KetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetchTests.swift; sourceTree = "<group>"; };
+		B963857F1E56E0E00081EB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96385841E56E0E00081EB69 /* KetchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96385881E56E0E00081EB69 /* KetchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetchUITests.swift; sourceTree = "<group>"; };
+		B963858A1E56E0E00081EB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96385961E56E1B00081EB69 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B96385601E56E0DF0081EB69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96385761E56E0E00081EB69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96385811E56E0E00081EB69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B963855A1E56E0DF0081EB69 = {
+			isa = PBXGroup;
+			children = (
+				B96385651E56E0DF0081EB69 /* Ketch */,
+				B963857C1E56E0E00081EB69 /* KetchTests */,
+				B96385871E56E0E00081EB69 /* KetchUITests */,
+				B96385641E56E0DF0081EB69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B96385641E56E0DF0081EB69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B96385631E56E0DF0081EB69 /* Ketch.app */,
+				B96385791E56E0E00081EB69 /* KetchTests.xctest */,
+				B96385841E56E0E00081EB69 /* KetchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B96385651E56E0DF0081EB69 /* Ketch */ = {
+			isa = PBXGroup;
+			children = (
+				B96385661E56E0DF0081EB69 /* AppDelegate.swift */,
+				B96385961E56E1B00081EB69 /* ThirdViewController.swift */,
+				B96385681E56E0DF0081EB69 /* FirstViewController.swift */,
+				B963856A1E56E0DF0081EB69 /* SecondViewController.swift */,
+				B963856C1E56E0DF0081EB69 /* Main.storyboard */,
+				B963856F1E56E0DF0081EB69 /* Assets.xcassets */,
+				B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */,
+				B96385741E56E0DF0081EB69 /* Info.plist */,
+			);
+			path = Ketch;
+			sourceTree = "<group>";
+		};
+		B963857C1E56E0E00081EB69 /* KetchTests */ = {
+			isa = PBXGroup;
+			children = (
+				B963857D1E56E0E00081EB69 /* KetchTests.swift */,
+				B963857F1E56E0E00081EB69 /* Info.plist */,
+			);
+			path = KetchTests;
+			sourceTree = "<group>";
+		};
+		B96385871E56E0E00081EB69 /* KetchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B96385881E56E0E00081EB69 /* KetchUITests.swift */,
+				B963858A1E56E0E00081EB69 /* Info.plist */,
+			);
+			path = KetchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B96385621E56E0DF0081EB69 /* Ketch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B963858D1E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "Ketch" */;
+			buildPhases = (
+				B963855F1E56E0DF0081EB69 /* Sources */,
+				B96385601E56E0DF0081EB69 /* Frameworks */,
+				B96385611E56E0DF0081EB69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ketch;
+			productName = Ketch;
+			productReference = B96385631E56E0DF0081EB69 /* Ketch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B96385781E56E0E00081EB69 /* KetchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B96385901E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "KetchTests" */;
+			buildPhases = (
+				B96385751E56E0E00081EB69 /* Sources */,
+				B96385761E56E0E00081EB69 /* Frameworks */,
+				B96385771E56E0E00081EB69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B963857B1E56E0E00081EB69 /* PBXTargetDependency */,
+			);
+			name = KetchTests;
+			productName = KetchTests;
+			productReference = B96385791E56E0E00081EB69 /* KetchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B96385831E56E0E00081EB69 /* KetchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B96385931E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "KetchUITests" */;
+			buildPhases = (
+				B96385801E56E0E00081EB69 /* Sources */,
+				B96385811E56E0E00081EB69 /* Frameworks */,
+				B96385821E56E0E00081EB69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B96385861E56E0E00081EB69 /* PBXTargetDependency */,
+			);
+			name = KetchUITests;
+			productName = KetchUITests;
+			productReference = B96385841E56E0E00081EB69 /* KetchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B963855B1E56E0DF0081EB69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = butlerproject;
+				TargetAttributes = {
+					B96385621E56E0DF0081EB69 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 43NXCQ9V3P;
+						ProvisioningStyle = Automatic;
+					};
+					B96385781E56E0E00081EB69 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 43NXCQ9V3P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B96385621E56E0DF0081EB69;
+					};
+					B96385831E56E0E00081EB69 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 43NXCQ9V3P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B96385621E56E0DF0081EB69;
+					};
+				};
+			};
+			buildConfigurationList = B963855E1E56E0DF0081EB69 /* Build configuration list for PBXProject "Ketch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B963855A1E56E0DF0081EB69;
+			productRefGroup = B96385641E56E0DF0081EB69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B96385621E56E0DF0081EB69 /* Ketch */,
+				B96385781E56E0E00081EB69 /* KetchTests */,
+				B96385831E56E0E00081EB69 /* KetchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B96385611E56E0DF0081EB69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96385731E56E0DF0081EB69 /* LaunchScreen.storyboard in Resources */,
+				B96385701E56E0DF0081EB69 /* Assets.xcassets in Resources */,
+				B963856E1E56E0DF0081EB69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96385771E56E0E00081EB69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96385821E56E0E00081EB69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B963855F1E56E0DF0081EB69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B963856B1E56E0DF0081EB69 /* SecondViewController.swift in Sources */,
+				B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */,
+				B96385971E56E1B00081EB69 /* ThirdViewController.swift in Sources */,
+				B96385691E56E0DF0081EB69 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96385751E56E0E00081EB69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B963857E1E56E0E00081EB69 /* KetchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96385801E56E0E00081EB69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96385891E56E0E00081EB69 /* KetchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B963857B1E56E0E00081EB69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B96385621E56E0DF0081EB69 /* Ketch */;
+			targetProxy = B963857A1E56E0E00081EB69 /* PBXContainerItemProxy */;
+		};
+		B96385861E56E0E00081EB69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B96385621E56E0DF0081EB69 /* Ketch */;
+			targetProxy = B96385851E56E0E00081EB69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B963856C1E56E0DF0081EB69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B963856D1E56E0DF0081EB69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B96385721E56E0DF0081EB69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B963858B1E56E0E00081EB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B963858C1E56E0E00081EB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B963858E1E56E0E00081EB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				INFOPLIST_FILE = Ketch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.Ketch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B963858F1E56E0E00081EB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				INFOPLIST_FILE = Ketch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.Ketch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B96385911E56E0E00081EB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				INFOPLIST_FILE = KetchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.KetchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ketch.app/Ketch";
+			};
+			name = Debug;
+		};
+		B96385921E56E0E00081EB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				INFOPLIST_FILE = KetchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.KetchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ketch.app/Ketch";
+			};
+			name = Release;
+		};
+		B96385941E56E0E00081EB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				INFOPLIST_FILE = KetchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.KetchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Ketch;
+			};
+			name = Debug;
+		};
+		B96385951E56E0E00081EB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				INFOPLIST_FILE = KetchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.KetchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Ketch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B963855E1E56E0DF0081EB69 /* Build configuration list for PBXProject "Ketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B963858B1E56E0E00081EB69 /* Debug */,
+				B963858C1E56E0E00081EB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B963858D1E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "Ketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B963858E1E56E0E00081EB69 /* Debug */,
+				B963858F1E56E0E00081EB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B96385901E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "KetchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96385911E56E0E00081EB69 /* Debug */,
+				B96385921E56E0E00081EB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B96385931E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "KetchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96385941E56E0E00081EB69 /* Debug */,
+				B96385951E56E0E00081EB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B963855B1E56E0DF0081EB69 /* Project object */;
+}
