@@ -10,6 +10,6 @@ Ketch is an iOS mobile app designed to facilitate transactions between two local
 - MySQL database to store user and item data
 
 ### Team
-Sawyer Beaton / Connor Butler / Patrick Carder / Keaton Greason / Test
+Sawyer Beaton / Connor Butler / Patrick Carder / Keaton Greason 
 
 CSC 490 Spring 2017 - Team 1
