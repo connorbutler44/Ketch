@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385661E56E0DF0081EB69 /* AppDelegate.swift */; };
-		B96385691E56E0DF0081EB69 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385681E56E0DF0081EB69 /* FirstViewController.swift */; };
 		B963856B1E56E0DF0081EB69 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963856A1E56E0DF0081EB69 /* SecondViewController.swift */; };
 		B963856E1E56E0DF0081EB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B963856C1E56E0DF0081EB69 /* Main.storyboard */; };
 		B96385701E56E0DF0081EB69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B963856F1E56E0DF0081EB69 /* Assets.xcassets */; };
@@ -16,6 +15,9 @@
 		B963857E1E56E0E00081EB69 /* KetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963857D1E56E0E00081EB69 /* KetchTests.swift */; };
 		B96385891E56E0E00081EB69 /* KetchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385881E56E0E00081EB69 /* KetchUITests.swift */; };
 		B96385971E56E1B00081EB69 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385961E56E1B00081EB69 /* ThirdViewController.swift */; };
+		B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */; };
+		B9B3991A1E57AFB10037AA62 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399191E57AFB10037AA62 /* NewViewController.swift */; };
+		B9F8488B1E57AD9A0085CC03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8488A1E57AD9A0085CC03 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 /* Begin PBXFileReference section */
 		B96385631E56E0DF0081EB69 /* Ketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96385661E56E0DF0081EB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B96385681E56E0DF0081EB69 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B963856A1E56E0DF0081EB69 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B963856D1E56E0DF0081EB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B963856F1E56E0DF0081EB69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		B96385881E56E0E00081EB69 /* KetchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetchUITests.swift; sourceTree = "<group>"; };
 		B963858A1E56E0E00081EB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B96385961E56E1B00081EB69 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B9B399191E57AFB10037AA62 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		B9F8488A1E57AD9A0085CC03 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,12 @@
 		B96385651E56E0DF0081EB69 /* Ketch */ = {
 			isa = PBXGroup;
 			children = (
+				B9F8488A1E57AD9A0085CC03 /* ViewController.swift */,
 				B96385661E56E0DF0081EB69 /* AppDelegate.swift */,
-				B96385961E56E1B00081EB69 /* ThirdViewController.swift */,
-				B96385681E56E0DF0081EB69 /* FirstViewController.swift */,
 				B963856A1E56E0DF0081EB69 /* SecondViewController.swift */,
+				B96385961E56E1B00081EB69 /* ThirdViewController.swift */,
+				B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */,
+				B9B399191E57AFB10037AA62 /* NewViewController.swift */,
 				B963856C1E56E0DF0081EB69 /* Main.storyboard */,
 				B963856F1E56E0DF0081EB69 /* Assets.xcassets */,
 				B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */,
@@ -268,10 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */,
 				B963856B1E56E0DF0081EB69 /* SecondViewController.swift in Sources */,
 				B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */,
+				B9B3991A1E57AFB10037AA62 /* NewViewController.swift in Sources */,
+				B9F8488B1E57AD9A0085CC03 /* ViewController.swift in Sources */,
 				B96385971E56E1B00081EB69 /* ThirdViewController.swift in Sources */,
-				B96385691E56E0DF0081EB69 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +528,7 @@
 				B963858F1E56E0E00081EB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B96385901E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "KetchTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +537,7 @@
 				B96385921E56E0E00081EB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B96385931E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "KetchUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +546,7 @@
 				B96385951E56E0E00081EB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
