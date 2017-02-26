@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156E4CB41E6367A700564E1E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E4CB31E6367A700564E1E /* FBSDKLoginKit.framework */; };
+		156E4CB61E636B3200564E1E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E4CB51E636B3200564E1E /* LoginController.swift */; };
+		426141720563B98654512C77 /* Pods_KetchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F27BDC54B381D7DDBE6A869 /* Pods_KetchUITests.framework */; };
+		8F01D29E463BBCC54107791F /* Pods_Ketch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A062DDC22F8E55A0D3DC58 /* Pods_Ketch.framework */; };
+		B2FA09A77D36BACF33E173AC /* Pods_KetchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190859E6D2702E0276FBF2F3 /* Pods_KetchTests.framework */; };
 		B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385661E56E0DF0081EB69 /* AppDelegate.swift */; };
 		B963856B1E56E0DF0081EB69 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963856A1E56E0DF0081EB69 /* SecondViewController.swift */; };
 		B963856E1E56E0DF0081EB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B963856C1E56E0DF0081EB69 /* Main.storyboard */; };
@@ -38,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07EE6CE7D5B3C8BE12919C4E /* Pods-KetchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetchUITests/Pods-KetchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		156E4CB31E6367A700564E1E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		156E4CB51E636B3200564E1E /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		15DEFCD1DB67EE7FA44C57B2 /* Pods-Ketch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ketch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ketch/Pods-Ketch.release.xcconfig"; sourceTree = "<group>"; };
+		190859E6D2702E0276FBF2F3 /* Pods_KetchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F27BDC54B381D7DDBE6A869 /* Pods_KetchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA39CEAEF684DA08C1556A7 /* Pods-Ketch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ketch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ketch/Pods-Ketch.debug.xcconfig"; sourceTree = "<group>"; };
 		B96385631E56E0DF0081EB69 /* Ketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96385661E56E0DF0081EB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B963856A1E56E0DF0081EB69 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +67,10 @@
 		B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B9B399191E57AFB10037AA62 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		B9F8488A1E57AD9A0085CC03 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD10A90030A9B57516079971 /* Pods-KetchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D59DBFEAD96CA58958F93154 /* Pods-KetchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0CF9126D4AE7B4FF563AEF4 /* Pods-KetchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetchUITests/Pods-KetchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5A062DDC22F8E55A0D3DC58 /* Pods_Ketch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ketch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156E4CB41E6367A700564E1E /* FBSDKLoginKit.framework in Frameworks */,
+				8F01D29E463BBCC54107791F /* Pods_Ketch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FA09A77D36BACF33E173AC /* Pods_KetchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +95,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426141720563B98654512C77 /* Pods_KetchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F98B4805E08F8920EB4313C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FA39CEAEF684DA08C1556A7 /* Pods-Ketch.debug.xcconfig */,
+				15DEFCD1DB67EE7FA44C57B2 /* Pods-Ketch.release.xcconfig */,
+				CD10A90030A9B57516079971 /* Pods-KetchTests.debug.xcconfig */,
+				D59DBFEAD96CA58958F93154 /* Pods-KetchTests.release.xcconfig */,
+				07EE6CE7D5B3C8BE12919C4E /* Pods-KetchUITests.debug.xcconfig */,
+				E0CF9126D4AE7B4FF563AEF4 /* Pods-KetchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8C83B58834F05642A791441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				156E4CB31E6367A700564E1E /* FBSDKLoginKit.framework */,
+				F5A062DDC22F8E55A0D3DC58 /* Pods_Ketch.framework */,
+				190859E6D2702E0276FBF2F3 /* Pods_KetchTests.framework */,
+				9F27BDC54B381D7DDBE6A869 /* Pods_KetchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B963855A1E56E0DF0081EB69 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +133,8 @@
 				B963857C1E56E0E00081EB69 /* KetchTests */,
 				B96385871E56E0E00081EB69 /* KetchUITests */,
 				B96385641E56E0DF0081EB69 /* Products */,
+				6F98B4805E08F8920EB4313C /* Pods */,
+				B8C83B58834F05642A791441 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +154,7 @@
 				B9F8488A1E57AD9A0085CC03 /* ViewController.swift */,
 				B96385661E56E0DF0081EB69 /* AppDelegate.swift */,
 				B963856A1E56E0DF0081EB69 /* SecondViewController.swift */,
+				156E4CB51E636B3200564E1E /* LoginController.swift */,
 				B96385961E56E1B00081EB69 /* ThirdViewController.swift */,
 				B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */,
 				B9B399191E57AFB10037AA62 /* NewViewController.swift */,
@@ -144,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B963858D1E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "Ketch" */;
 			buildPhases = (
+				BE8BB8709E25BF02F7E4B686 /* [CP] Check Pods Manifest.lock */,
 				B963855F1E56E0DF0081EB69 /* Sources */,
 				B96385601E56E0DF0081EB69 /* Frameworks */,
 				B96385611E56E0DF0081EB69 /* Resources */,
+				348409D563EFC39F5912241A /* [CP] Embed Pods Frameworks */,
+				D8321E51D10ACEE1053F638C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B96385901E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "KetchTests" */;
 			buildPhases = (
+				02F4704CC4778F422B86E272 /* [CP] Check Pods Manifest.lock */,
 				B96385751E56E0E00081EB69 /* Sources */,
 				B96385761E56E0E00081EB69 /* Frameworks */,
 				B96385771E56E0E00081EB69 /* Resources */,
+				15F7579E4C45B0F073C14F60 /* [CP] Embed Pods Frameworks */,
+				0942F6167DBFD531BE62F493 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B96385931E56E0E00081EB69 /* Build configuration list for PBXNativeTarget "KetchUITests" */;
 			buildPhases = (
+				300CBA6D26E568E3585A031C /* [CP] Check Pods Manifest.lock */,
 				B96385801E56E0E00081EB69 /* Sources */,
 				B96385811E56E0E00081EB69 /* Frameworks */,
 				B96385821E56E0E00081EB69 /* Resources */,
+				AD7962AE7BE5C054C1632E94 /* [CP] Embed Pods Frameworks */,
+				76D71F9451162EF6260204A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +325,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02F4704CC4778F422B86E272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0942F6167DBFD531BE62F493 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15F7579E4C45B0F073C14F60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		300CBA6D26E568E3585A031C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		348409D563EFC39F5912241A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ketch/Pods-Ketch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76D71F9451162EF6260204A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KetchUITests/Pods-KetchUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD7962AE7BE5C054C1632E94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KetchUITests/Pods-KetchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8BB8709E25BF02F7E4B686 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8321E51D10ACEE1053F638C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ketch/Pods-Ketch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B963855F1E56E0DF0081EB69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -280,6 +474,7 @@
 				B9B3991A1E57AFB10037AA62 /* NewViewController.swift in Sources */,
 				B9F8488B1E57AD9A0085CC03 /* ViewController.swift in Sources */,
 				B96385971E56E1B00081EB69 /* ThirdViewController.swift in Sources */,
+				156E4CB61E636B3200564E1E /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +622,15 @@
 		};
 		B963858E1E56E0E00081EB69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA39CEAEF684DA08C1556A7 /* Pods-Ketch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = Ketch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.Ketch;
@@ -440,9 +641,15 @@
 		};
 		B963858F1E56E0E00081EB69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DEFCD1DB67EE7FA44C57B2 /* Pods-Ketch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = Ketch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.Ketch;
@@ -453,6 +660,7 @@
 		};
 		B96385911E56E0E00081EB69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD10A90030A9B57516079971 /* Pods-KetchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +676,7 @@
 		};
 		B96385921E56E0E00081EB69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D59DBFEAD96CA58958F93154 /* Pods-KetchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,6 +692,7 @@
 		};
 		B96385941E56E0E00081EB69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EE6CE7D5B3C8BE12919C4E /* Pods-KetchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 43NXCQ9V3P;
@@ -497,6 +707,7 @@
 		};
 		B96385951E56E0E00081EB69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0CF9126D4AE7B4FF563AEF4 /* Pods-KetchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 43NXCQ9V3P;
