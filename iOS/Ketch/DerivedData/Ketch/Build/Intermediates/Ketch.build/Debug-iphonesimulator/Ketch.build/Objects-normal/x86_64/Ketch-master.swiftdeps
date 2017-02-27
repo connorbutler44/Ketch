@@ -1,0 +1,11 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "604e5325b02483b462b65b5de278e1ab"
+build_time: [541498536, 130686000]
+inputs:
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/CollectionViewCell.swift": [541493833, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/SecondViewController.swift": [541493833, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/AppDelegate.swift": [541497343, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/NewViewController.swift": [541493833, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/LoginScreen.swift": [541497896, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/ViewController.swift": [541493833, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/ThirdViewController.swift": [541493833, 0]
