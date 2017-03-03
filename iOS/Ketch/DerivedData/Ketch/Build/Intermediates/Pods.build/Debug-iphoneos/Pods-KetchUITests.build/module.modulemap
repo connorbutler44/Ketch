@@ -1,6 +1,0 @@
-framework module Pods_KetchUITests {
-  umbrella header "Pods-KetchUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

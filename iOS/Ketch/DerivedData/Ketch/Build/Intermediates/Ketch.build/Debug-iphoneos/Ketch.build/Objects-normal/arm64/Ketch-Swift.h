@@ -139,9 +139,19 @@ SWIFT_CLASS("_TtC5Ketch11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC5Ketch4Chat")
+@interface Chat : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIImageView;
 @class UILabel;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC5Ketch18CollectionViewCell")
 @interface CollectionViewCell : UICollectionViewCell
@@ -151,16 +161,37 @@ SWIFT_CLASS("_TtC5Ketch18CollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC5Ketch9Dashboard")
+@interface Dashboard : UITabBarController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC5Ketch11LoginScreen")
 @interface LoginScreen : UIViewController <FBSDKLoginButtonDelegate>
 - (void)viewDidLoad;
+- (void)userLoggedIn;
+- (void)handleCustomFBLogin;
 - (void)didReceiveMemoryWarning;
 - (void)loginButtonDidLogOut:(FBSDKLoginButton * _Null_unspecified)loginButton;
 - (void)loginButton:(FBSDKLoginButton * _Null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * _Null_unspecified)result error:(NSError * _Null_unspecified)error;
+- (void)showEmailAddress;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ketch9MyAccount")
+@interface MyAccount : UIViewController
+- (void)viewDidLoad;
+- (void)handleLogout;
+- (IBAction)logoutButton:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -171,24 +202,6 @@ SWIFT_CLASS("_TtC5Ketch17NewViewController")
 @interface NewViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, strong) UIImage * _Nonnull image;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC5Ketch20SecondViewController")
-@interface SecondViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC5Ketch19ThirdViewController")
-@interface ThirdViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

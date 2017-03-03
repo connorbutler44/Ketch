@@ -1,6 +1,0 @@
-framework module Pods_KetchTests {
-  umbrella header "Pods-KetchTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

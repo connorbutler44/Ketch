@@ -6,31 +6,33 @@ provides-nominal:
 provides-member:
 - ["C5Ketch11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "applicationWillEnterForeground"
+- "application"
+- "application"
 - "applicationWillResignActive"
-- "applicationDidEnterBackground"
 - "applicationWillTerminate"
-- "application"
-- "application"
+- "window"
 - "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "Dictionary"
+- !private "FIRApp"
+- !private "FBSDKApplicationDelegate"
+- "Bool"
 - "UIApplicationDelegate"
+- "UIWindow"
 - !private "BooleanLiteralType"
-- "URL"
-- "UIApplicationOpenURLOptionsKey"
-- !private "String"
+- "UIResponder"
 - "UIApplicationLaunchOptionsKey"
 - "AppDelegate"
-- !private "FBSDKApplicationDelegate"
+- "URL"
 - "UIApplication"
-- "UIWindow"
-- "UIResponder"
+- "UIApplicationOpenURLOptionsKey"
 - "CastingPrecedence"
-- "Bool"
+- !private "String"
+- "Dictionary"
 depends-member:
 - !private ["Ps9AnyObject", "FBSDKApplicationDelegate"]
+- !private ["Ps9AnyObject", "FIRApp"]
 - !private ["Ps9AnyObject", "UIApplicationOpenURLOptionsKey"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -44,12 +46,14 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillEnterForeground"]
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
+- !private ["Ps9AnyObject", "configure"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C5Ketch11AppDelegate", "Bool"]
 - !private ["C5Ketch11AppDelegate", "FBSDKApplicationDelegate"]
+- !private ["C5Ketch11AppDelegate", "FIRApp"]
 - !private ["C5Ketch11AppDelegate", "String"]
 - ["C5Ketch11AppDelegate", "UIApplication"]
 - ["C5Ketch11AppDelegate", "UIApplicationLaunchOptionsKey"]
@@ -73,6 +77,7 @@ depends-member:
 - ["C5Ketch11AppDelegate", "window"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "FBSDKApplicationDelegate"]
+- !private ["Ps7CVarArg", "FIRApp"]
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "SubSequence"]
@@ -90,6 +95,7 @@ depends-member:
 - ["Ps7CVarArg", "applicationWillEnterForeground"]
 - ["Ps7CVarArg", "applicationWillResignActive"]
 - ["Ps7CVarArg", "applicationWillTerminate"]
+- !private ["Ps7CVarArg", "configure"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "sharedInstance"]
 - !private ["Ps7CVarArg", "subscript"]
@@ -105,6 +111,7 @@ depends-member:
 - !private ["Ps10Comparable", "annotation"]
 - !private ["Ps10Comparable", "sourceApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "FBSDKApplicationDelegate"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRApp"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
@@ -122,6 +129,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- !private ["Ps28CustomDebugStringConvertible", "configure"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedInstance"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -133,6 +141,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "FBSDKApplicationDelegate"]
+- !private ["Ps23CustomStringConvertible", "FIRApp"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
@@ -150,6 +159,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["Ps23CustomStringConvertible", "configure"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "sharedInstance"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -162,6 +172,7 @@ depends-member:
 - ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Ps9Equatable", "FBSDKApplicationDelegate"]
+- !private ["Ps9Equatable", "FIRApp"]
 - !private ["Ps9Equatable", "UIApplicationOpenURLOptionsKey"]
 - !private ["Ps9Equatable", "annotation"]
 - ["Ps9Equatable", "application"]
@@ -176,6 +187,7 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
+- !private ["Ps9Equatable", "configure"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "sharedInstance"]
 - !private ["Ps9Equatable", "sourceApplication"]
@@ -188,7 +200,9 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["CSo24FBSDKApplicationDelegate", "application"]
 - !private ["CSo24FBSDKApplicationDelegate", "sharedInstance"]
+- !private ["CSo6FIRApp", "configure"]
 - !private ["Ps8Hashable", "FBSDKApplicationDelegate"]
+- !private ["Ps8Hashable", "FIRApp"]
 - !private ["Ps8Hashable", "UIApplicationOpenURLOptionsKey"]
 - !private ["Ps8Hashable", "annotation"]
 - ["Ps8Hashable", "application"]
@@ -203,6 +217,7 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
+- !private ["Ps8Hashable", "configure"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "sharedInstance"]
 - !private ["Ps8Hashable", "sourceApplication"]
@@ -227,6 +242,7 @@ depends-member:
 - !private ["Ps16IteratorProtocol", "Element"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "FBSDKApplicationDelegate"]
+- !private ["CSo8NSObject", "FIRApp"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
@@ -245,10 +261,12 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "configure"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "sharedInstance"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "FBSDKApplicationDelegate"]
+- !private ["PSo16NSObjectProtocol", "FIRApp"]
 - !private ["PSo16NSObjectProtocol", "UIApplicationOpenURLOptionsKey"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
@@ -262,6 +280,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "configure"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "sharedInstance"]
 - ["PSo16NSObjectProtocol", "window"]
@@ -283,6 +302,7 @@ depends-member:
 - !private ["Vs5Slice", "_Element"]
 - ["CSo13UIApplication", "deinit"]
 - !private ["PSo21UIApplicationDelegate", "FBSDKApplicationDelegate"]
+- !private ["PSo21UIApplicationDelegate", "FIRApp"]
 - !private ["PSo21UIApplicationDelegate", "UIApplicationOpenURLOptionsKey"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
@@ -303,6 +323,7 @@ depends-member:
 - !private ["VSC30UIApplicationOpenURLOptionsKey", "sourceApplication"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "FBSDKApplicationDelegate"]
+- !private ["CSo11UIResponder", "FIRApp"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
@@ -326,6 +347,7 @@ depends-member:
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 - !private ["PSo30UIResponderStandardEditActions", "FBSDKApplicationDelegate"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRApp"]
 - !private ["PSo30UIResponderStandardEditActions", "UIApplicationOpenURLOptionsKey"]
 - ["PSo30UIResponderStandardEditActions", "application"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
@@ -344,6 +366,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["V10Foundation3URL", "deinit"]
 - !private ["Ps9_Hashable", "FBSDKApplicationDelegate"]
+- !private ["Ps9_Hashable", "FIRApp"]
 - !private ["Ps9_Hashable", "UIApplicationOpenURLOptionsKey"]
 - !private ["Ps9_Hashable", "annotation"]
 - ["Ps9_Hashable", "application"]
@@ -358,6 +381,7 @@ depends-member:
 - ["Ps9_Hashable", "applicationWillEnterForeground"]
 - ["Ps9_Hashable", "applicationWillResignActive"]
 - ["Ps9_Hashable", "applicationWillTerminate"]
+- !private ["Ps9_Hashable", "configure"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "sharedInstance"]
 - !private ["Ps9_Hashable", "sourceApplication"]
@@ -386,6 +410,7 @@ depends-nominal:
 - "Ps9Equatable"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "CSo24FBSDKApplicationDelegate"
+- !private "CSo6FIRApp"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
@@ -419,6 +444,52 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/Firebase.h"
 - "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
@@ -469,4 +540,4 @@ depends-external:
 - "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "af73a42bf2b80bc0338a9794b458012a"
+interface-hash: "052ebfc4ccfc069471a810dce44580b2"

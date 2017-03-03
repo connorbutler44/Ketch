@@ -1,0 +1,481 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "splashScreen"
+provides-nominal:
+- "C5Ketch12splashScreen"
+provides-member:
+- ["C5Ketch12splashScreen", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- !private "Dashboard"
+- "UIViewController"
+- "splashScreen"
+- !private "FIRAuth"
+- "CastingPrecedence"
+- !private "StringLiteralType"
+- !private "print"
+- !private "LoginScreen"
+- !private "BooleanLiteralType"
+- !private "!="
+depends-member:
+- !private ["Ps9AnyObject", "FIRAuth"]
+- !private ["Ps9AnyObject", "auth"]
+- !private ["Ps9AnyObject", "currentUser"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "email"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "photoURL"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "pushViewController"]
+- !private ["Ps9AnyObject", "storyboard"]
+- !private ["Ps9AnyObject", "uid"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "FIRAuth"]
+- !private ["Ps7CVarArg", "auth"]
+- !private ["Ps7CVarArg", "currentUser"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "email"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "photoURL"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "pushViewController"]
+- !private ["Ps7CVarArg", "storyboard"]
+- !private ["Ps7CVarArg", "uid"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "email"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "photoURL"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "storyboard"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "FIRAuth"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "auth"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "email"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "photoURL"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "pushViewController"]
+- !private ["Ps23CustomStringConvertible", "storyboard"]
+- !private ["Ps23CustomStringConvertible", "uid"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["C5Ketch9Dashboard", "deinit"]
+- !private ["Ps9Equatable", "FIRAuth"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "auth"]
+- !private ["Ps9Equatable", "currentUser"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "email"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "photoURL"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "pushViewController"]
+- !private ["Ps9Equatable", "storyboard"]
+- !private ["Ps9Equatable", "uid"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo7FIRAuth", "auth"]
+- !private ["CSo7FIRAuth", "currentUser"]
+- ["CSo7FIRAuth", "deinit"]
+- ["CSo7FIRUser", "deinit"]
+- !private ["CSo7FIRUser", "email"]
+- !private ["CSo7FIRUser", "photoURL"]
+- !private ["CSo7FIRUser", "uid"]
+- !private ["PSo11FIRUserInfo", "email"]
+- !private ["PSo11FIRUserInfo", "photoURL"]
+- !private ["PSo11FIRUserInfo", "uid"]
+- !private ["Ps8Hashable", "FIRAuth"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "auth"]
+- !private ["Ps8Hashable", "currentUser"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "email"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "photoURL"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "pushViewController"]
+- !private ["Ps8Hashable", "storyboard"]
+- !private ["Ps8Hashable", "uid"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["C5Ketch11LoginScreen", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "FIRAuth"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "pushViewController"]
+- !private ["PSo8NSCoding", "storyboard"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRAuth"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "storyboard"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Dashboard"]
+- !private ["CSo8NSObject", "FIRAuth"]
+- !private ["CSo8NSObject", "LoginScreen"]
+- !private ["CSo8NSObject", "auth"]
+- !private ["CSo8NSObject", "currentUser"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "email"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "photoURL"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "pushViewController"]
+- !private ["CSo8NSObject", "storyboard"]
+- !private ["CSo8NSObject", "uid"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "FIRAuth"]
+- !private ["PSo16NSObjectProtocol", "auth"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "email"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "photoURL"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
+- !private ["PSo16NSObjectProtocol", "storyboard"]
+- !private ["PSo16NSObjectProtocol", "uid"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo21UIAppearanceContainer", "FIRAuth"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
+- !private ["PSo21UIAppearanceContainer", "storyboard"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "FIRAuth"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
+- !private ["PSo18UIContentContainer", "storyboard"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "FIRAuth"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "pushViewController"]
+- !private ["PSo18UIFocusEnvironment", "storyboard"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "pushViewController"]
+- !private ["CSo11UIResponder", "Dashboard"]
+- !private ["CSo11UIResponder", "FIRAuth"]
+- !private ["CSo11UIResponder", "LoginScreen"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "pushViewController"]
+- !private ["CSo11UIResponder", "storyboard"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRAuth"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "pushViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "storyboard"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "FIRAuth"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
+- !private ["PSo16UIStateRestoring", "storyboard"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["CSo12UIStoryboard", "deinit"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
+- !private ["PSo18UITraitEnvironment", "FIRAuth"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
+- !private ["PSo18UITraitEnvironment", "storyboard"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "Dashboard"]
+- !private ["CSo16UIViewController", "FIRAuth"]
+- !private ["CSo16UIViewController", "LoginScreen"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "pushViewController"]
+- !private ["CSo16UIViewController", "storyboard"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "FIRAuth"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "auth"]
+- !private ["Ps9_Hashable", "currentUser"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "email"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "navigationController"]
+- !private ["Ps9_Hashable", "photoURL"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "pushViewController"]
+- !private ["Ps9_Hashable", "storyboard"]
+- !private ["Ps9_Hashable", "uid"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["C5Ketch12splashScreen", "Dashboard"]
+- !private ["C5Ketch12splashScreen", "FIRAuth"]
+- !private ["C5Ketch12splashScreen", "LoginScreen"]
+- ["C5Ketch12splashScreen", "deinit"]
+- ["C5Ketch12splashScreen", "didReceiveMemoryWarning"]
+- ["C5Ketch12splashScreen", "init"]
+- !private ["C5Ketch12splashScreen", "navigationController"]
+- !private ["C5Ketch12splashScreen", "print"]
+- !private ["C5Ketch12splashScreen", "storyboard"]
+- ["C5Ketch12splashScreen", "viewDidLoad"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "C5Ketch9Dashboard"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "CSo7FIRAuth"
+- "CSo7FIRUser"
+- !private "PSo11FIRUserInfo"
+- "Ps8Hashable"
+- "C5Ketch11LoginScreen"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "CSo12UIStoryboard"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- "C5Ketch12splashScreen"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/DerivedData/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "75d1692d8630fdde2421c0eebcc499e8"
