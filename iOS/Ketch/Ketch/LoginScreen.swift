@@ -16,17 +16,14 @@ class LoginScreen: UIViewController, FBSDKLoginButtonDelegate {
         super.viewDidLoad()
         
         if FIRAuth.auth()?.currentUser?.uid == nil {
-            
-            
-            
-             
+      
             let loginButton = FBSDKLoginButton()
             view.addSubview(loginButton)
-            loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
+            let yStart = view.frame.maxY - 72
+            loginButton.frame = CGRect(x: 0, y: yStart, width: view.frame.width, height: 75)
             loginButton.delegate = self
             loginButton.readPermissions = ["email", "public_profile"]
             print("user is currently logged out")
-            loginButton.center = self.view.center
             
             //custom login button
             /*

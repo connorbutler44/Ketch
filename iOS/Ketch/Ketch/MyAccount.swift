@@ -18,14 +18,21 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var zipLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let loginButton = FBSDKLoginButton()
-        view.addSubview(loginButton)
-        let yStart = view.frame.maxY - 110
-        loginButton.frame = CGRect(x: 16, y: yStart, width: view.frame.width - 32, height: 50)
-        loginButton.delegate = self
-        loginButton.readPermissions = ["email", "public_profile"]
-        checkIfUserIsLoggedIn()
-        // Do any additional setup after loading the view.
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "LoginScreen")
+            self.present(controller, animated: true, completion: nil)
+        }
+        else {
+            let loginButton = FBSDKLoginButton()
+            view.addSubview(loginButton)
+            let yStart = view.frame.maxY - 98
+            loginButton.frame = CGRect(x: 0, y: yStart, width: view.frame.width, height: 50)
+            loginButton.delegate = self
+            loginButton.readPermissions = ["email", "public_profile"]
+            checkIfUserIsLoggedIn()
+        }
+        
     }
     
     func checkIfUserIsLoggedIn(){
@@ -67,6 +74,7 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
         }
         
     }
+    
 
 
 }

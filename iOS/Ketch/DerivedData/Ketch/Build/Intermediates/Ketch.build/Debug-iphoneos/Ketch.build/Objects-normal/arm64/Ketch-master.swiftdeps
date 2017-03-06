@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "37a789dc2a017f42fe6aa2bfac0ed258"
-build_time: [542093716, 482942000]
+build_time: [542096730, 967861000]
 inputs:
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/user.swift": [542091013, 0]
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/CollectionViewCell.swift": [541493833, 0]
@@ -8,7 +8,7 @@ inputs:
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/Dashboard.swift": [541849153, 0]
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/MessageController.swift": [542090128, 0]
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/NewViewController.swift": [542090373, 0]
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/MyAccount.swift": [542087132, 0]
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/LoginScreen.swift": [542078888, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/MyAccount.swift": [542096729, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/LoginScreen.swift": [542096730, 0]
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/ViewController.swift": [542088760, 0]
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/NewMessageController.swift": [542093716, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/NewMessageController.swift": [542094087, 0]

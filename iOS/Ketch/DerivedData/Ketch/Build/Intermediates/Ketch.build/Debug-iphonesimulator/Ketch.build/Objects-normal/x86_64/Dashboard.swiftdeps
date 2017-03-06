@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C5Ketch9Dashboard", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
 - "Dashboard"
 - "UITabBarController"
