@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 - ["C5Ketch4user", ""]
 provides-dynamic-lookup:
-- "email"
 - "name"
+- "email"
 depends-top-level:
-- "user"
-- "String"
 - "NSObject"
+- "String"
+- "user"
 depends-member:
 - ["Ps9AnyObject", "email"]
 - !private ["Ps9AnyObject", "init"]

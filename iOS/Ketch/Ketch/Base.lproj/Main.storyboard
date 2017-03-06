@@ -13,7 +13,7 @@
         <scene sceneID="kra-BA-crG">
             <objects>
                 <tableViewController storyboardIdentifier="MessageController" title="Chat" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fvR-ZH-TdH" customClass="MessageController" customModule="Ketch" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IgJ-pg-pim">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="messageControllerCells" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IgJ-pg-pim">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7mP-F2-2H4" id="3fu-1d-mpf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -173,6 +173,9 @@
                         <color key="backgroundColor" red="0.84313725490196079" green="0.84705882352941175" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ATP-4m-kTx"/>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="goToDashboard" id="g2T-2l-AMb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Amr-7w-pKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Item List Controller-->
         <scene sceneID="EzF-S5-zmx">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="zCX-nE-lDY" customClass="ViewController" customModule="Ketch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="zCX-nE-lDY" customClass="ItemListController" customModule="Ketch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j0b-VC-08A"/>
                         <viewControllerLayoutGuide type="bottom" id="L3t-hn-orC"/>
@@ -269,10 +272,10 @@
             </objects>
             <point key="canvasLocation" x="1748" y="-371.06446776611699"/>
         </scene>
-        <!--New View Controller-->
+        <!--Individual Item View Controller-->
         <scene sceneID="19d-5J-MfN">
             <objects>
-                <viewController id="woz-4v-l8j" customClass="NewViewController" customModule="Ketch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IndividualItemViewController" id="woz-4v-l8j" customClass="IndividualItemViewController" customModule="Ketch" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kmi-o3-rWw"/>
                         <viewControllerLayoutGuide type="bottom" id="Lil-vX-qJI"/>

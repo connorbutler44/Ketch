@@ -20,13 +20,13 @@
 		B988BCAA1E6417A70069CF69 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988BCA61E6417A70069CF69 /* FBSDKLoginKit.framework */; };
 		B988BCAB1E6417A70069CF69 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988BCA71E6417A70069CF69 /* FBSDKShareKit.framework */; };
 		B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */; };
-		B9B3991A1E57AFB10037AA62 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399191E57AFB10037AA62 /* NewViewController.swift */; };
+		B9B3991A1E57AFB10037AA62 /* IndividualItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */; };
 		B9B909191E69473900FBA550 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B909181E69473900FBA550 /* Dashboard.swift */; };
 		B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B909221E6962D900FBA550 /* MyAccount.swift */; };
 		B9CCB1181E6D10D600F87E30 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB1171E6D10D600F87E30 /* MessageController.swift */; };
 		B9CCB11A1E6D1C8800F87E30 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */; };
 		B9CCB11E1E6D21F400F87E30 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB11D1E6D21F400F87E30 /* user.swift */; };
-		B9F8488B1E57AD9A0085CC03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8488A1E57AD9A0085CC03 /* ViewController.swift */; };
+		B9F8488B1E57AD9A0085CC03 /* ItemListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */; };
 		CFBDEFB2965A5754461380E7 /* Pods_Ketch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340E900FBDC56DF1A09A258B /* Pods_Ketch.framework */; };
 		D2B97ECA247CCE34ED7E5EFA /* Pods_KetchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE388E1F9DB5E9F2CF1C869 /* Pods_KetchTests.framework */; };
 		F21951801701D933720D1C92 /* Pods_KetchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F28A3A1FA0BF49DB3F3A623 /* Pods_KetchUITests.framework */; };
@@ -78,13 +78,13 @@
 		B988BCA61E6417A70069CF69 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../FacebookSDKs-iOS-4.19.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		B988BCA71E6417A70069CF69 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../../FacebookSDKs-iOS-4.19.0/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		B9B399191E57AFB10037AA62 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualItemViewController.swift; sourceTree = "<group>"; };
 		B9B909181E69473900FBA550 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		B9B909221E6962D900FBA550 /* MyAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		B9CCB1171E6D10D600F87E30 /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		B9CCB11D1E6D21F400F87E30 /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
-		B9F8488A1E57AD9A0085CC03 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListController.swift; sourceTree = "<group>"; };
 		DC06A5882FB9727108E690D8 /* Pods-KetchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,10 +161,10 @@
 			children = (
 				B9CCB11C1E6D21DF00F87E30 /* model */,
 				B988BCA31E6415580069CF69 /* Ketch.entitlements */,
-				B9F8488A1E57AD9A0085CC03 /* ViewController.swift */,
+				B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */,
 				B96385661E56E0DF0081EB69 /* AppDelegate.swift */,
 				B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */,
-				B9B399191E57AFB10037AA62 /* NewViewController.swift */,
+				B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */,
 				B963856C1E56E0DF0081EB69 /* Main.storyboard */,
 				B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */,
 				B9B909181E69473900FBA550 /* Dashboard.swift */,
@@ -513,10 +513,10 @@
 				B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */,
 				B9B909191E69473900FBA550 /* Dashboard.swift in Sources */,
 				B9CCB1181E6D10D600F87E30 /* MessageController.swift in Sources */,
-				B9B3991A1E57AFB10037AA62 /* NewViewController.swift in Sources */,
+				B9B3991A1E57AFB10037AA62 /* IndividualItemViewController.swift in Sources */,
 				B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */,
 				B988BCA21E6412FE0069CF69 /* LoginScreen.swift in Sources */,
-				B9F8488B1E57AD9A0085CC03 /* ViewController.swift in Sources */,
+				B9F8488B1E57AD9A0085CC03 /* ItemListController.swift in Sources */,
 				B9CCB11A1E6D1C8800F87E30 /* NewMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

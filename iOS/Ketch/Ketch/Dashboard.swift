@@ -5,6 +5,8 @@
 //  Created by Connor Butler on 3/3/17.
 //  Copyright © 2017 butlerproject. All rights reserved.
 //
+//
+//  This Dashboard consists of ItemListController, MyAccount and MessageMessageController
 
 import UIKit
 

@@ -5,6 +5,9 @@
 //  Created by Connor Butler on 2/27/17.
 //  Copyright © 2017 butlerproject. All rights reserved.
 //
+//
+//
+//  This screen allows the user to login/register through Facebook, it is bypassed if the user is already logged in
 
 import UIKit
 import FBSDKLoginKit
@@ -18,14 +21,14 @@ class LoginScreen: UIViewController, FBSDKLoginButtonDelegate {
         if FIRAuth.auth()?.currentUser?.uid == nil {
       
             let loginButton = FBSDKLoginButton()
-            view.addSubview(loginButton)
             let yStart = view.frame.maxY - 72
             loginButton.frame = CGRect(x: 0, y: yStart, width: view.frame.width, height: 75)
             loginButton.delegate = self
             loginButton.readPermissions = ["email", "public_profile"]
             print("user is currently logged out")
+            view.addSubview(loginButton)
             
-            //custom login button
+            //custom login button - probably don't need, keeping just incase
             /*
             print("user is currently logged out")
              let customFBButton = UIButton()

@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "imageView"
 - "titleLabel"
 depends-top-level:
-- "UIImageView"
 - "UICollectionViewCell"
 - "UILabel"
+- "UIImageView"
 - "CollectionViewCell"
 depends-member:
 - ["Ps9AnyObject", "imageView"]

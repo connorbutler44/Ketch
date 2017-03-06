@@ -6,10 +6,10 @@ provides-nominal:
 provides-member:
 - ["C5Ketch14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "products"
-- "didReceiveMemoryWarning"
 - "prepare"
+- "products"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "collectionView"
 - "collectionView"
 - "collectionView"
@@ -17,22 +17,24 @@ provides-dynamic-lookup:
 depends-top-level:
 - "UICollectionViewCell"
 - "ViewController"
-- "UICollectionView"
-- "UIImage"
+- "UIStoryboardSegue"
+- !private "NewViewController"
+- !private "CollectionViewCell"
 - "CastingPrecedence"
-- "IndexPath"
+- "UIViewController"
 - "AssignmentPrecedence"
 - !private "=="
-- "UIStoryboardSegue"
-- "StringLiteralType"
 - "UICollectionViewDataSource"
-- "Array"
-- !private "CollectionViewCell"
 - "UICollectionViewDelegate"
-- !private "NewViewController"
+- "IndexPath"
+- "StringLiteralType"
+- !private "UIBarButtonItem"
+- "UICollectionView"
+- "UIImage"
 - "Int"
-- "UIViewController"
+- "Array"
 depends-member:
+- !private ["Ps9AnyObject", "UIBarButtonItem"]
 - ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
@@ -46,11 +48,13 @@ depends-member:
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["Ps9AnyObject", "indexPathsForSelectedItems"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "navigationItem"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "prepare"]
 - ["Ps9AnyObject", "products"]
+- !private ["Ps9AnyObject", "rightBarButtonItem"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
 - ["Ps9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -121,6 +125,7 @@ depends-member:
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "UIBarButtonItem"]
 - ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
@@ -137,11 +142,13 @@ depends-member:
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["Ps7CVarArg", "indexPathsForSelectedItems"]
 - ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "navigationItem"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInCollectionView"]
 - !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "prepare"]
 - ["Ps7CVarArg", "products"]
+- !private ["Ps7CVarArg", "rightBarButtonItem"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
 - ["Ps7CVarArg", "scrollViewDidEndScrollingAnimation"]
@@ -184,6 +191,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
@@ -199,11 +207,13 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "indexPathsForSelectedItems"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - ["Ps28CustomDebugStringConvertible", "products"]
+- !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
@@ -249,6 +259,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -266,11 +277,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["Ps23CustomStringConvertible", "indexPathsForSelectedItems"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "navigationItem"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - ["Ps23CustomStringConvertible", "products"]
+- !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -304,6 +317,7 @@ depends-member:
 - !private ["Vs26DefaultRandomAccessIndices", "_Element"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "UIBarButtonItem"]
 - ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -319,11 +333,14 @@ depends-member:
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["Ps9Equatable", "indexPathsForSelectedItems"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "navigationItem"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9Equatable", "performSegue"]
+- !private ["Ps9Equatable", "plain"]
 - ["Ps9Equatable", "prepare"]
 - ["Ps9Equatable", "products"]
+- !private ["Ps9Equatable", "rightBarButtonItem"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
@@ -362,6 +379,7 @@ depends-member:
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "UIBarButtonItem"]
 - ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -377,11 +395,14 @@ depends-member:
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["Ps8Hashable", "indexPathsForSelectedItems"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "navigationItem"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps8Hashable", "performSegue"]
+- !private ["Ps8Hashable", "plain"]
 - ["Ps8Hashable", "prepare"]
 - ["Ps8Hashable", "products"]
+- !private ["Ps8Hashable", "rightBarButtonItem"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
@@ -460,6 +481,7 @@ depends-member:
 - !private ["Ps16MutableIndexable", "row"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "UIBarButtonItem"]
 - ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
@@ -471,11 +493,13 @@ depends-member:
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo8NSCoding", "indexPathsForSelectedItems"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "prepare"]
 - ["PSo8NSCoding", "products"]
+- !private ["PSo8NSCoding", "rightBarButtonItem"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -496,6 +520,7 @@ depends-member:
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "collectionView"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -504,6 +529,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
@@ -531,6 +557,7 @@ depends-member:
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NewViewController"]
+- !private ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UICollectionView"]
 - ["CSo8NSObject", "UICollectionViewCell"]
 - ["CSo8NSObject", "UIImage"]
@@ -547,11 +574,13 @@ depends-member:
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["CSo8NSObject", "indexPathsForSelectedItems"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "prepare"]
 - ["CSo8NSObject", "products"]
+- !private ["CSo8NSObject", "rightBarButtonItem"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -570,6 +599,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
@@ -583,11 +613,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "indexPathsForSelectedItems"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - ["PSo16NSObjectProtocol", "products"]
+- !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -653,6 +685,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps25RangeReplaceableIndexable", "count"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
+- !private ["Ps16RawRepresentable", "plain"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
@@ -692,8 +725,10 @@ depends-member:
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "imageView"]
 - !private ["PSo12UIAppearance", "indexPathsForSelectedItems"]
+- !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "titleLabel"]
+- !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "collectionView"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
@@ -705,6 +740,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "indexPathsForSelectedItems"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
@@ -729,6 +765,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["CSo15UIBarButtonItem", "deinit"]
+- !private ["CSo15UIBarButtonItem", "init"]
+- ["OSC20UIBarButtonItemStyle", "deinit"]
+- !private ["OSC20UIBarButtonItemStyle", "plain"]
+- !private ["CSo9UIBarItem", "init"]
 - !private ["CSo24UICollectionReusableView", "imageView"]
 - !private ["CSo24UICollectionReusableView", "titleLabel"]
 - ["CSo16UICollectionView", "deinit"]
@@ -737,11 +778,13 @@ depends-member:
 - ["CSo20UICollectionViewCell", "deinit"]
 - !private ["CSo20UICollectionViewCell", "imageView"]
 - !private ["CSo20UICollectionViewCell", "titleLabel"]
+- !private ["PSo26UICollectionViewDataSource", "UIBarButtonItem"]
 - ["PSo26UICollectionViewDataSource", "UIImage"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
 - !private ["PSo26UICollectionViewDataSource", "imageArray"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "navigationItem"]
 - ["PSo26UICollectionViewDataSource", "numberOfSections"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
 - !private ["PSo26UICollectionViewDataSource", "performSegue"]
@@ -761,11 +804,13 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "viewForZooming"]
 - ["PSo26UICollectionViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo26UICollectionViewDataSource", ""]
+- !private ["PSo24UICollectionViewDelegate", "UIBarButtonItem"]
 - ["PSo24UICollectionViewDelegate", "UIImage"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - !private ["PSo24UICollectionViewDelegate", "imageArray"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo24UICollectionViewDelegate", "navigationItem"]
 - ["PSo24UICollectionViewDelegate", "numberOfSections"]
 - ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo24UICollectionViewDelegate", "performSegue"]
@@ -785,6 +830,7 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "viewForZooming"]
 - ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo24UICollectionViewDelegate", ""]
+- !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "collectionView"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -793,6 +839,7 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIContentContainer", "performSegue"]
@@ -828,6 +875,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "indexPathsForSelectedItems"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "titleLabel"]
+- !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - ["PSo18UIFocusEnvironment", "UIImage"]
 - ["PSo18UIFocusEnvironment", "collectionView"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
@@ -839,6 +887,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "indexPathsForSelectedItems"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
@@ -873,10 +922,13 @@ depends-member:
 - ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
+- ["CSo16UINavigationItem", "deinit"]
+- !private ["CSo16UINavigationItem", "rightBarButtonItem"]
 - !private ["CSo11UIResponder", "CollectionViewCell"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NewViewController"]
+- !private ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UICollectionView"]
 - ["CSo11UIResponder", "UICollectionViewCell"]
 - ["CSo11UIResponder", "UIImage"]
@@ -891,6 +943,7 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["CSo11UIResponder", "indexPathsForSelectedItems"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - !private ["CSo11UIResponder", "performSegue"]
@@ -914,6 +967,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
+- !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItem"]
 - ["PSo30UIResponderStandardEditActions", "UIImage"]
 - ["PSo30UIResponderStandardEditActions", "collectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
@@ -925,6 +979,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "indexPathsForSelectedItems"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationItem"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInCollectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
@@ -951,11 +1006,13 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["CSo12UIScrollView", "indexPathsForSelectedItems"]
+- !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - ["PSo20UIScrollViewDelegate", "UIImage"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - !private ["PSo20UIScrollViewDelegate", "imageArray"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo20UIScrollViewDelegate", "performSegue"]
@@ -975,6 +1032,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "collectionView"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -983,6 +1041,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
@@ -1008,6 +1067,7 @@ depends-member:
 - ["CSo17UIStoryboardSegue", "deinit"]
 - !private ["CSo17UIStoryboardSegue", "destination"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
+- !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "collectionView"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
@@ -1019,6 +1079,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "indexPathsForSelectedItems"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
@@ -1053,6 +1114,7 @@ depends-member:
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NewViewController"]
+- !private ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UICollectionView"]
 - ["CSo16UIViewController", "UICollectionViewCell"]
 - ["CSo16UIViewController", "UIImage"]
@@ -1065,6 +1127,7 @@ depends-member:
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
 - !private ["CSo16UIViewController", "performSegue"]
@@ -1091,6 +1154,7 @@ depends-member:
 - ["C5Ketch14ViewController", "IndexPath"]
 - ["C5Ketch14ViewController", "Int"]
 - !private ["C5Ketch14ViewController", "NewViewController"]
+- !private ["C5Ketch14ViewController", "UIBarButtonItem"]
 - ["C5Ketch14ViewController", "UICollectionView"]
 - ["C5Ketch14ViewController", "UICollectionViewCell"]
 - ["C5Ketch14ViewController", "UIImage"]
@@ -1102,6 +1166,7 @@ depends-member:
 - ["C5Ketch14ViewController", "indexPathForPreferredFocusedView"]
 - ["C5Ketch14ViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["C5Ketch14ViewController", "init"]
+- !private ["C5Ketch14ViewController", "navigationItem"]
 - ["C5Ketch14ViewController", "numberOfSections"]
 - ["C5Ketch14ViewController", "numberOfSectionsInCollectionView"]
 - !private ["C5Ketch14ViewController", "performSegue"]
@@ -1154,6 +1219,7 @@ depends-member:
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "UIBarButtonItem"]
 - ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -1169,11 +1235,14 @@ depends-member:
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["Ps9_Hashable", "indexPathsForSelectedItems"]
 - ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "navigationItem"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9_Hashable", "performSegue"]
+- !private ["Ps9_Hashable", "plain"]
 - ["Ps9_Hashable", "prepare"]
 - ["Ps9_Hashable", "products"]
+- !private ["Ps9_Hashable", "rightBarButtonItem"]
 - !private ["Ps9_Hashable", "row"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps9_Hashable", "scrollViewDidEndDragging"]
@@ -1280,6 +1349,7 @@ depends-nominal:
 - !private "Vs17RandomAccessSlice"
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - "Ps8Sequence"
 - !private "Ps13SignedInteger"
@@ -1292,6 +1362,9 @@ depends-nominal:
 - "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- "CSo15UIBarButtonItem"
+- "OSC20UIBarButtonItemStyle"
+- !private "CSo9UIBarItem"
 - !private "CSo24UICollectionReusableView"
 - "CSo16UICollectionView"
 - "CSo20UICollectionViewCell"
@@ -1306,6 +1379,7 @@ depends-nominal:
 - "CSo7UIImage"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
