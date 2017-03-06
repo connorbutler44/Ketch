@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C5Ketch18CollectionViewCell", ""]
 provides-dynamic-lookup:
-- "titleLabel"
 - "imageView"
+- "titleLabel"
 depends-top-level:
-- "CollectionViewCell"
-- "UILabel"
-- "UICollectionViewCell"
 - "UIImageView"
+- "UICollectionViewCell"
+- "UILabel"
+- "CollectionViewCell"
 depends-member:
 - ["Ps9AnyObject", "imageView"]
 - !private ["Ps9AnyObject", "init"]

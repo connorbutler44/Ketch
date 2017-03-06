@@ -22,8 +22,10 @@
 		B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */; };
 		B9B3991A1E57AFB10037AA62 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399191E57AFB10037AA62 /* NewViewController.swift */; };
 		B9B909191E69473900FBA550 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B909181E69473900FBA550 /* Dashboard.swift */; };
-		B9B9091D1E695C9900FBA550 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9091C1E695C9900FBA550 /* Chat.swift */; };
 		B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B909221E6962D900FBA550 /* MyAccount.swift */; };
+		B9CCB1181E6D10D600F87E30 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB1171E6D10D600F87E30 /* MessageController.swift */; };
+		B9CCB11A1E6D1C8800F87E30 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */; };
+		B9CCB11E1E6D21F400F87E30 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB11D1E6D21F400F87E30 /* user.swift */; };
 		B9F8488B1E57AD9A0085CC03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8488A1E57AD9A0085CC03 /* ViewController.swift */; };
 		CFBDEFB2965A5754461380E7 /* Pods_Ketch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340E900FBDC56DF1A09A258B /* Pods_Ketch.framework */; };
 		D2B97ECA247CCE34ED7E5EFA /* Pods_KetchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE388E1F9DB5E9F2CF1C869 /* Pods_KetchTests.framework */; };
@@ -78,8 +80,10 @@
 		B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B9B399191E57AFB10037AA62 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		B9B909181E69473900FBA550 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
-		B9B9091C1E695C9900FBA550 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		B9B909221E6962D900FBA550 /* MyAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+		B9CCB1171E6D10D600F87E30 /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		B9CCB11D1E6D21F400F87E30 /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		B9F8488A1E57AD9A0085CC03 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC06A5882FB9727108E690D8 /* Pods-KetchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,20 +159,22 @@
 		B96385651E56E0DF0081EB69 /* Ketch */ = {
 			isa = PBXGroup;
 			children = (
+				B9CCB11C1E6D21DF00F87E30 /* model */,
 				B988BCA31E6415580069CF69 /* Ketch.entitlements */,
 				B9F8488A1E57AD9A0085CC03 /* ViewController.swift */,
 				B96385661E56E0DF0081EB69 /* AppDelegate.swift */,
 				B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */,
 				B9B399191E57AFB10037AA62 /* NewViewController.swift */,
 				B963856C1E56E0DF0081EB69 /* Main.storyboard */,
+				B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */,
 				B9B909181E69473900FBA550 /* Dashboard.swift */,
 				B988BCA11E6412FE0069CF69 /* LoginScreen.swift */,
 				B963856F1E56E0DF0081EB69 /* Assets.xcassets */,
 				B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */,
 				B96385741E56E0DF0081EB69 /* Info.plist */,
 				B90B58151E679F4700560DED /* GoogleService-Info.plist */,
-				B9B9091C1E695C9900FBA550 /* Chat.swift */,
 				B9B909221E6962D900FBA550 /* MyAccount.swift */,
+				B9CCB1171E6D10D600F87E30 /* MessageController.swift */,
 			);
 			path = Ketch;
 			sourceTree = "<group>";
@@ -189,6 +195,14 @@
 				B963858A1E56E0E00081EB69 /* Info.plist */,
 			);
 			path = KetchUITests;
+			sourceTree = "<group>";
+		};
+		B9CCB11C1E6D21DF00F87E30 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCB11D1E6D21F400F87E30 /* user.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		E24200C6EE732A9DCBB46D14 /* Pods */ = {
@@ -494,14 +508,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CCB11E1E6D21F400F87E30 /* user.swift in Sources */,
 				B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */,
 				B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */,
 				B9B909191E69473900FBA550 /* Dashboard.swift in Sources */,
-				B9B9091D1E695C9900FBA550 /* Chat.swift in Sources */,
+				B9CCB1181E6D10D600F87E30 /* MessageController.swift in Sources */,
 				B9B3991A1E57AFB10037AA62 /* NewViewController.swift in Sources */,
 				B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */,
 				B988BCA21E6412FE0069CF69 /* LoginScreen.swift in Sources */,
 				B9F8488B1E57AD9A0085CC03 /* ViewController.swift in Sources */,
+				B9CCB11A1E6D1C8800F87E30 /* NewMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,15 +7,15 @@ provides-member:
 - ["C5Ketch17NewViewController", ""]
 provides-dynamic-lookup:
 - "image"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 - "imageView"
 depends-top-level:
-- "AssignmentPrecedence"
 - "UIViewController"
+- "NewViewController"
+- "AssignmentPrecedence"
 - "UIImageView"
 - "UIImage"
-- "NewViewController"
 depends-member:
 - ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

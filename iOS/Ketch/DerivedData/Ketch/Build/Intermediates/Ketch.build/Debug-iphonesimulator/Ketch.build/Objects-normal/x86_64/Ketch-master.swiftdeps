@@ -1,13 +1,12 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "9f9ce01821bfba960c7df379449edb63"
-build_time: [541839774, 513270000]
+build_time: [542078300, 534865000]
 inputs:
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/splashScreen.swift": [541839671, 0]
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/CollectionViewCell.swift": [541493833, 0]
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/SecondViewController.swift": [541493833, 0]
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/AppDelegate.swift": [541833850, 0]
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/Dashboard.swift": [541838393, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/AppDelegate.swift": [541849153, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/Dashboard.swift": [541849153, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/Chat.swift": [541849153, 0]
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/NewViewController.swift": [541493833, 0]
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/LoginScreen.swift": [541838645, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/MyAccount.swift": [541849153, 0]
+  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/LoginScreen.swift": [542078297, 0]
   "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/ViewController.swift": [541493833, 0]
-  "/Users/connorbutler/Documents/KetchPersonal/Ketch/iOS/Ketch/Ketch/ThirdViewController.swift": [541498832, 0]
