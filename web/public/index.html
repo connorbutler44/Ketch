@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
     <title>Ketch</title>
 
     <!-- Bootstrap Core CSS -->
@@ -34,6 +34,7 @@
 
 </head>
 
+
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -57,7 +58,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Login</a>
+                        <a class="page-scroll" href="#login">Login</a>
                     </li>
                 </ul>
             </div>
@@ -251,7 +252,7 @@
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
+                    <p>336-123-4567</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
@@ -262,6 +263,53 @@
     </section>
 
     <!-- jQuery -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+         var config = {
+            apiKey: "AIzaSyDCgqKsoq3QztLYe8Ozbrau4n80-ewpT7w",
+            authDomain: "ketch-b8d8a.firebaseapp.com",
+            databaseURL: "https://ketch-b8d8a.firebaseio.com",
+            storageBucket: "ketch-b8d8a.appspot.com",
+            messagingSenderId: "1040070057907"
+        };
+        firebase.initializeApp(config);
+        var DBRef = firebase.database();
+        getCount();
+        function getCount(){
+            DBRef.ref('web/views/').once("value", function(snapshot){
+                var total = snapshot.val();
+                writeUserData(total + 1);
+            });
+        }
+        
+        function writeUserData(total) {
+        DBRef.ref('web/').set({
+            views: total
+         });
+        }
+        /*  FACEBOOK LOGIN FUNCTION
+        
+            var provider = new firebase.auth.FacebookAuthProvider();
+            firebase.auth().signInWithPopup(provider).then(function(result) {
+            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            // ...
+            }).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // The email of the user's account used.
+            var email = error.email;
+            // The firebase.auth.AuthCredential type that was used.
+            var credential = error.credential;
+            // ...
+            });
+        */
+        
+        </script>
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->

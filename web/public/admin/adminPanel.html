@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ketch Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDCgqKsoq3QztLYe8Ozbrau4n80-ewpT7w",
+            authDomain: "ketch-b8d8a.firebaseapp.com",
+            databaseURL: "https://ketch-b8d8a.firebaseio.com",
+            storageBucket: "ketch-b8d8a.appspot.com",
+            messagingSenderId: "1040070057907"
+        };
+        firebase.initializeApp(config);
+        var DBRef = firebase.database();
+        var user = firebase.auth().currentUser;
+        if (user) {
+            console.log("user is already logged in...");
+        } else {
+            console.log("user is not logged in...");
+            window.location.href = "index.html";
+        }
+
+    </script>
+</body>
+
+
+</html>

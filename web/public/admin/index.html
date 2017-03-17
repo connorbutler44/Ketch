@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ketch Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body id="body">
+    <div id=loginScreen>
+        <div id="title">
+            <img src="img/sailboat.png"> Ketch Admin
+        </div>
+        <div id="wrapper">
+            <div class="tab">
+                <button class="tablinks" onclick="opentab(event, 'loginWrapper')" id="defaultOpen">Login</button>
+                <button class="tablinks" onclick="opentab(event, 'registerWrapper')">Register</button>
+            </div>
+        </div>
+        <div id="registerWrapper" class="tabcontent">
+            <div id="registerMain">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="userEmail" placeholder="Email">
+                <input type="password" id="userPass" placeholder="Password">
+                <button type="submit" id="register">Create</button>
+
+            </div>
+        </div>
+
+        <div id="loginWrapper" class="tabcontent">
+            <div id="loginMain">
+                <input type="text" id="loginEmail" placeholder="Email">
+                <input type="password" id="loginPass" placeholder="Password">
+                <button type="submit" id="login">Continue</button>
+
+            </div>
+
+        </div>
+        <div id="errors">
+            <div id="text"></div>
+        </div>
+    </div>
+
+    <div id="dashboard">
+        <div class="tab2">
+            <ul>
+
+                <li id="logo" class="tablinks2" onclick="opentab2(event, 'home')"><img src="img/sailboat64.png" height="64px" width="64px">KETCH ADMIN</li>
+                <li class="tablinks2"><img src="img/magnify.png" height="50px" width="50px" onclick="opentab2(event, 'search')">SEARCH</li>
+                <li class="tablinks2"><img src="img/notebook.png" height="50px" width="50px" onclick="opentab2(event, 'items')">ITEMS</li>
+                <li class="tablinks2"><img src="img/warning.png" height="50px" width="50px" onclick="opentab2(event, 'issues')">ISSUES</li>
+                <li id="power" class="tablinks2"><img onclick="logout()" src="img/power.png" height="32px" width="32px"></li>
+            </ul>
+        </div>
+        <div id="home" class="tabcontent2">
+
+
+        </div>
+        <div id="search" class="tabcontent2">
+            Coming Soon.....
+        </div>
+        <div id="items" class="tabcontent2">
+            <div id="db">
+                Table:
+                <select id="whichDB" class="styled-select">
+                    <option value="items">Items</option>
+                    <option value="admin">Admin</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="users">Users</option>
+                </select>
+                <button id="find" onclick="retrieveData();">Find</button>
+            </div>
+            <div>
+                <table class="itemTable">
+                    <td>Item ID</td>
+                    <td>Desc</td>
+                    <td>Price</td>
+                    <td>Seller ID</td>
+                    <td>Sold</td>
+                    <td>Title</td>
+                </table>
+
+            </div>
+
+        </div>
+        <div id="issues" class="tabcontent2">
+            <table class="itemTable">
+                <td>Issue ID</td>
+                <td>Desc</td>
+                <td>itemID</td>
+                <td>User ID</td>
+            </table>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDCgqKsoq3QztLYe8Ozbrau4n80-ewpT7w",
+            authDomain: "ketch-b8d8a.firebaseapp.com",
+            databaseURL: "https://ketch-b8d8a.firebaseio.com",
+            storageBucket: "ketch-b8d8a.appspot.com",
+            messagingSenderId: "1040070057907"
+        };
+        firebase.initializeApp(config);
+        var DBRef = firebase.database();
+
+    </script>
+    <script>
+        $('#register').click(function() {
+
+            var userEmail1 = $('#userEmail');
+            var userPass1 = $('#userPass');
+            var userName1 = $('#name');
+            var DBRef = firebase.database();
+            if (userEmail1.val() && userPass1.val() && userName1.val()) {
+
+                firebase.auth().createUserWithEmailAndPassword(userEmail1.val(), userPass1.val()).then(function(user) {
+                    console.log('everything went fine');
+                    DBRef.ref('admin/' + user.uid).set({
+                        email: userEmail1.val(),
+                        name: userName1.val(),
+                        admin: true
+                    });
+                }).catch(function(error) {
+                    console.log('there was an error');
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    console.log(errorCode + ' - ' + errorMessage);
+                    document.getElementById("errors").style.visibility = 'visible';
+                    document.getElementById("text").innerHTML = "There was an error creating the account.";
+                });
+
+            } else {
+                document.getElementById("errors").style.visibility = 'visible';
+                document.getElementById("text").innerHTML = "Fill in all fields correctly.";
+            }
+        });
+
+    </script>
+    <script>
+        $('#login').click(function() {
+            var loginEmail1 = $('#loginEmail');
+            var loginPass1 = $('#loginPass');
+            var DBRef = firebase.database();
+            if (loginEmail1.val() && loginPass1.val()) {
+                firebase.auth().signInWithEmailAndPassword(loginEmail1.val(), loginPass1.val()).catch(function(error) {
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    console.log(errorCode, errorMessage);
+                    document.getElementById("errors").style.visibility = 'visible';
+                    document.getElementById("text").innerHTML = "Could not log in with this user.";
+                });
+
+                firebase.auth().onAuthStateChanged(function(user) {
+                    if (user) {
+                        console.log("logged in");
+                        var userId = firebase.auth().currentUser.uid;
+                        DBRef.ref('/admin/' + userId).once('value').then(function(snapshot) {
+                            var isAdmin = snapshot.val().admin;
+                            if (isAdmin == true) {
+                                console.log("is admin");
+                                $('#loginScreen').fadeOut('slow', function() {
+                                    document.getElementById("body").style.backgroundColor = '#fff';
+                                    $('#dashboard').fadeIn('slow');
+                                });
+
+
+                            } else {
+                                console.log("not an admin");
+                                document.getElementById("errors").style.visibility = "visible";
+                                document.getElementById("text").innerHTML = "This user is not an admin.";
+                            }
+                        });
+
+                    } else {
+                        console.log("not logged in");
+                    }
+                });
+
+            }
+
+        });
+
+    </script>
+    <script>
+        function opentab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        }
+
+    </script>
+    <script>
+        function opentab2(evt, tabName2) {
+            // Declare all variables
+            var i, tabcontent2, tablinks2;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent2 = document.getElementsByClassName("tabcontent2");
+            for (i = 0; i < tabcontent2.length; i++) {
+                tabcontent2[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks2 = document.getElementsByClassName("tablinks2");
+            for (i = 0; i < tablinks2.length; i++) {
+                tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName2).style.display = "block";
+            evt.currentTarget.className += " active";
+            console.log("now displaying tab " + tabName2);
+            if (tabName2 == "issues") {
+                loadIssues();
+            } else if (tabName2 == "items") {
+                retrieveData();
+            }
+        }
+
+    </script>
+    <script>
+        document.getElementById("defaultOpen").click();
+
+    </script>
+    <script>
+        function logout() {
+            firebase.auth().signOut().then(function() {
+                console.log("sign out successful");
+                $('#dashboard').fadeOut('slow', function() {
+                    document.getElementById("body").style.backgroundColor = '#1d2c4c';
+                    $('#loginScreen').fadeIn('slow');
+                });
+                document.getElementById("errors").style.visibility = "hidden";
+            }).catch(function(error) {
+                console.log("an error occured while trying to logout");
+            });
+        }
+
+    </script>
+
+    <script>
+        function retrieveData() {
+            var DBRef = firebase.database();
+            var table = document.getElementsByClassName('itemTable');
+            var select = document.getElementById('whichDB');
+            $(".itemTable tr").remove();
+            if (select[select.selectedIndex].value == "items") {
+                var str = "<tr><td>Item ID</td><td>Desc</td><td>Price</td><td>Seller ID</td><td>Sold</td><td>Title</td></tr>";
+                DBRef.ref('items/').once('value').then(function(snapshot) {
+                    snapshot.forEach(function(child) {
+                        str += "<tr>" + "<td>" + child.key + "</td>";
+                        child.forEach(function(child2) {
+                            str += "<td>";
+                            str += child2.val();
+                            str += "</td>";
+                        });
+                        str += "<td>" + "<img src='img/exclaim.png' height='12px' width='12px' align='center'" + "</td>"
+                        str += "</tr>";
+                    });
+                    $(table).append(str);
+                });
+            } else if (select[select.selectedIndex].value == "admin") {
+                var str = "<tr><td>User ID</td><td>Status</td><td>Email</td><td>Name</td></tr>";
+                DBRef.ref('admin/').once('value').then(function(snapshot) {
+                    snapshot.forEach(function(child) {
+                        str += "<tr>" + "<td>" + child.key + "</td>";
+                        child.forEach(function(child2) {
+                            str += "<td>";
+                            str += child2.val();
+                            str += "</td>";
+                        });
+                        str += "<td>" + "<img src='img/exclaim.png' height='12px' width='12px' align='center'" + "</td>"
+                        str += "</tr>";
+                    });
+                    $(table).append(str);
+                });
+            } else if (select[select.selectedIndex].value == "items") {
+                var str = "<tr><td>Item ID</td><td>Desc</td><td>Price</td><td>Seller ID</td><td>Sold</td><td>Title</td></tr>";
+                DBRef.ref('items/').once('value').then(function(snapshot) {
+                    snapshot.forEach(function(child) {
+                        str += "<tr>" + "<td>" + child.key + "</td>";
+                        child.forEach(function(child2) {
+                            str += "<td>";
+                            str += child2.val();
+                            str += "</td>";
+                        });
+                        str += "<td>" + "<img src='img/exclaim.png' height='12px' width='12px' align='center'" + "</td>"
+                        str += "</tr>";
+                    });
+                    $(table).append(str);
+                });
+            } else if (select[select.selectedIndex].value == "feedback") {
+                var str = "<tr><td>Seller ID</td><td>Buyer ID</td><td>Desc</td><td>item ID</td><td>Stars</td><td>Title</td></tr>";
+                DBRef.ref('feedback/').once('value').then(function(snapshot) {
+                    snapshot.forEach(function(child) {
+                        str += "<tr>" + "<td>" + child.key + "</td>";
+                        child.forEach(function(child2) {
+                            str += "<td>";
+                            str += child2.val();
+                            str += "</td>";
+                        });
+                        str += "<td>" + "<img src='img/exclaim.png' height='12px' width='12px' align='center'" + "</td>"
+                        str += "</tr>";
+                    });
+                    $(table).append(str);
+                });
+            } else if (select[select.selectedIndex].value == "users") {
+                var str = "<tr><td>User ID</td><td>Name</td><td>Email</td><td>Zipcode</td></tr>";
+                DBRef.ref('users/').once('value').then(function(snapshot) {
+                    snapshot.forEach(function(child) {
+                        str += "<tr>" + "<td>" + child.key + "</td>";
+                        child.forEach(function(child2) {
+                            str += "<td>";
+                            str += child2.val();
+                            str += "</td>";
+                        });
+                        str += "<td>" + "<img src='img/exclaim.png' height='12px' width='12px' align='center'" + "</td>"
+                        str += "</tr>";
+                    });
+                    $(table).append(str);
+                });
+            }
+
+
+        }
+
+    </script>
+    <script>
+        function loadIssues() {
+            var DBRef = firebase.database();
+            var table = document.getElementsByClassName('itemTable');
+            var str = "<tr><td>Issue ID</td><td>Desc</td><td>Item ID</td><td>User ID</td></tr>";
+            $(".itemTable tr").remove();
+            DBRef.ref('reports/').once('value').then(function(snapshot) {
+                snapshot.forEach(function(child) {
+                    str += "<tr>" + "<td>" + child.key + "</td>";
+                    child.forEach(function(child2) {
+                        str += "<td>";
+                        str += child2.val();
+                        str += "</td>";
+
+                    });
+                    str += "<td>" + "<img src='img/exclaim.png' height='12px' width='12px' align='center'" + "</td>"
+                    str += "</tr>";
+                });
+                $(table).append(str);
+            });
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+body {
+    background-color: #1d2c4c;
+}
+
+#registerWrapper {
+    margin: auto;
+    width: 800px;
+    vertical-align: middle;
+}
+
+#loginWrapper {
+    margin: auto;
+    width: 800px;
+    vertical-align: middle;
+}
+
+#wrapper {
+    margin: auto;
+    width: 800px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    height: 65px;
+    border: none;
+    border-bottom: 1px solid #d7ddea;
+}
+
+button {
+    color: #fff;
+    background-color: #627aac;
+    width: 100%;
+    border: none;
+    height: 65px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+
+/* Style the tab */
+
+div.tab {
+    overflow: hidden;
+    background-color: #9daccb;
+}
+
+
+/* Style the buttons inside the tab */
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+div.tab button:hover {
+    background-color: #627aac;
+}
+
+
+/* Create an active/current tablink class */
+
+div.tab button.active {
+    background-color: #627aac;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tablinks {
+    width: 50%;
+    display: inline-block;
+}
+
+#title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    width: 800px;
+    font: 30px arial, sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    color: #ebeef4;
+    background-color: inherit;
+}
+
+#errors {
+    margin: auto;
+    margin-top: 5px;
+    width: 800px;
+    font: 12px arial, sans-serif;
+    color: darkred;
+    background-color: white;
+    height: 25px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+#text {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loginScreen {
+    visibility: visible;
+}
+
+#dashboard {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: -8px;
+    margin-top: -8px;
+    width: 64px;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    background-color: #1d2c4c;
+    text-align: center;
+    display: table;
+}
+
+li {
+    margin: auto;
+    vertical-align: middle;
+    width: 100%;
+    height: 64;
+    display: table-row;
+    background-color: #1d2c4c;
+    font: 9px arial, sans-serif;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+li:before {
+    float: left;
+    width: 20px;
+    font-size: 1.8em;
+    line-height: 0.75em;
+}
+
+
+/* Change the link color on hover */
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#power {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+#logo {}
+
+div.tab2 {
+    overflow: auto;
+    background-color: #9daccb;
+}
+
+
+/* Style the buttons inside the tab */
+
+div.tab2 button {
+    background-color: inherit;
+    float: left;
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+div.tab2 li:hover {
+    color: #9daccb;
+}
+
+
+/* Create an active/current tablink class */
+
+div.tab2 button.active {
+    color: #9daccb;
+}
+
+
+/* Style the tab content */
+
+.tabcontent2 {
+    position: fixed;
+    display: none;
+    border-top: none;
+    padding-left: 85px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabcontent2 {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+#db {
+    font: 18px arial, sans-serif;
+}
+
+.styled-select {
+    width: 240px;
+    height: 34px;
+    font: 18px arial, sans-serif;
+    overflow: hidden;
+    background: url(../img/down.svg) no-repeat right #fff;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+}
+
+.styled-select select {
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+}
+
+.itemTable {
+    margin-top: 15px;
+    position: relative;
+    font: 16px arial, sans-serif;
+    padding: 10px;
+    width: 90%;
+    padding-top: 20px;
+    border: 1px solid grey;
+    overflow-x: auto;
+}
+
+#find {
+    background-color: #9daccb;
+    width: 120px;
+    height: 34px;
+}
+
+#find:hover {
+    background-color: #627aac;
+}
+
+tr:nth-child(even) {
+    background-color: #9daccb;
+}
