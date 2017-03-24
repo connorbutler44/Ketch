@@ -15,11 +15,13 @@ pod ‘Firebase/Database’
 
   target 'KetchTests' do
     inherit! :search_paths
+    pod 'Firebase'
     # Pods for testing
   end
 
   target 'KetchUITests' do
     inherit! :search_paths
+    pod 'Firebase'
     # Pods for testing
   end
 

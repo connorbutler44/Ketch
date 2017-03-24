@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B90B58161E679F4700560DED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B90B58151E679F4700560DED /* GoogleService-Info.plist */; };
+		1526327F1E74A17E00186369 /* SellingPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526327E1E74A17E00186369 /* SellingPostController.swift */; };
+		153062E61E732196001E23DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153062E51E732196001E23DF /* GoogleService-Info.plist */; };
+		15A9A96E1E80EFA9006DE688 /* NewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A9A96D1E80EFA9006DE688 /* NewItemController.swift */; };
 		B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385661E56E0DF0081EB69 /* AppDelegate.swift */; };
 		B963856E1E56E0DF0081EB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B963856C1E56E0DF0081EB69 /* Main.storyboard */; };
 		B96385701E56E0DF0081EB69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B963856F1E56E0DF0081EB69 /* Assets.xcassets */; };
@@ -51,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		05C566E4C352F44909682BCD /* Pods-KetchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests.release.xcconfig"; sourceTree = "<group>"; };
+		1526327E1E74A17E00186369 /* SellingPostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellingPostController.swift; sourceTree = "<group>"; };
+		153062E51E732196001E23DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		15A9A96D1E80EFA9006DE688 /* NewItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemController.swift; sourceTree = "<group>"; };
 		1DBF92C31E7A2895B77531FA /* Pods-KetchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetchUITests/Pods-KetchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2AB954FBD1E0833729D1701C /* Pods-KetchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetchUITests/Pods-KetchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		340E900FBDC56DF1A09A258B /* Pods_Ketch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ketch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +63,6 @@
 		6815679235E82CE53FF9D99F /* Pods-Ketch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ketch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ketch/Pods-Ketch.release.xcconfig"; sourceTree = "<group>"; };
 		6FE388E1F9DB5E9F2CF1C869 /* Pods_KetchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CB3A11787DF5E8DBFE41BA /* Pods-Ketch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ketch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ketch/Pods-Ketch.debug.xcconfig"; sourceTree = "<group>"; };
-		B90B58151E679F4700560DED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B96385631E56E0DF0081EB69 /* Ketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96385661E56E0DF0081EB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B963856D1E56E0DF0081EB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -172,9 +176,11 @@
 				B963856F1E56E0DF0081EB69 /* Assets.xcassets */,
 				B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */,
 				B96385741E56E0DF0081EB69 /* Info.plist */,
-				B90B58151E679F4700560DED /* GoogleService-Info.plist */,
+				153062E51E732196001E23DF /* GoogleService-Info.plist */,
 				B9B909221E6962D900FBA550 /* MyAccount.swift */,
 				B9CCB1171E6D10D600F87E30 /* MessageController.swift */,
+				1526327E1E74A17E00186369 /* SellingPostController.swift */,
+				15A9A96D1E80EFA9006DE688 /* NewItemController.swift */,
 			);
 			path = Ketch;
 			sourceTree = "<group>";
@@ -343,8 +349,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96385731E56E0DF0081EB69 /* LaunchScreen.storyboard in Resources */,
-				B90B58161E679F4700560DED /* GoogleService-Info.plist in Resources */,
 				B96385701E56E0DF0081EB69 /* Assets.xcassets in Resources */,
+				153062E61E732196001E23DF /* GoogleService-Info.plist in Resources */,
 				B963856E1E56E0DF0081EB69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,8 +515,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9CCB11E1E6D21F400F87E30 /* user.swift in Sources */,
+				15A9A96E1E80EFA9006DE688 /* NewItemController.swift in Sources */,
 				B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */,
 				B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */,
+				1526327F1E74A17E00186369 /* SellingPostController.swift in Sources */,
 				B9B909191E69473900FBA550 /* Dashboard.swift in Sources */,
 				B9CCB1181E6D10D600F87E30 /* MessageController.swift in Sources */,
 				B9B3991A1E57AFB10037AA62 /* IndividualItemViewController.swift in Sources */,
@@ -710,6 +718,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = KetchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.KetchTests;
@@ -726,6 +735,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 43NXCQ9V3P;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = KetchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.KetchTests;
