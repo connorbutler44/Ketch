@@ -26,6 +26,7 @@ class NewMessageController: UITableViewController {
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 let userr = user()
+                userr.id = snapshot.key
                 userr.setValuesForKeys(dictionary)
                 self.users.append(userr)
                 DispatchQueue.main.async {
@@ -44,20 +45,28 @@ class NewMessageController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let user = users[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! UserCell
         cell.textLabel?.text = user.name
+        cell.imageView?.contentMode = .scaleAspectFill
         cell.detailTextLabel?.text = user.email
+        cell.imageView?.image = UIImage(named: "second")
         return cell
     }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
     
+    var messagesController: MessageController?
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dismiss(animated: true){
+            print("Dismiss completed")
+            let user = self.users[indexPath.row]
+            self.messagesController?.showChatControllerForUser(user: user)
+        }
+    }
 
 }
 
-class UserCell: UITableViewCell{
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?){
-        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
-    }
-    required init?(coder aDecoder: NSCoder){
-        fatalError("init(coder:) has not been implemented")
-    }
-}
+
+

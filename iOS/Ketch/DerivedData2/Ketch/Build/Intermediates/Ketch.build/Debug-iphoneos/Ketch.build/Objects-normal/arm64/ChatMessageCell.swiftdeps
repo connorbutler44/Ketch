@@ -1,0 +1,678 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ChatMessageCell"
+provides-nominal:
+- "C5Ketch15ChatMessageCell"
+provides-member:
+- ["C5Ketch15ChatMessageCell", ""]
+provides-dynamic-lookup:
+- "textView"
+depends-top-level:
+- "UITextView"
+- "CGRect"
+- "AssignmentPrecedence"
+- "UIFont"
+- "UICollectionViewCell"
+- "StringLiteralType"
+- "ChatMessageCell"
+- "BooleanLiteralType"
+- !private "fatalError"
+- "NSCoder"
+depends-member:
+- ["Ps9AnyObject", "UIFont"]
+- ["Ps9AnyObject", "UITextView"]
+- !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "constraint"]
+- !private ["Ps9AnyObject", "fatalError"]
+- ["Ps9AnyObject", "font"]
+- !private ["Ps9AnyObject", "heightAnchor"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isActive"]
+- !private ["Ps9AnyObject", "rightAnchor"]
+- ["Ps9AnyObject", "systemFont"]
+- ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "textView"]
+- !private ["Ps9AnyObject", "topAnchor"]
+- ["Ps9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps9AnyObject", "widthAnchor"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "UIFont"]
+- ["PSo15CALayerDelegate", "UITextView"]
+- !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "fatalError"]
+- ["PSo15CALayerDelegate", "font"]
+- !private ["PSo15CALayerDelegate", "heightAnchor"]
+- ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "rightAnchor"]
+- ["PSo15CALayerDelegate", "text"]
+- ["PSo15CALayerDelegate", "textView"]
+- !private ["PSo15CALayerDelegate", "topAnchor"]
+- ["PSo15CALayerDelegate", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo15CALayerDelegate", "widthAnchor"]
+- ["PSo15CALayerDelegate", ""]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC6CGRect", "deinit"]
+- ["Ps7CVarArg", "UIFont"]
+- ["Ps7CVarArg", "UITextView"]
+- !private ["Ps7CVarArg", "addSubview"]
+- !private ["Ps7CVarArg", "constraint"]
+- !private ["Ps7CVarArg", "fatalError"]
+- ["Ps7CVarArg", "font"]
+- !private ["Ps7CVarArg", "heightAnchor"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isActive"]
+- !private ["Ps7CVarArg", "rightAnchor"]
+- ["Ps7CVarArg", "systemFont"]
+- ["Ps7CVarArg", "text"]
+- ["Ps7CVarArg", "textView"]
+- !private ["Ps7CVarArg", "topAnchor"]
+- ["Ps7CVarArg", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps7CVarArg", "widthAnchor"]
+- ["Ps7CVarArg", ""]
+- ["C5Ketch15ChatMessageCell", "CGRect"]
+- ["C5Ketch15ChatMessageCell", "NSCoder"]
+- ["C5Ketch15ChatMessageCell", "UIFont"]
+- ["C5Ketch15ChatMessageCell", "UITextView"]
+- !private ["C5Ketch15ChatMessageCell", "addSubview"]
+- ["C5Ketch15ChatMessageCell", "deinit"]
+- !private ["C5Ketch15ChatMessageCell", "fatalError"]
+- !private ["C5Ketch15ChatMessageCell", "heightAnchor"]
+- ["C5Ketch15ChatMessageCell", "init"]
+- !private ["C5Ketch15ChatMessageCell", "rightAnchor"]
+- ["C5Ketch15ChatMessageCell", "textView"]
+- !private ["C5Ketch15ChatMessageCell", "topAnchor"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "UIFont"]
+- ["Ps28CustomDebugStringConvertible", "UITextView"]
+- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "constraint"]
+- !private ["Ps28CustomDebugStringConvertible", "fatalError"]
+- ["Ps28CustomDebugStringConvertible", "font"]
+- !private ["Ps28CustomDebugStringConvertible", "heightAnchor"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isActive"]
+- !private ["Ps28CustomDebugStringConvertible", "rightAnchor"]
+- ["Ps28CustomDebugStringConvertible", "systemFont"]
+- ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "textView"]
+- !private ["Ps28CustomDebugStringConvertible", "topAnchor"]
+- ["Ps28CustomDebugStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps28CustomDebugStringConvertible", "widthAnchor"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "UIFont"]
+- ["Ps23CustomStringConvertible", "UITextView"]
+- !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps23CustomStringConvertible", "constraint"]
+- !private ["Ps23CustomStringConvertible", "fatalError"]
+- ["Ps23CustomStringConvertible", "font"]
+- !private ["Ps23CustomStringConvertible", "heightAnchor"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isActive"]
+- !private ["Ps23CustomStringConvertible", "rightAnchor"]
+- ["Ps23CustomStringConvertible", "systemFont"]
+- ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "textView"]
+- !private ["Ps23CustomStringConvertible", "topAnchor"]
+- ["Ps23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps23CustomStringConvertible", "widthAnchor"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "UIFont"]
+- ["Ps9Equatable", "UITextView"]
+- !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "constraint"]
+- !private ["Ps9Equatable", "fatalError"]
+- ["Ps9Equatable", "font"]
+- !private ["Ps9Equatable", "heightAnchor"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isActive"]
+- !private ["Ps9Equatable", "rightAnchor"]
+- ["Ps9Equatable", "systemFont"]
+- ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "textView"]
+- !private ["Ps9Equatable", "topAnchor"]
+- ["Ps9Equatable", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps9Equatable", "widthAnchor"]
+- ["Ps9Equatable", ""]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "UIFont"]
+- ["Ps8Hashable", "UITextView"]
+- !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps8Hashable", "constraint"]
+- !private ["Ps8Hashable", "fatalError"]
+- ["Ps8Hashable", "font"]
+- !private ["Ps8Hashable", "heightAnchor"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isActive"]
+- !private ["Ps8Hashable", "rightAnchor"]
+- ["Ps8Hashable", "systemFont"]
+- ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "textView"]
+- !private ["Ps8Hashable", "topAnchor"]
+- ["Ps8Hashable", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps8Hashable", "widthAnchor"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["PSo8NSCoding", "UIFont"]
+- ["PSo8NSCoding", "UITextView"]
+- !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "fatalError"]
+- ["PSo8NSCoding", "font"]
+- !private ["PSo8NSCoding", "heightAnchor"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "rightAnchor"]
+- ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "textView"]
+- !private ["PSo8NSCoding", "topAnchor"]
+- ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo8NSCoding", "widthAnchor"]
+- ["PSo8NSCoding", ""]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "systemFont"]
+- !private ["CSo14NSLayoutAnchor", "constraint"]
+- ["CSo18NSLayoutConstraint", "deinit"]
+- !private ["CSo18NSLayoutConstraint", "isActive"]
+- !private ["CSo17NSLayoutDimension", "constraint"]
+- ["CSo17NSLayoutDimension", "deinit"]
+- !private ["CSo19NSLayoutXAxisAnchor", "constraint"]
+- ["CSo19NSLayoutXAxisAnchor", "deinit"]
+- !private ["CSo19NSLayoutYAxisAnchor", "constraint"]
+- ["CSo19NSLayoutYAxisAnchor", "deinit"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "UIFont"]
+- ["CSo8NSObject", "UITextView"]
+- !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "constraint"]
+- !private ["CSo8NSObject", "fatalError"]
+- ["CSo8NSObject", "font"]
+- !private ["CSo8NSObject", "heightAnchor"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isActive"]
+- !private ["CSo8NSObject", "rightAnchor"]
+- ["CSo8NSObject", "systemFont"]
+- ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "textView"]
+- !private ["CSo8NSObject", "topAnchor"]
+- ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["CSo8NSObject", "widthAnchor"]
+- ["PSo16NSObjectProtocol", "UIFont"]
+- ["PSo16NSObjectProtocol", "UITextView"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "constraint"]
+- !private ["PSo16NSObjectProtocol", "fatalError"]
+- ["PSo16NSObjectProtocol", "font"]
+- !private ["PSo16NSObjectProtocol", "heightAnchor"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isActive"]
+- !private ["PSo16NSObjectProtocol", "rightAnchor"]
+- ["PSo16NSObjectProtocol", "systemFont"]
+- ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "textView"]
+- !private ["PSo16NSObjectProtocol", "topAnchor"]
+- ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo16NSObjectProtocol", "widthAnchor"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Os5Never", "deinit"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["PSo29UIAccessibilityIdentification", "UIFont"]
+- ["PSo29UIAccessibilityIdentification", "UITextView"]
+- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "fatalError"]
+- ["PSo29UIAccessibilityIdentification", "font"]
+- !private ["PSo29UIAccessibilityIdentification", "heightAnchor"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "rightAnchor"]
+- ["PSo29UIAccessibilityIdentification", "text"]
+- ["PSo29UIAccessibilityIdentification", "textView"]
+- !private ["PSo29UIAccessibilityIdentification", "topAnchor"]
+- ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo29UIAccessibilityIdentification", "widthAnchor"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "UIFont"]
+- ["PSo12UIAppearance", "UITextView"]
+- !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "fatalError"]
+- ["PSo12UIAppearance", "font"]
+- !private ["PSo12UIAppearance", "heightAnchor"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "rightAnchor"]
+- ["PSo12UIAppearance", "text"]
+- ["PSo12UIAppearance", "textView"]
+- !private ["PSo12UIAppearance", "topAnchor"]
+- ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo12UIAppearance", "widthAnchor"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "UIFont"]
+- ["PSo21UIAppearanceContainer", "UITextView"]
+- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "fatalError"]
+- ["PSo21UIAppearanceContainer", "font"]
+- !private ["PSo21UIAppearanceContainer", "heightAnchor"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "rightAnchor"]
+- ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "textView"]
+- !private ["PSo21UIAppearanceContainer", "topAnchor"]
+- ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo21UIAppearanceContainer", "widthAnchor"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "CGRect"]
+- ["CSo24UICollectionReusableView", "NSCoder"]
+- ["CSo24UICollectionReusableView", "UIFont"]
+- ["CSo24UICollectionReusableView", "UITextView"]
+- !private ["CSo24UICollectionReusableView", "addSubview"]
+- !private ["CSo24UICollectionReusableView", "fatalError"]
+- !private ["CSo24UICollectionReusableView", "heightAnchor"]
+- ["CSo24UICollectionReusableView", "init"]
+- !private ["CSo24UICollectionReusableView", "rightAnchor"]
+- ["CSo24UICollectionReusableView", "textView"]
+- !private ["CSo24UICollectionReusableView", "topAnchor"]
+- ["CSo20UICollectionViewCell", "CGRect"]
+- ["CSo20UICollectionViewCell", "NSCoder"]
+- ["CSo20UICollectionViewCell", "UIFont"]
+- ["CSo20UICollectionViewCell", "UITextView"]
+- !private ["CSo20UICollectionViewCell", "addSubview"]
+- ["CSo20UICollectionViewCell", "deinit"]
+- !private ["CSo20UICollectionViewCell", "fatalError"]
+- !private ["CSo20UICollectionViewCell", "heightAnchor"]
+- ["CSo20UICollectionViewCell", "init"]
+- !private ["CSo20UICollectionViewCell", "rightAnchor"]
+- ["CSo20UICollectionViewCell", "textView"]
+- !private ["CSo20UICollectionViewCell", "topAnchor"]
+- ["CSo20UICollectionViewCell", ""]
+- ["PSo30UIContentSizeCategoryAdjusting", "font"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "heightAnchor"]
+- ["PSo30UIContentSizeCategoryAdjusting", "init"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "rightAnchor"]
+- ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "topAnchor"]
+- ["PSo30UIContentSizeCategoryAdjusting", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "widthAnchor"]
+- ["PSo17UICoordinateSpace", "UIFont"]
+- ["PSo17UICoordinateSpace", "UITextView"]
+- !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "fatalError"]
+- ["PSo17UICoordinateSpace", "font"]
+- !private ["PSo17UICoordinateSpace", "heightAnchor"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "rightAnchor"]
+- ["PSo17UICoordinateSpace", "text"]
+- ["PSo17UICoordinateSpace", "textView"]
+- !private ["PSo17UICoordinateSpace", "topAnchor"]
+- ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo17UICoordinateSpace", "widthAnchor"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "UIFont"]
+- ["PSo13UIDynamicItem", "UITextView"]
+- !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "fatalError"]
+- ["PSo13UIDynamicItem", "font"]
+- !private ["PSo13UIDynamicItem", "heightAnchor"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "rightAnchor"]
+- ["PSo13UIDynamicItem", "text"]
+- ["PSo13UIDynamicItem", "textView"]
+- !private ["PSo13UIDynamicItem", "topAnchor"]
+- ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo13UIDynamicItem", "widthAnchor"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "UIFont"]
+- ["PSo18UIFocusEnvironment", "UITextView"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "fatalError"]
+- ["PSo18UIFocusEnvironment", "font"]
+- !private ["PSo18UIFocusEnvironment", "heightAnchor"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "rightAnchor"]
+- ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "textView"]
+- !private ["PSo18UIFocusEnvironment", "topAnchor"]
+- ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo18UIFocusEnvironment", "widthAnchor"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo11UIFocusItem", "UIFont"]
+- ["PSo11UIFocusItem", "UITextView"]
+- !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "fatalError"]
+- ["PSo11UIFocusItem", "font"]
+- !private ["PSo11UIFocusItem", "heightAnchor"]
+- ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "rightAnchor"]
+- ["PSo11UIFocusItem", "text"]
+- ["PSo11UIFocusItem", "textView"]
+- !private ["PSo11UIFocusItem", "topAnchor"]
+- ["PSo11UIFocusItem", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo11UIFocusItem", "widthAnchor"]
+- ["PSo11UIFocusItem", ""]
+- ["CSo6UIFont", "deinit"]
+- ["CSo6UIFont", "systemFont"]
+- ["PSo10UIKeyInput", "font"]
+- !private ["PSo10UIKeyInput", "heightAnchor"]
+- ["PSo10UIKeyInput", "init"]
+- !private ["PSo10UIKeyInput", "rightAnchor"]
+- ["PSo10UIKeyInput", "text"]
+- !private ["PSo10UIKeyInput", "topAnchor"]
+- ["PSo10UIKeyInput", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo10UIKeyInput", "widthAnchor"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "UIFont"]
+- ["CSo11UIResponder", "UITextView"]
+- !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "fatalError"]
+- ["CSo11UIResponder", "font"]
+- !private ["CSo11UIResponder", "heightAnchor"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "rightAnchor"]
+- ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "textView"]
+- !private ["CSo11UIResponder", "topAnchor"]
+- ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["CSo11UIResponder", "widthAnchor"]
+- ["PSo30UIResponderStandardEditActions", "UIFont"]
+- ["PSo30UIResponderStandardEditActions", "UITextView"]
+- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "fatalError"]
+- ["PSo30UIResponderStandardEditActions", "font"]
+- !private ["PSo30UIResponderStandardEditActions", "heightAnchor"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "rightAnchor"]
+- ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", "textView"]
+- !private ["PSo30UIResponderStandardEditActions", "topAnchor"]
+- ["PSo30UIResponderStandardEditActions", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo30UIResponderStandardEditActions", "widthAnchor"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["CSo12UIScrollView", "font"]
+- !private ["CSo12UIScrollView", "heightAnchor"]
+- ["CSo12UIScrollView", "init"]
+- !private ["CSo12UIScrollView", "rightAnchor"]
+- ["CSo12UIScrollView", "text"]
+- !private ["CSo12UIScrollView", "topAnchor"]
+- ["CSo12UIScrollView", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["CSo12UIScrollView", "widthAnchor"]
+- ["PSo11UITextInput", "font"]
+- !private ["PSo11UITextInput", "heightAnchor"]
+- ["PSo11UITextInput", "init"]
+- !private ["PSo11UITextInput", "rightAnchor"]
+- ["PSo11UITextInput", "text"]
+- !private ["PSo11UITextInput", "topAnchor"]
+- ["PSo11UITextInput", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo11UITextInput", "widthAnchor"]
+- ["PSo17UITextInputTraits", "font"]
+- !private ["PSo17UITextInputTraits", "heightAnchor"]
+- ["PSo17UITextInputTraits", "init"]
+- !private ["PSo17UITextInputTraits", "rightAnchor"]
+- ["PSo17UITextInputTraits", "text"]
+- !private ["PSo17UITextInputTraits", "topAnchor"]
+- ["PSo17UITextInputTraits", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo17UITextInputTraits", "widthAnchor"]
+- ["CSo10UITextView", "deinit"]
+- ["CSo10UITextView", "font"]
+- !private ["CSo10UITextView", "heightAnchor"]
+- ["CSo10UITextView", "init"]
+- !private ["CSo10UITextView", "rightAnchor"]
+- ["CSo10UITextView", "text"]
+- !private ["CSo10UITextView", "topAnchor"]
+- ["CSo10UITextView", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["CSo10UITextView", "widthAnchor"]
+- ["PSo18UITraitEnvironment", "UIFont"]
+- ["PSo18UITraitEnvironment", "UITextView"]
+- !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "fatalError"]
+- ["PSo18UITraitEnvironment", "font"]
+- !private ["PSo18UITraitEnvironment", "heightAnchor"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "rightAnchor"]
+- ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "textView"]
+- !private ["PSo18UITraitEnvironment", "topAnchor"]
+- ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo18UITraitEnvironment", "widthAnchor"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "NSCoder"]
+- ["CSo6UIView", "UIFont"]
+- ["CSo6UIView", "UITextView"]
+- !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "fatalError"]
+- ["CSo6UIView", "font"]
+- !private ["CSo6UIView", "heightAnchor"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "rightAnchor"]
+- ["CSo6UIView", "text"]
+- ["CSo6UIView", "textView"]
+- !private ["CSo6UIView", "topAnchor"]
+- ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["CSo6UIView", "widthAnchor"]
+- ["Su", "deinit"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIFont"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "UITextView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "fatalError"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "heightAnchor"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rightAnchor"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "textView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "topAnchor"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "widthAnchor"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "UIFont"]
+- ["Ps9_Hashable", "UITextView"]
+- !private ["Ps9_Hashable", "addSubview"]
+- !private ["Ps9_Hashable", "constraint"]
+- !private ["Ps9_Hashable", "fatalError"]
+- ["Ps9_Hashable", "font"]
+- !private ["Ps9_Hashable", "heightAnchor"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isActive"]
+- !private ["Ps9_Hashable", "rightAnchor"]
+- ["Ps9_Hashable", "systemFont"]
+- ["Ps9_Hashable", "text"]
+- ["Ps9_Hashable", "textView"]
+- !private ["Ps9_Hashable", "topAnchor"]
+- ["Ps9_Hashable", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps9_Hashable", "widthAnchor"]
+- ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "C5Ketch15ChatMessageCell"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "SQ"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo14NSLayoutAnchor"
+- "CSo18NSLayoutConstraint"
+- "CSo17NSLayoutDimension"
+- "CSo19NSLayoutXAxisAnchor"
+- "CSo19NSLayoutYAxisAnchor"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Os5Never"
+- "Vs12StaticString"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo24UICollectionReusableView"
+- "CSo20UICollectionViewCell"
+- "PSo30UIContentSizeCategoryAdjusting"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo6UIFont"
+- "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "CSo12UIScrollView"
+- "PSo11UITextInput"
+- "PSo17UITextInputTraits"
+- "CSo10UITextView"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Su"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "b4f44a3cffece81ac8501a8518a26c65"
