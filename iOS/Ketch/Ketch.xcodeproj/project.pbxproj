@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1526327F1E74A17E00186369 /* SellingPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526327E1E74A17E00186369 /* SellingPostController.swift */; };
 		153062E61E732196001E23DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153062E51E732196001E23DF /* GoogleService-Info.plist */; };
+		1555EBB41E8A242E001D1C8D /* SellingPostTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555EBB31E8A242E001D1C8D /* SellingPostTableController.swift */; };
+		1555EBB61E8A26CA001D1C8D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555EBB51E8A26CA001D1C8D /* Item.swift */; };
 		15A9A96E1E80EFA9006DE688 /* NewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A9A96D1E80EFA9006DE688 /* NewItemController.swift */; };
 		B9311DB41E85155300E97547 /* splashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9311DAF1E85155300E97547 /* splashScreen.swift */; };
 		B9311DB51E85155300E97547 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9311DB01E85155300E97547 /* ChatLogController.swift */; };
@@ -60,6 +62,8 @@
 		05C566E4C352F44909682BCD /* Pods-KetchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests.release.xcconfig"; sourceTree = "<group>"; };
 		1526327E1E74A17E00186369 /* SellingPostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellingPostController.swift; sourceTree = "<group>"; };
 		153062E51E732196001E23DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1555EBB31E8A242E001D1C8D /* SellingPostTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellingPostTableController.swift; sourceTree = "<group>"; };
+		1555EBB51E8A26CA001D1C8D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		15A9A96D1E80EFA9006DE688 /* NewItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemController.swift; sourceTree = "<group>"; };
 		1DBF92C31E7A2895B77531FA /* Pods-KetchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetchUITests/Pods-KetchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2AB954FBD1E0833729D1701C /* Pods-KetchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetchUITests/Pods-KetchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,12 +181,14 @@
 				B988BCA31E6415580069CF69 /* Ketch.entitlements */,
 				B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */,
 				B96385661E56E0DF0081EB69 /* AppDelegate.swift */,
+				1555EBB31E8A242E001D1C8D /* SellingPostTableController.swift */,
 				B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */,
 				B9311DAF1E85155300E97547 /* splashScreen.swift */,
 				B9311DB01E85155300E97547 /* ChatLogController.swift */,
 				B9311DB11E85155300E97547 /* ChatMessageCell.swift */,
 				B9311DB21E85155300E97547 /* UserCell.swift */,
 				B9311DB31E85155300E97547 /* Message.swift */,
+				1555EBB51E8A26CA001D1C8D /* Item.swift */,
 				B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */,
 				B963856C1E56E0DF0081EB69 /* Main.storyboard */,
 				B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */,
@@ -531,6 +537,7 @@
 			files = (
 				B9CCB11E1E6D21F400F87E30 /* user.swift in Sources */,
 				15A9A96E1E80EFA9006DE688 /* NewItemController.swift in Sources */,
+				1555EBB41E8A242E001D1C8D /* SellingPostTableController.swift in Sources */,
 				B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */,
 				B9311DB81E85155300E97547 /* Message.swift in Sources */,
 				B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */,
@@ -542,6 +549,7 @@
 				B9CCB1181E6D10D600F87E30 /* MessageController.swift in Sources */,
 				B9B3991A1E57AFB10037AA62 /* IndividualItemViewController.swift in Sources */,
 				B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */,
+				1555EBB61E8A26CA001D1C8D /* Item.swift in Sources */,
 				B9311DB51E85155300E97547 /* ChatLogController.swift in Sources */,
 				B988BCA21E6412FE0069CF69 /* LoginScreen.swift in Sources */,
 				B9F8488B1E57AD9A0085CC03 /* ItemListController.swift in Sources */,

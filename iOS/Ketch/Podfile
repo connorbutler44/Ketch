@@ -12,6 +12,7 @@ pod ‘FBSDKLoginKit’
 
 pod ‘Firebase/Auth’
 pod ‘Firebase/Database’
+pod 'Firebase/Storage'
 
   target 'KetchTests' do
     inherit! :search_paths

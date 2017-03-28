@@ -1,19 +1,19 @@
 //
-//  SellingPost.swift
+//  SellingPostTableController.swift
 //  Ketch
 //
-//  Created by Patrick Carder on 3/11/17.
+//  Created by Patrick Carder on 3/28/17.
 //  Copyright © 2017 butlerproject. All rights reserved.
 //
-
 import UIKit
 import Firebase
 
-class SellingPost: UIViewController {
+class SellingPostTableController: UITableViewController {
     
     @IBOutlet var myItems: UITableView!
     
-    @IBOutlet var newItemButton: UIButton!
+    @IBOutlet var newItemButton: UIBarButtonItem!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +21,18 @@ class SellingPost: UIViewController {
         
     }
     
-    @IBAction func addNewItem(_ sender: UIButton) {
-       
+    @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "AddItem")
         self.present(controller, animated: true, completion: nil)
-        
     }
+
     
     func updateMyItems() {
-        let uid = FIRAuth.auth()?.currentUser?.uid
         let ref = FIRDatabase.database().reference(fromURL: "https://ketch-b8d8a.firebaseio.com/")
+        let uid = FIRAuth.auth()?.currentUser?.uid
         let itemRef = ref.child("user-item").child(uid!)
-
-                
+              
     }
     
 }

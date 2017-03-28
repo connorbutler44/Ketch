@@ -146,6 +146,44 @@
             </objects>
             <point key="canvasLocation" x="-2.3999999999999999" y="791.15442278860576"/>
         </scene>
+        <!--Selling Post-->
+        <scene sceneID="QJ8-yR-umx">
+            <objects>
+                <tableViewController storyboardIdentifier="SellingPostTable" title="Selling Post" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4fM-O6-nwf" customClass="SellingPostTableController" customModule="Ketch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zLI-fT-f2U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wi5-yj-3Ds">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wi5-yj-3Ds" id="E1R-q3-tuj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4fM-O6-nwf" id="Wcx-wc-z65"/>
+                            <outlet property="delegate" destination="4fM-O6-nwf" id="RXW-5T-vNT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Selling Post" id="Zqq-aw-jcn">
+                        <barButtonItem key="rightBarButtonItem" image="plus-button" id="VI6-9e-WIy">
+                            <connections>
+                                <action selector="addNewItem:" destination="4fM-O6-nwf" id="jeq-G9-m78"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="newItemButton" destination="VI6-9e-WIy" id="wUi-0q-a8I"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6sg-4i-wv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="-1101"/>
+        </scene>
         <!--Login Screen-->
         <scene sceneID="Zd0-YK-zVJ">
             <objects>
@@ -207,7 +245,7 @@
                         <segue destination="SZT-8i-TeA" kind="relationship" relationship="viewControllers" id="OMh-m9-nBB"/>
                         <segue destination="xeg-mM-eue" kind="relationship" relationship="viewControllers" id="VnV-16-fzC"/>
                         <segue destination="aDL-r2-AbN" kind="relationship" relationship="viewControllers" id="wVE-an-GOc"/>
-                        <segue destination="HTa-SB-Rgr" kind="relationship" relationship="viewControllers" id="F0H-Kh-9aw"/>
+                        <segue destination="j0w-Hw-QIo" kind="relationship" relationship="viewControllers" id="mpK-yJ-HMd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -238,7 +276,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="MUR-5S-sZR" customClass="CollectionViewCell" customModule="Ketch" customModuleProvider="target">
-                                        <rect key="frame" x="37" y="0.0" width="300" height="250"/>
+                                        <rect key="frame" x="38" y="0.0" width="300" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
@@ -282,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wA2-gj-TXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="-371.06446776611699"/>
+            <point key="canvasLocation" x="3626.4000000000001" y="-371.06446776611699"/>
         </scene>
         <!--Individual Item View Controller-->
         <scene sceneID="19d-5J-MfN">
@@ -309,58 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4s-5P-Y2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2589.5999999999999" y="-371.06446776611699"/>
-        </scene>
-        <!--SellingPost-->
-        <scene sceneID="9sv-NY-Zrq">
-            <objects>
-                <viewController storyboardIdentifier="SellingPost" title="SellingPost" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HTa-SB-Rgr" customClass="SellingPost" customModule="Ketch" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sCW-0r-SlN"/>
-                        <viewControllerLayoutGuide type="bottom" id="DZN-Mf-XjA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="78M-J5-kQY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LZJ-r1-hdp">
-                                <rect key="frame" x="16" y="102" width="343" height="508"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Items" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFK-PQ-mFc">
-                                <rect key="frame" x="16" y="28" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-bh-iAF">
-                                <rect key="frame" x="16" y="57" width="343" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Add New Item"/>
-                                <connections>
-                                    <action selector="addNewItem:" destination="HTa-SB-Rgr" eventType="touchUpInside" id="ahB-OR-qt5"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="5qe-bh-iAF" firstAttribute="centerX" secondItem="FFK-PQ-mFc" secondAttribute="centerX" id="GFW-K4-b15"/>
-                            <constraint firstItem="LZJ-r1-hdp" firstAttribute="top" secondItem="5qe-bh-iAF" secondAttribute="bottom" constant="8" id="LP3-cs-IQq"/>
-                            <constraint firstItem="FFK-PQ-mFc" firstAttribute="top" secondItem="sCW-0r-SlN" secondAttribute="bottom" constant="8" id="WOr-Sl-Bm6"/>
-                            <constraint firstItem="FFK-PQ-mFc" firstAttribute="centerX" secondItem="78M-J5-kQY" secondAttribute="centerX" id="pv9-DM-GBm"/>
-                            <constraint firstItem="LZJ-r1-hdp" firstAttribute="centerX" secondItem="78M-J5-kQY" secondAttribute="centerX" id="tci-0z-hd9"/>
-                            <constraint firstItem="5qe-bh-iAF" firstAttribute="top" secondItem="FFK-PQ-mFc" secondAttribute="bottom" constant="8" id="vf3-R0-MTO"/>
-                            <constraint firstItem="LZJ-r1-hdp" firstAttribute="centerX" secondItem="FFK-PQ-mFc" secondAttribute="centerX" id="zTK-8L-cvf"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Selling Post" image="plus-button" id="zom-8s-3Qr"/>
-                    <connections>
-                        <outlet property="newItemButton" destination="5qe-bh-iAF" id="RkJ-6H-D1U"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sgs-2k-iAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-18.399999999999999" y="-791.15442278860576"/>
+            <point key="canvasLocation" x="4468" y="-371.06446776611699"/>
         </scene>
         <!--AddItem-->
         <scene sceneID="txd-d3-xAw">
@@ -389,7 +376,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1J-Ol-gmA">
-                                <rect key="frame" x="172" y="592" width="31" height="30"/>
+                                <rect key="frame" x="53" y="592" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
@@ -443,6 +430,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="UploadImages"/>
+                                <connections>
+                                    <action selector="uploadImageAction:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="IMB-yC-QVc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHr-ew-NHm">
+                                <rect key="frame" x="273" y="592" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelPost:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="D2I-fH-8Di"/>
+                                    <action selector="postAndReturn:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="ee9-kZ-umm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -452,11 +451,13 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="ZHr-ew-NHm" id="GlR-VV-PjH"/>
                         <outlet property="itemDesc" destination="y0W-1a-Ahd" id="Zel-6E-w6G"/>
                         <outlet property="itemPrice" destination="65k-RJ-tvb" id="QoT-dH-xik"/>
                         <outlet property="itemTitle" destination="dOK-xf-mEK" id="isN-bN-wWQ"/>
                         <outlet property="itemZip" destination="zkj-y7-oi0" id="RTR-Ho-CrM"/>
                         <outlet property="postButton" destination="d1J-Ol-gmA" id="Ghe-dY-BGk"/>
+                        <outlet property="uploadImage" destination="fA7-tZ-ojS" id="hWR-BR-4qh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJU-Wk-qdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -466,7 +467,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="808.79999999999995" y="-1041.2293853073463"/>
+            <point key="canvasLocation" x="2687" y="-1101"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="zP6-Oj-Z1a">
@@ -485,7 +486,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M97-ga-7Ji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.79999999999995" y="-371.06446776611699"/>
+            <point key="canvasLocation" x="2687.1999999999998" y="-371.06446776611699"/>
         </scene>
         <!--Chat-->
         <scene sceneID="fJc-vh-EkG">
@@ -505,6 +506,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaO-7P-gLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="331.48425787106447"/>
+        </scene>
+        <!--Selling Post-->
+        <scene sceneID="drY-2X-MzP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j0w-Hw-QIo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Selling Post" image="plus-button" id="epX-F3-jtm"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rEU-GZ-mdp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4fM-O6-nwf" kind="relationship" relationship="rootViewController" id="lja-Dr-gag"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KIP-PT-aCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="-1100"/>
         </scene>
     </scenes>
     <resources>
