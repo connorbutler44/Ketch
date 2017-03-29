@@ -39,8 +39,8 @@ class MessageController: UITableViewController {
                 if let dictionary = snapshot.value as? [String: AnyObject]{
                     let message = Message()
                     message.setValuesForKeys(dictionary)
-                    if let toID = message.toID{
-                        self.messagesDictionary[message.toID!] = message
+                    if let chatPartnerID = message.chatPartnerID(){
+                        self.messagesDictionary[chatPartnerID] = message
                         self.messages = Array(self.messagesDictionary.values)
                         self.messages.sort(by: { (message1, message2) ->
                             Bool in
@@ -48,39 +48,27 @@ class MessageController: UITableViewController {
                             return (message1.timestamp?.intValue)! > (message2.timestamp?.intValue)!
                         })
                     }
-                    DispatchQueue.main.async {
-                        //reloads the tableView with all user's name/email *MUST call async func so the app does not crash from this thread*
-                        self.tableView.reloadData()
-                    }
+                    self.timer?.invalidate()
+                    self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.handleReloadTable), userInfo: nil, repeats: false)
+                    
+                    
                 }
             }, withCancel: nil)
         }, withCancel: nil)
     }
-    func observeMessages(){
-        let ref = FIRDatabase.database().reference().child("messages")
-        ref.observe(.childAdded, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String: AnyObject]{
-                let message = Message()
-                message.setValuesForKeys(dictionary)
-                if let toID = message.toID{
-                    self.messagesDictionary[message.toID!] = message
-                    self.messages = Array(self.messagesDictionary.values)
-                    self.messages.sort(by: { (message1, message2) ->
-                        Bool in
-                        
-                        return (message1.timestamp?.intValue)! > (message2.timestamp?.intValue)!
-                        })
-                }
-                DispatchQueue.main.async {
-                    //reloads the tableView with all user's name/email *MUST call async func so the app does not crash from this thread*
-                    self.tableView.reloadData()
-                }
-            }
-        }, withCancel: nil)
-    }
+    
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 72
+    }
+    
+    var timer: Timer?
+    
+    func handleReloadTable(){
+        DispatchQueue.main.async {
+            //reloads the tableView with all user's name/email *MUST call async func so the app does not crash from this thread*
+            self.tableView.reloadData()
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -140,6 +128,11 @@ class MessageController: UITableViewController {
         
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.leftBarButtonItem = nil
+    }
+    
     func showChatControllerForUser(user: user){
         let chatLogController = ChatLogController(collectionViewLayout: UICollectionViewFlowLayout())
         chatLogController.user = user

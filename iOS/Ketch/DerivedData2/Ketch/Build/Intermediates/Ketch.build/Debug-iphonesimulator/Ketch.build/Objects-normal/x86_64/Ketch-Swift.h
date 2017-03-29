@@ -118,8 +118,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import Foundation;
 @import CoreGraphics;
-@import FBSDKLoginKit;
 @import ObjectiveC;
+@import FBSDKLoginKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -144,8 +144,10 @@ SWIFT_CLASS("_TtC5Ketch11AppDelegate")
 @class Message;
 @class UITextField;
 @class UICollectionView;
+@class NSNotification;
 @class UICollectionViewCell;
 @class UICollectionViewLayout;
+@class NSLayoutConstraint;
 @class NSBundle;
 @class NSCoder;
 
@@ -158,9 +160,16 @@ SWIFT_CLASS("_TtC5Ketch17ChatLogController")
 @property (nonatomic, readonly, copy) NSString * _Nonnull cellID;
 - (void)viewDidLoad;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (void)setupKeyboardObserves;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)handleKeyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)handleKeyboardWillHideWithNotification:(NSNotification * _Nonnull)notification;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)handleBack;
+- (void)dismissKeyboard;
+@property (nonatomic, strong) NSLayoutConstraint * _Nullable containerViewBottomAnchor;
 - (void)setupInputComponents;
 - (void)handleSend;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
@@ -170,10 +179,18 @@ SWIFT_CLASS("_TtC5Ketch17ChatLogController")
 @end
 
 @class UITextView;
+@class UIColor;
+@class UIView;
 
 SWIFT_CLASS("_TtC5Ketch15ChatMessageCell")
 @interface ChatMessageCell : UICollectionViewCell
 @property (nonatomic, readonly, strong) UITextView * _Nonnull textView;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull blueColor;)
++ (UIColor * _Nonnull)blueColor;
+@property (nonatomic, strong) NSLayoutConstraint * _Nullable bubbleWidthAnchor;
+@property (nonatomic, strong) NSLayoutConstraint * _Nullable bubbleViewRightAnchor;
+@property (nonatomic, strong) NSLayoutConstraint * _Nullable bubbleViewLeftAnchor;
+@property (nonatomic, readonly, strong) UIView * _Nonnull bubbleView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -208,6 +225,15 @@ SWIFT_CLASS("_TtC5Ketch28IndividualItemViewController")
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ketch4Item")
+@interface Item : NSObject
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable zDesc;
+@property (nonatomic, copy) NSString * _Nullable seller;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIStoryboardSegue;
@@ -255,6 +281,7 @@ SWIFT_CLASS("_TtC5Ketch7Message")
 @end
 
 @class UITableView;
+@class NSTimer;
 @class UITableViewCell;
 
 SWIFT_CLASS("_TtC5Ketch17MessageController")
@@ -264,14 +291,16 @@ SWIFT_CLASS("_TtC5Ketch17MessageController")
 @property (nonatomic, copy) NSArray<Message *> * _Nonnull messages;
 @property (nonatomic, copy) NSDictionary<NSString *, Message *> * _Nonnull messagesDictionary;
 - (void)observeUserMessages;
-- (void)observeMessages;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
+- (void)handleReloadTable;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)handleNewMessage;
 - (void)checkIfUserIsLoggedIn;
 - (void)fetchUserAndSetupNavBarTitle;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)showChatControllerForUserWithUser:(user * _Nonnull)user;
 - (void)handleLogout;
 - (void)didReceiveMemoryWarning;
@@ -305,9 +334,15 @@ SWIFT_CLASS("_TtC5Ketch7NewItem")
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemDesc;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemPrice;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemZip;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified uploadImage;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified cancelButton;
+@property (nonatomic, readonly, copy) NSString * _Nonnull uuid;
 - (void)viewDidLoad;
 - (IBAction)postAndReturn:(UIButton * _Nonnull)sender;
+- (void)dismissKeyboard;
+- (IBAction)uploadImageAction:(UIButton * _Nonnull)sender;
 - (IBAction)dismissKeyboard:(UITapGestureRecognizer * _Nonnull)sender;
+- (IBAction)cancelPost:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -333,9 +368,25 @@ SWIFT_CLASS("_TtC5Ketch20NewMessageController")
 
 SWIFT_CLASS("_TtC5Ketch11SellingPost")
 @interface SellingPost : UIViewController
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified myItems;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified newItemButton;
 - (void)viewDidLoad;
 - (IBAction)addNewItem:(UIButton * _Nonnull)sender;
+- (void)updateMyItems;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIBarButtonItem;
+
+SWIFT_CLASS("_TtC5Ketch26SellingPostTableController")
+@interface SellingPostTableController : UITableViewController
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified myItems;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem * _Null_unspecified newItemButton;
+- (void)viewDidLoad;
+- (IBAction)addNewItem:(UIBarButtonItem * _Nonnull)sender;
+- (void)updateMyItems;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

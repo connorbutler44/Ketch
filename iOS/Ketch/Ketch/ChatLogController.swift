@@ -16,6 +16,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
             observeMessages()
         }
     }
+    
     var messages = [Message]()
     func observeMessages(){
         guard let uid = FIRAuth.auth()?.currentUser?.uid else {
@@ -55,36 +56,174 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     let cellID = "cellID"
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        collectionView?.contentInset = UIEdgeInsetsMake(8, 0, 8, 0)
+        view.addGestureRecognizer(tap)
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(ChatMessageCell.self, forCellWithReuseIdentifier: cellID)
-        setupInputComponents()
+        
+        collectionView?.keyboardDismissMode = .interactive
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBack))
-        self.tabBarController?.tabBar.isHidden = true
+        
+        
+        
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return messages.count
     }
+    
+    lazy var inputContainerView: UIView = {
+        let containerView = UIView()
+        containerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
+        containerView.backgroundColor = UIColor.white
+        
+        
+        let sendButton = UIButton(type: .system)
+        sendButton.setTitle("Send", for: .normal)
+        sendButton.translatesAutoresizingMaskIntoConstraints = false
+        sendButton.addTarget(self, action: #selector(handleSend), for: .touchUpInside)
+        
+        containerView.addSubview(sendButton)
+        
+        sendButton.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
+        sendButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        sendButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        sendButton.heightAnchor.constraint(equalTo: containerView.heightAnchor).isActive = true
+        
+        
+        containerView.addSubview(self.inputTextField)
+        
+        self.inputTextField.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 8).isActive = true
+        self.inputTextField.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        self.inputTextField.rightAnchor.constraint(equalTo: sendButton.leftAnchor).isActive = true
+        self.inputTextField.heightAnchor.constraint(equalTo: containerView.heightAnchor).isActive = true
+        
+        let separatorLineView = UIView()
+        separatorLineView.backgroundColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 1)
+        separatorLineView.translatesAutoresizingMaskIntoConstraints = false
+        
+        containerView.addSubview(separatorLineView)
+        
+        separatorLineView.leftAnchor.constraint(equalTo: containerView.leftAnchor).isActive = true
+        separatorLineView.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
+        separatorLineView.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
+        separatorLineView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        
+        return containerView
+        
+    }()
+    
+    override var inputAccessoryView: UIView? {
+        get {
+            
+            return inputContainerView
+        }
+    }
+    
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
+    
+    func setupKeyboardObserves(){
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func handleKeyboardWillShow(notification: Notification) {
+        let keyboardFrame = ((notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as AnyObject).cgRectValue
+        let keyboardDuration = ((notification as NSNotification).userInfo?[UIKeyboardAnimationDurationUserInfoKey] as AnyObject).doubleValue
+        
+        containerViewBottomAnchor?.constant = -keyboardFrame!.height
+        UIView.animate(withDuration: keyboardDuration!) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func handleKeyboardWillHide(notification: Notification) {
+        let keyboardDuration = ((notification as NSNotification).userInfo?[UIKeyboardAnimationDurationUserInfoKey] as AnyObject).doubleValue
+        
+        containerViewBottomAnchor?.constant = 0
+        UIView.animate(withDuration: keyboardDuration!) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+   
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! ChatMessageCell
         let message = messages[indexPath.item]
         cell.textView.text = message.text
         
+        setupCell(cell: cell, message: message)
+        
+        cell.bubbleWidthAnchor?.constant = estimateFrameForText(text: message.text!).width + 24
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 80)
+        var height: CGFloat = 80
+        
+        if let text = messages[indexPath.item].text {
+            height = estimateFrameForText(text: text).height + 20
+        }
+        
+        return CGSize(width: view.frame.width, height: height)
+    }
+    
+    private func setupCell(cell: ChatMessageCell, message: Message) {
+        
+        if message.fromID == FIRAuth.auth()?.currentUser?.uid {
+            //outgoing blue
+            cell.bubbleView.backgroundColor = ChatMessageCell.blueColor
+            cell.textView.textColor = UIColor.white
+            
+            cell.bubbleViewRightAnchor?.isActive = true
+            cell.bubbleViewLeftAnchor?.isActive = false
+        } else {
+            //incoming gray
+            cell.bubbleView.backgroundColor = UIColor(red: 229/255, green: 229/255, blue: 234/255, alpha: 1)
+            cell.textView.textColor = UIColor.black
+            
+            cell.bubbleViewRightAnchor?.isActive = false
+            cell.bubbleViewLeftAnchor?.isActive = true
+        }
+    }
+    
+    private func estimateFrameForText(text: String) -> CGRect {
+        let size = CGSize(width: 250, height: 1000)
+        let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+        return NSString(string: text).boundingRect(with: size, options: options, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16)], context: nil)
     }
     
     func handleBack(){
         self.tabBarController?.tabBar.isHidden = false
         self.tabBarController?.title = FIRAuth.auth()?.currentUser?.uid
-        let messageController = MessageController()
-        navigationController?.pushViewController(messageController, animated: true)
+        //navigationController?.popViewController(messageController, animated: true)
+        _ = navigationController?.popViewController(animated: true)
     }
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    var containerViewBottomAnchor: NSLayoutConstraint?
     
     func setupInputComponents(){
         let containerView = UIView()
@@ -93,7 +232,8 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         view.addSubview(containerView)
         
         containerView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        containerViewBottomAnchor = containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        containerViewBottomAnchor?.isActive = true
         containerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         containerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
@@ -135,7 +275,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         let toID = user!.id!
         let timestamp = NSNumber(value: Int(Date().timeIntervalSince1970))
         let fromID = FIRAuth.auth()?.currentUser?.uid
-        let values = ["text" : inputTextField.text!, "toID": toID, "fromID": fromID, "timestamp": timestamp] as [String : Any]
+        let values = ["text" : inputTextField.text!, "toID": toID , "fromID": fromID ?? "", "timestamp": timestamp] as [String : Any]
         //childRef.updateChildValues(values)
         
         childRef.updateChildValues(values) { (error, ref) in
@@ -143,6 +283,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
                 print(error ?? "")
                 return
             }
+            self.inputTextField.text = nil
             let userMessagesRef = FIRDatabase.database().reference().child("user-messages").child(fromID!)
             
             let messageID = childRef.key
@@ -153,6 +294,8 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
             
         }
     }
+    
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         handleSend()

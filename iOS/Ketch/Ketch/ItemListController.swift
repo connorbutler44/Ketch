@@ -19,8 +19,7 @@ class ItemListController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        let image = UIImage(named: "editIcon1")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: nil)
+        
         // Do any additional setup after loading the view.
     }
 
