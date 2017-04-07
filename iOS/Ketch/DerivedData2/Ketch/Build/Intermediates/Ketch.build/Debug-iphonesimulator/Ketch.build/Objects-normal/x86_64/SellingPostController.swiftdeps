@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C5Ketch11SellingPost", ""]
 provides-dynamic-lookup:
-- "myItems"
-- "addNewItem"
-- "newItemButton"
-- "viewDidLoad"
 - "updateMyItems"
+- "newItemButton"
+- "addNewItem"
+- "viewDidLoad"
+- "myItems"
 depends-top-level:
+- "UITableView"
 - !private "UIStoryboard"
 - !private "FIRDatabase"
-- "UITableView"
-- "UIButton"
-- "UIViewController"
-- !private "StringLiteralType"
-- !private "FIRAuth"
 - !private "BooleanLiteralType"
 - "SellingPost"
+- !private "FIRAuth"
+- "UIViewController"
+- !private "StringLiteralType"
+- "UIButton"
 depends-member:
 - !private ["Ps9AnyObject", "FIRAuth"]
 - !private ["Ps9AnyObject", "FIRDatabase"]

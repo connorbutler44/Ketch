@@ -1,0 +1,1078 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MyAccount"
+provides-nominal:
+- "C5Ketch9MyAccount"
+provides-member:
+- ["C5Ketch9MyAccount", ""]
+provides-dynamic-lookup:
+- "checkIfUserIsLoggedIn"
+- "viewDidLoad"
+- "nameLabel"
+- "loginButton"
+- "UIDLabel"
+- "zipLabel"
+- "loginButtonDidLogOut"
+- "emailLabel"
+depends-top-level:
+- !private "Array"
+- !private "FIRDatabase"
+- !private "FIRAuth"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "CastingPrecedence"
+- "UIViewController"
+- "FBSDKLoginButton"
+- !private "CGRect"
+- "FBSDKLoginButtonDelegate"
+- !private "UIStoryboard"
+- "Error"
+- !private "-"
+- !private "StringLiteralType"
+- !private "print"
+- !private "String"
+- !private "!="
+- "MyAccount"
+- "FBSDKLoginManagerLoginResult"
+- !private "AnyObject"
+- "UILabel"
+- !private "BooleanLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "CGRect"]
+- !private ["Ps9AnyObject", "FBSDKLoginButton"]
+- !private ["Ps9AnyObject", "FIRAuth"]
+- !private ["Ps9AnyObject", "FIRDatabase"]
+- ["Ps9AnyObject", "UIDLabel"]
+- !private ["Ps9AnyObject", "UIStoryboard"]
+- !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "auth"]
+- ["Ps9AnyObject", "checkIfUserIsLoggedIn"]
+- !private ["Ps9AnyObject", "child"]
+- !private ["Ps9AnyObject", "currentUser"]
+- !private ["Ps9AnyObject", "database"]
+- !private ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "emailLabel"]
+- !private ["Ps9AnyObject", "frame"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
+- ["Ps9AnyObject", "loginButton"]
+- ["Ps9AnyObject", "loginButtonDidLogOut"]
+- ["Ps9AnyObject", "loginButtonWillLogin"]
+- ["Ps9AnyObject", "nameLabel"]
+- !private ["Ps9AnyObject", "observeSingleEvent"]
+- !private ["Ps9AnyObject", "perform"]
+- !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "readPermissions"]
+- !private ["Ps9AnyObject", "reference"]
+- !private ["Ps9AnyObject", "signOut"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "uid"]
+- !private ["Ps9AnyObject", "value"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "zipLabel"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "delegate"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "readPermissions"]
+- !private ["PSo15CALayerDelegate", "text"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC6CGRect", "deinit"]
+- !private ["VSC6CGRect", "init"]
+- !private ["VSC6CGRect", "maxY"]
+- !private ["VSC6CGRect", "width"]
+- !private ["Ps7CVarArg", "CGRect"]
+- !private ["Ps7CVarArg", "Element"]
+- !private ["Ps7CVarArg", "FBSDKLoginButton"]
+- !private ["Ps7CVarArg", "FIRAuth"]
+- !private ["Ps7CVarArg", "FIRDatabase"]
+- !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "SubSequence"]
+- ["Ps7CVarArg", "UIDLabel"]
+- !private ["Ps7CVarArg", "UIStoryboard"]
+- !private ["Ps7CVarArg", "addSubview"]
+- !private ["Ps7CVarArg", "auth"]
+- ["Ps7CVarArg", "checkIfUserIsLoggedIn"]
+- !private ["Ps7CVarArg", "child"]
+- !private ["Ps7CVarArg", "currentUser"]
+- !private ["Ps7CVarArg", "database"]
+- !private ["Ps7CVarArg", "delegate"]
+- ["Ps7CVarArg", "emailLabel"]
+- !private ["Ps7CVarArg", "frame"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
+- ["Ps7CVarArg", "loginButton"]
+- ["Ps7CVarArg", "loginButtonDidLogOut"]
+- ["Ps7CVarArg", "loginButtonWillLogin"]
+- ["Ps7CVarArg", "nameLabel"]
+- !private ["Ps7CVarArg", "observeSingleEvent"]
+- !private ["Ps7CVarArg", "perform"]
+- !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "readPermissions"]
+- !private ["Ps7CVarArg", "reference"]
+- !private ["Ps7CVarArg", "signOut"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "uid"]
+- !private ["Ps7CVarArg", "value"]
+- !private ["Ps7CVarArg", "view"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "zipLabel"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "Element"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRect"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKLoginButton"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- ["Ps28CustomDebugStringConvertible", "UIDLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
+- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
+- ["Ps28CustomDebugStringConvertible", "checkIfUserIsLoggedIn"]
+- !private ["Ps28CustomDebugStringConvertible", "child"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "emailLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- ["Ps28CustomDebugStringConvertible", "loginButton"]
+- ["Ps28CustomDebugStringConvertible", "loginButtonDidLogOut"]
+- ["Ps28CustomDebugStringConvertible", "loginButtonWillLogin"]
+- !private ["Ps28CustomDebugStringConvertible", "maxY"]
+- ["Ps28CustomDebugStringConvertible", "nameLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "observeSingleEvent"]
+- !private ["Ps28CustomDebugStringConvertible", "perform"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "readPermissions"]
+- !private ["Ps28CustomDebugStringConvertible", "reference"]
+- !private ["Ps28CustomDebugStringConvertible", "signOut"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- ["Ps28CustomDebugStringConvertible", "zipLabel"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "maxY"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "maxY"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "CGRect"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "FBSDKLoginButton"]
+- !private ["Ps23CustomStringConvertible", "FIRAuth"]
+- !private ["Ps23CustomStringConvertible", "FIRDatabase"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- ["Ps23CustomStringConvertible", "UIDLabel"]
+- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps23CustomStringConvertible", "auth"]
+- ["Ps23CustomStringConvertible", "checkIfUserIsLoggedIn"]
+- !private ["Ps23CustomStringConvertible", "child"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
+- !private ["Ps23CustomStringConvertible", "database"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "emailLabel"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- ["Ps23CustomStringConvertible", "loginButton"]
+- ["Ps23CustomStringConvertible", "loginButtonDidLogOut"]
+- ["Ps23CustomStringConvertible", "loginButtonWillLogin"]
+- ["Ps23CustomStringConvertible", "nameLabel"]
+- !private ["Ps23CustomStringConvertible", "observeSingleEvent"]
+- !private ["Ps23CustomStringConvertible", "perform"]
+- !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "readPermissions"]
+- !private ["Ps23CustomStringConvertible", "reference"]
+- !private ["Ps23CustomStringConvertible", "signOut"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "uid"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "zipLabel"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CGRect"]
+- !private ["Ps9Equatable", "FBSDKLoginButton"]
+- !private ["Ps9Equatable", "FIRAuth"]
+- !private ["Ps9Equatable", "FIRDatabase"]
+- ["Ps9Equatable", "UIDLabel"]
+- !private ["Ps9Equatable", "UIStoryboard"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "auth"]
+- ["Ps9Equatable", "checkIfUserIsLoggedIn"]
+- !private ["Ps9Equatable", "child"]
+- !private ["Ps9Equatable", "currentUser"]
+- !private ["Ps9Equatable", "database"]
+- !private ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "emailLabel"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewController"]
+- ["Ps9Equatable", "loginButton"]
+- ["Ps9Equatable", "loginButtonDidLogOut"]
+- ["Ps9Equatable", "loginButtonWillLogin"]
+- !private ["Ps9Equatable", "maxY"]
+- ["Ps9Equatable", "nameLabel"]
+- !private ["Ps9Equatable", "observeSingleEvent"]
+- !private ["Ps9Equatable", "perform"]
+- !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "readPermissions"]
+- !private ["Ps9Equatable", "reference"]
+- !private ["Ps9Equatable", "signOut"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "uid"]
+- !private ["Ps9Equatable", "value"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", "zipLabel"]
+- ["Ps9Equatable", ""]
+- ["Ps5Error", "deinit"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo11FBSDKButton", "delegate"]
+- !private ["CSo11FBSDKButton", "frame"]
+- !private ["CSo11FBSDKButton", "init"]
+- !private ["CSo11FBSDKButton", "readPermissions"]
+- ["CSo16FBSDKLoginButton", "deinit"]
+- !private ["CSo16FBSDKLoginButton", "delegate"]
+- !private ["CSo16FBSDKLoginButton", "frame"]
+- !private ["CSo16FBSDKLoginButton", "init"]
+- !private ["CSo16FBSDKLoginButton", "readPermissions"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "CGRect"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "FBSDKLoginButton"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "FIRAuth"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "FIRDatabase"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "UIStoryboard"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "checkIfUserIsLoggedIn"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "emailLabel"]
+- ["PSo24FBSDKLoginButtonDelegate", "loginButton"]
+- ["PSo24FBSDKLoginButtonDelegate", "loginButtonDidLogOut"]
+- ["PSo24FBSDKLoginButtonDelegate", "loginButtonWillLogin"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "nameLabel"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "perform"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "present"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "print"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "view"]
+- ["PSo24FBSDKLoginButtonDelegate", ""]
+- !private ["CSo7FIRAuth", "auth"]
+- !private ["CSo7FIRAuth", "currentUser"]
+- ["CSo7FIRAuth", "deinit"]
+- !private ["CSo7FIRAuth", "signOut"]
+- ["OSC16FIRDataEventType", "deinit"]
+- !private ["OSC16FIRDataEventType", "value"]
+- !private ["CSo15FIRDataSnapshot", "deinit"]
+- !private ["CSo15FIRDataSnapshot", "value"]
+- !private ["CSo11FIRDatabase", "database"]
+- ["CSo11FIRDatabase", "deinit"]
+- !private ["CSo11FIRDatabase", "reference"]
+- !private ["CSo16FIRDatabaseQuery", "child"]
+- !private ["CSo16FIRDatabaseQuery", "observeSingleEvent"]
+- !private ["CSo20FIRDatabaseReference", "child"]
+- ["CSo20FIRDatabaseReference", "deinit"]
+- !private ["CSo20FIRDatabaseReference", "observeSingleEvent"]
+- ["CSo7FIRUser", "deinit"]
+- !private ["CSo7FIRUser", "uid"]
+- !private ["PSo11FIRUserInfo", "uid"]
+- !private ["Ps8Hashable", "CGRect"]
+- !private ["Ps8Hashable", "FBSDKLoginButton"]
+- !private ["Ps8Hashable", "FIRAuth"]
+- !private ["Ps8Hashable", "FIRDatabase"]
+- ["Ps8Hashable", "UIDLabel"]
+- !private ["Ps8Hashable", "UIStoryboard"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps8Hashable", "auth"]
+- ["Ps8Hashable", "checkIfUserIsLoggedIn"]
+- !private ["Ps8Hashable", "child"]
+- !private ["Ps8Hashable", "currentUser"]
+- !private ["Ps8Hashable", "database"]
+- !private ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "emailLabel"]
+- !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewController"]
+- ["Ps8Hashable", "loginButton"]
+- ["Ps8Hashable", "loginButtonDidLogOut"]
+- ["Ps8Hashable", "loginButtonWillLogin"]
+- ["Ps8Hashable", "nameLabel"]
+- !private ["Ps8Hashable", "observeSingleEvent"]
+- !private ["Ps8Hashable", "perform"]
+- !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "readPermissions"]
+- !private ["Ps8Hashable", "reference"]
+- !private ["Ps8Hashable", "signOut"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "uid"]
+- !private ["Ps8Hashable", "value"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "zipLabel"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Element"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["C5Ketch9MyAccount", "AnyObject"]
+- !private ["C5Ketch9MyAccount", "CGRect"]
+- ["C5Ketch9MyAccount", "Error"]
+- ["C5Ketch9MyAccount", "FBSDKLoginButton"]
+- ["C5Ketch9MyAccount", "FBSDKLoginManagerLoginResult"]
+- !private ["C5Ketch9MyAccount", "FIRAuth"]
+- !private ["C5Ketch9MyAccount", "FIRDatabase"]
+- !private ["C5Ketch9MyAccount", "String"]
+- ["C5Ketch9MyAccount", "UIDLabel"]
+- ["C5Ketch9MyAccount", "UILabel"]
+- !private ["C5Ketch9MyAccount", "UIStoryboard"]
+- ["C5Ketch9MyAccount", "checkIfUserIsLoggedIn"]
+- ["C5Ketch9MyAccount", "deinit"]
+- ["C5Ketch9MyAccount", "emailLabel"]
+- ["C5Ketch9MyAccount", "init"]
+- ["C5Ketch9MyAccount", "loginButton"]
+- ["C5Ketch9MyAccount", "loginButtonDidLogOut"]
+- ["C5Ketch9MyAccount", "loginButtonWillLogin"]
+- ["C5Ketch9MyAccount", "nameLabel"]
+- !private ["C5Ketch9MyAccount", "perform"]
+- !private ["C5Ketch9MyAccount", "present"]
+- !private ["C5Ketch9MyAccount", "print"]
+- !private ["C5Ketch9MyAccount", "view"]
+- ["C5Ketch9MyAccount", "viewDidLoad"]
+- ["C5Ketch9MyAccount", "zipLabel"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "CGRect"]
+- !private ["PSo8NSCoding", "FBSDKLoginButton"]
+- !private ["PSo8NSCoding", "FIRAuth"]
+- !private ["PSo8NSCoding", "FIRDatabase"]
+- ["PSo8NSCoding", "UIDLabel"]
+- !private ["PSo8NSCoding", "UIStoryboard"]
+- !private ["PSo8NSCoding", "addSubview"]
+- ["PSo8NSCoding", "checkIfUserIsLoggedIn"]
+- !private ["PSo8NSCoding", "delegate"]
+- ["PSo8NSCoding", "emailLabel"]
+- !private ["PSo8NSCoding", "frame"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "loginButton"]
+- ["PSo8NSCoding", "loginButtonDidLogOut"]
+- ["PSo8NSCoding", "loginButtonWillLogin"]
+- ["PSo8NSCoding", "nameLabel"]
+- !private ["PSo8NSCoding", "perform"]
+- !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "readPermissions"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "zipLabel"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRect"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKLoginButton"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRAuth"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRDatabase"]
+- ["PSo26NSExtensionRequestHandling", "UIDLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
+- ["PSo26NSExtensionRequestHandling", "checkIfUserIsLoggedIn"]
+- ["PSo26NSExtensionRequestHandling", "emailLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "loginButton"]
+- ["PSo26NSExtensionRequestHandling", "loginButtonDidLogOut"]
+- ["PSo26NSExtensionRequestHandling", "loginButtonWillLogin"]
+- ["PSo26NSExtensionRequestHandling", "nameLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "perform"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "zipLabel"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "Error"]
+- ["CSo8NSObject", "FBSDKLoginButton"]
+- ["CSo8NSObject", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo8NSObject", "FIRAuth"]
+- !private ["CSo8NSObject", "FIRDatabase"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIDLabel"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UIStoryboard"]
+- !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "auth"]
+- ["CSo8NSObject", "checkIfUserIsLoggedIn"]
+- !private ["CSo8NSObject", "child"]
+- !private ["CSo8NSObject", "currentUser"]
+- !private ["CSo8NSObject", "database"]
+- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "emailLabel"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewController"]
+- ["CSo8NSObject", "loginButton"]
+- ["CSo8NSObject", "loginButtonDidLogOut"]
+- ["CSo8NSObject", "loginButtonWillLogin"]
+- ["CSo8NSObject", "nameLabel"]
+- !private ["CSo8NSObject", "observeSingleEvent"]
+- !private ["CSo8NSObject", "perform"]
+- !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "readPermissions"]
+- !private ["CSo8NSObject", "reference"]
+- !private ["CSo8NSObject", "signOut"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "uid"]
+- !private ["CSo8NSObject", "value"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "zipLabel"]
+- !private ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "FBSDKLoginButton"]
+- !private ["PSo16NSObjectProtocol", "FIRAuth"]
+- !private ["PSo16NSObjectProtocol", "FIRDatabase"]
+- ["PSo16NSObjectProtocol", "UIDLabel"]
+- !private ["PSo16NSObjectProtocol", "UIStoryboard"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "auth"]
+- ["PSo16NSObjectProtocol", "checkIfUserIsLoggedIn"]
+- !private ["PSo16NSObjectProtocol", "child"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
+- !private ["PSo16NSObjectProtocol", "database"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "emailLabel"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- ["PSo16NSObjectProtocol", "loginButton"]
+- ["PSo16NSObjectProtocol", "loginButtonDidLogOut"]
+- ["PSo16NSObjectProtocol", "loginButtonWillLogin"]
+- ["PSo16NSObjectProtocol", "nameLabel"]
+- !private ["PSo16NSObjectProtocol", "observeSingleEvent"]
+- !private ["PSo16NSObjectProtocol", "perform"]
+- !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "readPermissions"]
+- !private ["PSo16NSObjectProtocol", "reference"]
+- !private ["PSo16NSObjectProtocol", "signOut"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "uid"]
+- !private ["PSo16NSObjectProtocol", "value"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "zipLabel"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["Ps16RawRepresentable", "value"]
+- ["V10ObjectiveC8Selector", "deinit"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "readPermissions"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "readPermissions"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "CGRect"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKLoginButton"]
+- !private ["PSo21UIAppearanceContainer", "FIRAuth"]
+- !private ["PSo21UIAppearanceContainer", "FIRDatabase"]
+- ["PSo21UIAppearanceContainer", "UIDLabel"]
+- !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
+- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- ["PSo21UIAppearanceContainer", "checkIfUserIsLoggedIn"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
+- ["PSo21UIAppearanceContainer", "emailLabel"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "loginButton"]
+- ["PSo21UIAppearanceContainer", "loginButtonDidLogOut"]
+- ["PSo21UIAppearanceContainer", "loginButtonWillLogin"]
+- ["PSo21UIAppearanceContainer", "nameLabel"]
+- !private ["PSo21UIAppearanceContainer", "perform"]
+- !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "readPermissions"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "zipLabel"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "delegate"]
+- !private ["CSo8UIButton", "frame"]
+- !private ["CSo8UIButton", "init"]
+- !private ["CSo8UIButton", "readPermissions"]
+- !private ["PSo18UIContentContainer", "CGRect"]
+- !private ["PSo18UIContentContainer", "FBSDKLoginButton"]
+- !private ["PSo18UIContentContainer", "FIRAuth"]
+- !private ["PSo18UIContentContainer", "FIRDatabase"]
+- ["PSo18UIContentContainer", "UIDLabel"]
+- !private ["PSo18UIContentContainer", "UIStoryboard"]
+- ["PSo18UIContentContainer", "checkIfUserIsLoggedIn"]
+- ["PSo18UIContentContainer", "emailLabel"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "loginButton"]
+- ["PSo18UIContentContainer", "loginButtonDidLogOut"]
+- ["PSo18UIContentContainer", "loginButtonWillLogin"]
+- ["PSo18UIContentContainer", "nameLabel"]
+- !private ["PSo18UIContentContainer", "perform"]
+- !private ["PSo18UIContentContainer", "present"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "zipLabel"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "delegate"]
+- !private ["CSo9UIControl", "frame"]
+- !private ["CSo9UIControl", "init"]
+- !private ["CSo9UIControl", "readPermissions"]
+- !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "readPermissions"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "readPermissions"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "CGRect"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKLoginButton"]
+- !private ["PSo18UIFocusEnvironment", "FIRAuth"]
+- !private ["PSo18UIFocusEnvironment", "FIRDatabase"]
+- ["PSo18UIFocusEnvironment", "UIDLabel"]
+- !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- ["PSo18UIFocusEnvironment", "checkIfUserIsLoggedIn"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "emailLabel"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "loginButton"]
+- ["PSo18UIFocusEnvironment", "loginButtonDidLogOut"]
+- ["PSo18UIFocusEnvironment", "loginButtonWillLogin"]
+- ["PSo18UIFocusEnvironment", "nameLabel"]
+- !private ["PSo18UIFocusEnvironment", "perform"]
+- !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "readPermissions"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "zipLabel"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "delegate"]
+- !private ["PSo11UIFocusItem", "frame"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "readPermissions"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "Error"]
+- ["CSo11UIResponder", "FBSDKLoginButton"]
+- ["CSo11UIResponder", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo11UIResponder", "FIRAuth"]
+- !private ["CSo11UIResponder", "FIRDatabase"]
+- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIDLabel"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UIStoryboard"]
+- !private ["CSo11UIResponder", "addSubview"]
+- ["CSo11UIResponder", "checkIfUserIsLoggedIn"]
+- !private ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "emailLabel"]
+- !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "loginButton"]
+- ["CSo11UIResponder", "loginButtonDidLogOut"]
+- ["CSo11UIResponder", "loginButtonWillLogin"]
+- ["CSo11UIResponder", "nameLabel"]
+- !private ["CSo11UIResponder", "perform"]
+- !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "readPermissions"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "zipLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRect"]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKLoginButton"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRAuth"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRDatabase"]
+- ["PSo30UIResponderStandardEditActions", "UIDLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
+- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- ["PSo30UIResponderStandardEditActions", "checkIfUserIsLoggedIn"]
+- !private ["PSo30UIResponderStandardEditActions", "delegate"]
+- ["PSo30UIResponderStandardEditActions", "emailLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "loginButton"]
+- ["PSo30UIResponderStandardEditActions", "loginButtonDidLogOut"]
+- ["PSo30UIResponderStandardEditActions", "loginButtonWillLogin"]
+- ["PSo30UIResponderStandardEditActions", "nameLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "perform"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "readPermissions"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "zipLabel"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "CGRect"]
+- !private ["PSo16UIStateRestoring", "FBSDKLoginButton"]
+- !private ["PSo16UIStateRestoring", "FIRAuth"]
+- !private ["PSo16UIStateRestoring", "FIRDatabase"]
+- ["PSo16UIStateRestoring", "UIDLabel"]
+- !private ["PSo16UIStateRestoring", "UIStoryboard"]
+- ["PSo16UIStateRestoring", "checkIfUserIsLoggedIn"]
+- ["PSo16UIStateRestoring", "emailLabel"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "loginButton"]
+- ["PSo16UIStateRestoring", "loginButtonDidLogOut"]
+- ["PSo16UIStateRestoring", "loginButtonWillLogin"]
+- ["PSo16UIStateRestoring", "nameLabel"]
+- !private ["PSo16UIStateRestoring", "perform"]
+- !private ["PSo16UIStateRestoring", "present"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "zipLabel"]
+- ["PSo16UIStateRestoring", ""]
+- ["CSo12UIStoryboard", "deinit"]
+- !private ["CSo12UIStoryboard", "init"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
+- !private ["PSo18UITraitEnvironment", "CGRect"]
+- !private ["PSo18UITraitEnvironment", "FBSDKLoginButton"]
+- !private ["PSo18UITraitEnvironment", "FIRAuth"]
+- !private ["PSo18UITraitEnvironment", "FIRDatabase"]
+- ["PSo18UITraitEnvironment", "UIDLabel"]
+- !private ["PSo18UITraitEnvironment", "UIStoryboard"]
+- !private ["PSo18UITraitEnvironment", "addSubview"]
+- ["PSo18UITraitEnvironment", "checkIfUserIsLoggedIn"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
+- ["PSo18UITraitEnvironment", "emailLabel"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "loginButton"]
+- ["PSo18UITraitEnvironment", "loginButtonDidLogOut"]
+- ["PSo18UITraitEnvironment", "loginButtonWillLogin"]
+- ["PSo18UITraitEnvironment", "nameLabel"]
+- !private ["PSo18UITraitEnvironment", "perform"]
+- !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "readPermissions"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "zipLabel"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "frame"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "readPermissions"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "CGRect"]
+- ["CSo16UIViewController", "Error"]
+- ["CSo16UIViewController", "FBSDKLoginButton"]
+- ["CSo16UIViewController", "FBSDKLoginManagerLoginResult"]
+- !private ["CSo16UIViewController", "FIRAuth"]
+- !private ["CSo16UIViewController", "FIRDatabase"]
+- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIDLabel"]
+- ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "UIStoryboard"]
+- ["CSo16UIViewController", "checkIfUserIsLoggedIn"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "emailLabel"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "loginButton"]
+- ["CSo16UIViewController", "loginButtonDidLogOut"]
+- ["CSo16UIViewController", "loginButtonWillLogin"]
+- ["CSo16UIViewController", "nameLabel"]
+- !private ["CSo16UIViewController", "perform"]
+- !private ["CSo16UIViewController", "present"]
+- !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "zipLabel"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps14_ArrayProtocol", "Element"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "readPermissions"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "CGRect"]
+- !private ["Ps9_Hashable", "FBSDKLoginButton"]
+- !private ["Ps9_Hashable", "FIRAuth"]
+- !private ["Ps9_Hashable", "FIRDatabase"]
+- ["Ps9_Hashable", "UIDLabel"]
+- !private ["Ps9_Hashable", "UIStoryboard"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addSubview"]
+- !private ["Ps9_Hashable", "auth"]
+- ["Ps9_Hashable", "checkIfUserIsLoggedIn"]
+- !private ["Ps9_Hashable", "child"]
+- !private ["Ps9_Hashable", "currentUser"]
+- !private ["Ps9_Hashable", "database"]
+- !private ["Ps9_Hashable", "delegate"]
+- ["Ps9_Hashable", "emailLabel"]
+- !private ["Ps9_Hashable", "frame"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
+- ["Ps9_Hashable", "loginButton"]
+- ["Ps9_Hashable", "loginButtonDidLogOut"]
+- ["Ps9_Hashable", "loginButtonWillLogin"]
+- ["Ps9_Hashable", "nameLabel"]
+- !private ["Ps9_Hashable", "observeSingleEvent"]
+- !private ["Ps9_Hashable", "perform"]
+- !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "readPermissions"]
+- !private ["Ps9_Hashable", "reference"]
+- !private ["Ps9_Hashable", "signOut"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "uid"]
+- !private ["Ps9_Hashable", "value"]
+- !private ["Ps9_Hashable", "view"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "zipLabel"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "maxY"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- "Sd"
+- "Ps9Equatable"
+- "Ps5Error"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "CSo11FBSDKButton"
+- "CSo16FBSDKLoginButton"
+- "PSo24FBSDKLoginButtonDelegate"
+- "CSo7FIRAuth"
+- "OSC16FIRDataEventType"
+- !private "CSo15FIRDataSnapshot"
+- "CSo11FIRDatabase"
+- !private "CSo16FIRDatabaseQuery"
+- "CSo20FIRDatabaseReference"
+- "CSo7FIRUser"
+- !private "PSo11FIRUserInfo"
+- "Ps8Hashable"
+- "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "C5Ketch9MyAccount"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
+- "V10ObjectiveC8Selector"
+- !private "Ps8Sequence"
+- !private "Vs5Slice"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "CSo12UIStoryboard"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "4afe8201b0eff6dd652b482b8a7fcf39"

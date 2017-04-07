@@ -27,23 +27,7 @@ class LoginScreen: UIViewController, FBSDKLoginButtonDelegate {
             loginButton.readPermissions = ["email", "public_profile"]
             print("user is currently logged out")
             view.addSubview(loginButton)
-            
-            //custom login button - probably don't need, keeping just incase
-            /*
-            print("user is currently logged out")
-             let customFBButton = UIButton()
-            customFBButton.backgroundColor = UIColor(red: 59/255, green: 89/255, blue: 152/255, alpha: 1.0)
-            customFBButton.setTitleColor(.white, for: .normal)
-             customFBButton.frame = CGRect(x: 16, y: 116, width: view.frame.width - 32, height: 50)
-            customFBButton.center = self.view.center
-            customFBButton.layer.cornerRadius = 5
-             customFBButton.setTitle("Continue with Facebook", for: .normal)
-             customFBButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12)
-             customFBButton.setTitleColor(.white, for: .normal)
-             view.addSubview(customFBButton)
-             customFBButton.addTarget(self, action: #selector(handleCustomFBLogin), for: .touchUpInside)
-            */
-            
+                        
         }
         else
         {

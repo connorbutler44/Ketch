@@ -144,7 +144,7 @@ SWIFT_CLASS("_TtC5Ketch11AppDelegate")
 @class Message;
 @class UITextField;
 @class UICollectionView;
-@class NSNotification;
+@class UIView;
 @class UICollectionViewCell;
 @class UICollectionViewLayout;
 @class NSLayoutConstraint;
@@ -160,11 +160,14 @@ SWIFT_CLASS("_TtC5Ketch17ChatLogController")
 @property (nonatomic, readonly, copy) NSString * _Nonnull cellID;
 - (void)viewDidLoad;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+@property (nonatomic, strong) UIView * _Nonnull inputContainerView;
+@property (nonatomic, readonly, strong) UIView * _Nullable inputAccessoryView;
+@property (nonatomic, readonly) BOOL canBecomeFirstResponder;
 - (void)setupKeyboardObserves;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)handleKeyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
-- (void)viewWillAppear:(BOOL)animated;
 - (void)handleKeyboardWillHideWithNotification:(NSNotification * _Nonnull)notification;
+- (void)viewWillAppear:(BOOL)animated;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)handleBack;
@@ -180,7 +183,6 @@ SWIFT_CLASS("_TtC5Ketch17ChatLogController")
 
 @class UITextView;
 @class UIColor;
-@class UIView;
 
 SWIFT_CLASS("_TtC5Ketch15ChatMessageCell")
 @interface ChatMessageCell : UICollectionViewCell
@@ -206,11 +208,15 @@ SWIFT_CLASS("_TtC5Ketch18CollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC5Ketch9Dashboard")
-@interface Dashboard : UITabBarController
+@interface Dashboard : UITabBarController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate>
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)checkIfUserHasZipcode;
+- (void)respondToSwipeGestureWithGesture:(UIGestureRecognizer * _Nonnull)gesture;
+- (void)setUserZipcode;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -312,14 +318,20 @@ SWIFT_CLASS("_TtC5Ketch17MessageController")
 
 SWIFT_CLASS("_TtC5Ketch9MyAccount")
 @interface MyAccount : UIViewController <FBSDKLoginButtonDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified checkButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified editImage;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified zipLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified UIDLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified zipLabel;
 - (void)viewDidLoad;
+- (void)imageTappedWithGesture:(UIGestureRecognizer * _Nonnull)gesture;
+- (void)checkTappedWithGesture:(UIGestureRecognizer * _Nonnull)gesture;
+- (void)textFieldActive;
+- (void)textFieldDeactive;
 - (void)checkIfUserIsLoggedIn;
 - (void)loginButtonDidLogOut:(FBSDKLoginButton * _Null_unspecified)loginButton;
 - (void)loginButton:(FBSDKLoginButton * _Null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * _Null_unspecified)result error:(NSError * _Null_unspecified)error;
+- (void)dismissKeyboard;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -361,6 +373,19 @@ SWIFT_CLASS("_TtC5Ketch20NewMessageController")
 @property (nonatomic, strong) MessageController * _Nullable messagesController;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ketch19PopupViewController")
+@interface PopupViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified zipcodeID;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)submitZipcode:(id _Nonnull)sender;
+- (void)showAnimate;
+- (void)removeAnimate;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

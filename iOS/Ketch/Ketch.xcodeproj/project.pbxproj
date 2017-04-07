@@ -32,6 +32,7 @@
 		B9B3991A1E57AFB10037AA62 /* IndividualItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */; };
 		B9B909191E69473900FBA550 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B909181E69473900FBA550 /* Dashboard.swift */; };
 		B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B909221E6962D900FBA550 /* MyAccount.swift */; };
+		B9CAB8CC1E97006B00F93A07 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CAB8CB1E97006B00F93A07 /* PopupViewController.swift */; };
 		B9CCB1181E6D10D600F87E30 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB1171E6D10D600F87E30 /* MessageController.swift */; };
 		B9CCB11A1E6D1C8800F87E30 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */; };
 		B9CCB11E1E6D21F400F87E30 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB11D1E6D21F400F87E30 /* user.swift */; };
@@ -99,6 +100,7 @@
 		B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualItemViewController.swift; sourceTree = "<group>"; };
 		B9B909181E69473900FBA550 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		B9B909221E6962D900FBA550 /* MyAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+		B9CAB8CB1E97006B00F93A07 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		B9CCB1171E6D10D600F87E30 /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		B9CCB11D1E6D21F400F87E30 /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				1526327E1E74A17E00186369 /* SellingPostController.swift */,
 				1555EBB31E8A242E001D1C8D /* SellingPostTableController.swift */,
 				B9311DAF1E85155300E97547 /* splashScreen.swift */,
+				B9CAB8CB1E97006B00F93A07 /* PopupViewController.swift */,
 				B963856C1E56E0DF0081EB69 /* Main.storyboard */,
 				B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */,
 				B963856F1E56E0DF0081EB69 /* Assets.xcassets */,
@@ -558,6 +561,7 @@
 				B9B3991A1E57AFB10037AA62 /* IndividualItemViewController.swift in Sources */,
 				B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */,
 				1555EBB61E8A26CA001D1C8D /* Item.swift in Sources */,
+				B9CAB8CC1E97006B00F93A07 /* PopupViewController.swift in Sources */,
 				B9311DB51E85155300E97547 /* ChatLogController.swift in Sources */,
 				B988BCA21E6412FE0069CF69 /* LoginScreen.swift in Sources */,
 				B9F8488B1E57AD9A0085CC03 /* ItemListController.swift in Sources */,
