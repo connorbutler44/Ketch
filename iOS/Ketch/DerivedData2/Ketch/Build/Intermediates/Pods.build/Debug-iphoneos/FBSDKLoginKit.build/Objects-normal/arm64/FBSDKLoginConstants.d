@@ -1,5 +1,6 @@
 dependencies: \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.m \
+  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphoneos/FBSDKLoginKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Target\ Support\ Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphoneos/FBSDKCoreKit.build/module.modulemap \

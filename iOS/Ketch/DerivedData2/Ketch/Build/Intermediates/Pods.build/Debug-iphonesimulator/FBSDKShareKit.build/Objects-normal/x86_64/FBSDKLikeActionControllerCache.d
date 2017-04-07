@@ -1,5 +1,6 @@
 dependencies: \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionControllerCache.m \
+  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKShareKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Target\ Support\ Files/FBSDKShareKit/FBSDKShareKit-prefix.pch \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionControllerCache.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionController.h \
@@ -44,5 +45,4 @@ dependencies: \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Target\ Support\ Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h \
-  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKShareKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.h

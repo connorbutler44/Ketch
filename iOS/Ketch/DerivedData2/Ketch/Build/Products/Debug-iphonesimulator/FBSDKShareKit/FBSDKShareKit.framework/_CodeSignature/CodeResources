@@ -142,7 +142,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AgVjwaERSWeTHR0fNzJ2jVN/Klo=
+		8ZAZXNN17lo/oTadc4hOYNA98Jw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -555,6 +555,11 @@
 			<key>weight</key>
 			<real>1100</real>
 		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
@@ -599,6 +604,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

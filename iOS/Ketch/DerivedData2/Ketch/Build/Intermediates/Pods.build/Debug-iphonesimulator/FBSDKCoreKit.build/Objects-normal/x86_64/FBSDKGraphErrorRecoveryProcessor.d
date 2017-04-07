@@ -1,9 +1,9 @@
 dependencies: \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.m \
+  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Target\ Support\ Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h \
-  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKCoreKit+Internal.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h \

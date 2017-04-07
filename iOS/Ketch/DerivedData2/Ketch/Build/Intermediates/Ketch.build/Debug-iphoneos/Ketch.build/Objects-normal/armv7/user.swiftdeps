@@ -6,61 +6,35 @@ provides-nominal:
 provides-member:
 - ["C5Ketch4user", ""]
 provides-dynamic-lookup:
+- "email"
 - "id"
 - "name"
-- "email"
 depends-top-level:
-- "String"
 - "NSObject"
+- "String"
 - "user"
 depends-member:
-- ["Ps9AnyObject", "email"]
-- ["Ps9AnyObject", "id"]
 - !private ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "name"]
 - ["Ps9AnyObject", ""]
-- ["Ps7CVarArg", "email"]
-- ["Ps7CVarArg", "id"]
 - !private ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "name"]
 - ["Ps7CVarArg", ""]
-- ["Ps28CustomDebugStringConvertible", "email"]
-- ["Ps28CustomDebugStringConvertible", "id"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "name"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- ["Ps23CustomStringConvertible", "email"]
-- ["Ps23CustomStringConvertible", "id"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "name"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Ps9Equatable", "email"]
-- ["Ps9Equatable", "id"]
 - !private ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "name"]
 - ["Ps9Equatable", ""]
-- ["Ps8Hashable", "email"]
-- ["Ps8Hashable", "id"]
 - !private ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "name"]
 - ["Ps8Hashable", ""]
 - ["CSo8NSObject", "String"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "email"]
 - ["CSo8NSObject", "id"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "name"]
 - ["CSo8NSObject", ""]
-- ["PSo16NSObjectProtocol", "email"]
-- ["PSo16NSObjectProtocol", "id"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "name"]
 - ["PSo16NSObjectProtocol", ""]
-- ["Sq", "deinit"]
-- ["Ps9_Hashable", "email"]
-- ["Ps9_Hashable", "id"]
 - !private ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "name"]
 - ["Ps9_Hashable", ""]
 - ["C5Ketch4user", "String"]
 - ["C5Ketch4user", "deinit"]
@@ -77,7 +51,6 @@ depends-nominal:
 - "Ps8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "Sq"
 - "Ps9_Hashable"
 - "C5Ketch4user"
 depends-dynamic-lookup:
@@ -87,10 +60,17 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"

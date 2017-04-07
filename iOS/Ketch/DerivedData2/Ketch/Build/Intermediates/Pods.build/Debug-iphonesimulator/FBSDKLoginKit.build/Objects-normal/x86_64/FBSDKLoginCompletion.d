@@ -1,5 +1,6 @@
 dependencies: \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion.m \
+  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKLoginKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Target\ Support\ Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion+Internal.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion.h \
@@ -95,7 +96,6 @@ dependencies: \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStoreViaBundleID.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKButton+Subclass.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKLogo.h \
-  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKLoginKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginError.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginManager+Internal.h \

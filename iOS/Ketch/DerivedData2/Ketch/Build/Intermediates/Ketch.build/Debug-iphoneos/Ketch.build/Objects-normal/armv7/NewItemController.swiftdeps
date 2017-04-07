@@ -6,42 +6,41 @@ provides-nominal:
 provides-member:
 - ["C5Ketch7NewItem", ""]
 provides-dynamic-lookup:
+- "cancelButton"
+- "cancelPost"
+- "dismissKeyboard"
+- "itemDesc"
+- "itemPrice"
+- "itemTitle"
+- "itemZip"
+- "postAndReturn"
+- "postButton"
+- "uploadImage"
+- "uploadImageAction"
 - "uuid"
 - "viewDidLoad"
-- "cancelPost"
-- "itemZip"
-- "itemTitle"
-- "postButton"
-- "itemDesc"
-- "postAndReturn"
-- "dismissKeyboard"
-- "dismissKeyboard"
-- "uploadImageAction"
-- "uploadImage"
-- "cancelButton"
-- "itemPrice"
 depends-top-level:
-- !private "print"
-- "UITapGestureRecognizer"
-- !private "??"
-- "UUID"
-- "UIButton"
-- !private "URL"
-- !private "UIStoryboard"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "String"
-- "UIViewController"
-- !private "FIRAuth"
-- !private "StringLiteralType"
-- "NewItem"
-- !private "FIRStorage"
-- !private "Dictionary"
 - !private "!="
-- !private "UIInputViewController"
-- "UITextField"
+- !private "??"
+- "AssignmentPrecedence"
 - !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "Dictionary"
+- !private "FIRAuth"
 - !private "FIRDatabase"
+- !private "FIRStorage"
+- "NewItem"
+- !private "String"
+- !private "StringLiteralType"
+- "UIButton"
+- !private "UIInputViewController"
+- !private "UIStoryboard"
+- "UITapGestureRecognizer"
+- "UITextField"
+- "UIViewController"
+- !private "URL"
+- "UUID"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "FIRAuth"]
 - !private ["Ps9AnyObject", "FIRDatabase"]
@@ -53,24 +52,20 @@ depends-member:
 - ["Ps9AnyObject", "UUID"]
 - !private ["Ps9AnyObject", "addGestureRecognizer"]
 - !private ["Ps9AnyObject", "auth"]
-- ["Ps9AnyObject", "cancelButton"]
-- ["Ps9AnyObject", "cancelPost"]
 - !private ["Ps9AnyObject", "child"]
 - !private ["Ps9AnyObject", "currentUser"]
 - !private ["Ps9AnyObject", "database"]
-- ["Ps9AnyObject", "dismissKeyboard"]
+- !private ["Ps9AnyObject", "dismissKeyboard"]
 - !private ["Ps9AnyObject", "downloadURL"]
 - !private ["Ps9AnyObject", "endEditing"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
-- ["Ps9AnyObject", "itemDesc"]
-- ["Ps9AnyObject", "itemPrice"]
-- ["Ps9AnyObject", "itemTitle"]
-- ["Ps9AnyObject", "itemZip"]
+- !private ["Ps9AnyObject", "itemDesc"]
+- !private ["Ps9AnyObject", "itemPrice"]
+- !private ["Ps9AnyObject", "itemTitle"]
+- !private ["Ps9AnyObject", "itemZip"]
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "popViewController"]
-- ["Ps9AnyObject", "postAndReturn"]
-- ["Ps9AnyObject", "postButton"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "putFile"]
@@ -80,14 +75,11 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "uid"]
 - !private ["Ps9AnyObject", "updateChildValues"]
-- ["Ps9AnyObject", "uploadImage"]
-- ["Ps9AnyObject", "uploadImageAction"]
-- ["Ps9AnyObject", "uuid"]
+- !private ["Ps9AnyObject", "uuid"]
 - !private ["Ps9AnyObject", "view"]
-- ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
 - !private ["PSo15CALayerDelegate", "endEditing"]
 - !private ["PSo15CALayerDelegate", "resignFirstResponder"]
@@ -95,33 +87,27 @@ depends-member:
 - !private ["Ps7CVarArg", "FIRAuth"]
 - !private ["Ps7CVarArg", "FIRDatabase"]
 - !private ["Ps7CVarArg", "FIRStorage"]
-- !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "UIInputViewController"]
 - !private ["Ps7CVarArg", "UIStoryboard"]
 - !private ["Ps7CVarArg", "UITapGestureRecognizer"]
 - !private ["Ps7CVarArg", "URL"]
 - ["Ps7CVarArg", "UUID"]
-- !private ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "addGestureRecognizer"]
 - !private ["Ps7CVarArg", "auth"]
-- ["Ps7CVarArg", "cancelButton"]
-- ["Ps7CVarArg", "cancelPost"]
 - !private ["Ps7CVarArg", "child"]
 - !private ["Ps7CVarArg", "currentUser"]
 - !private ["Ps7CVarArg", "database"]
-- ["Ps7CVarArg", "dismissKeyboard"]
+- !private ["Ps7CVarArg", "dismissKeyboard"]
 - !private ["Ps7CVarArg", "downloadURL"]
 - !private ["Ps7CVarArg", "endEditing"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
-- ["Ps7CVarArg", "itemDesc"]
-- ["Ps7CVarArg", "itemPrice"]
-- ["Ps7CVarArg", "itemTitle"]
-- ["Ps7CVarArg", "itemZip"]
+- !private ["Ps7CVarArg", "itemDesc"]
+- !private ["Ps7CVarArg", "itemPrice"]
+- !private ["Ps7CVarArg", "itemTitle"]
+- !private ["Ps7CVarArg", "itemZip"]
 - !private ["Ps7CVarArg", "navigationController"]
 - !private ["Ps7CVarArg", "popViewController"]
-- ["Ps7CVarArg", "postAndReturn"]
-- ["Ps7CVarArg", "postButton"]
 - !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "putFile"]
@@ -131,45 +117,35 @@ depends-member:
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "uid"]
 - !private ["Ps7CVarArg", "updateChildValues"]
-- ["Ps7CVarArg", "uploadImage"]
-- ["Ps7CVarArg", "uploadImageAction"]
-- ["Ps7CVarArg", "uuid"]
+- !private ["Ps7CVarArg", "uuid"]
 - !private ["Ps7CVarArg", "view"]
-- ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps10Collection", "Key"]
-- !private ["Ps10Collection", "Value"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRStorage"]
-- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "UIInputViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
 - ["Ps28CustomDebugStringConvertible", "UUID"]
-- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "auth"]
-- ["Ps28CustomDebugStringConvertible", "cancelButton"]
-- ["Ps28CustomDebugStringConvertible", "cancelPost"]
 - !private ["Ps28CustomDebugStringConvertible", "child"]
 - !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "database"]
-- ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
+- !private ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "downloadURL"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
-- ["Ps28CustomDebugStringConvertible", "itemDesc"]
-- ["Ps28CustomDebugStringConvertible", "itemPrice"]
-- ["Ps28CustomDebugStringConvertible", "itemTitle"]
-- ["Ps28CustomDebugStringConvertible", "itemZip"]
+- !private ["Ps28CustomDebugStringConvertible", "itemDesc"]
+- !private ["Ps28CustomDebugStringConvertible", "itemPrice"]
+- !private ["Ps28CustomDebugStringConvertible", "itemTitle"]
+- !private ["Ps28CustomDebugStringConvertible", "itemZip"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "popViewController"]
-- ["Ps28CustomDebugStringConvertible", "postAndReturn"]
-- ["Ps28CustomDebugStringConvertible", "postButton"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "putFile"]
@@ -179,51 +155,41 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "uid"]
 - !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
-- ["Ps28CustomDebugStringConvertible", "uploadImage"]
-- ["Ps28CustomDebugStringConvertible", "uploadImageAction"]
-- ["Ps28CustomDebugStringConvertible", "uuid"]
+- !private ["Ps28CustomDebugStringConvertible", "uuid"]
 - ["Ps28CustomDebugStringConvertible", "uuidString"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
-- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "Key"]
-- !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
 - ["Ps17CustomReflectable", "uuidString"]
 - !private ["Ps23CustomStringConvertible", "FIRAuth"]
 - !private ["Ps23CustomStringConvertible", "FIRDatabase"]
 - !private ["Ps23CustomStringConvertible", "FIRStorage"]
-- !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "UIInputViewController"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "URL"]
 - ["Ps23CustomStringConvertible", "UUID"]
-- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "auth"]
-- ["Ps23CustomStringConvertible", "cancelButton"]
-- ["Ps23CustomStringConvertible", "cancelPost"]
 - !private ["Ps23CustomStringConvertible", "child"]
 - !private ["Ps23CustomStringConvertible", "currentUser"]
 - !private ["Ps23CustomStringConvertible", "database"]
-- ["Ps23CustomStringConvertible", "dismissKeyboard"]
+- !private ["Ps23CustomStringConvertible", "dismissKeyboard"]
 - !private ["Ps23CustomStringConvertible", "downloadURL"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
-- ["Ps23CustomStringConvertible", "itemDesc"]
-- ["Ps23CustomStringConvertible", "itemPrice"]
-- ["Ps23CustomStringConvertible", "itemTitle"]
-- ["Ps23CustomStringConvertible", "itemZip"]
+- !private ["Ps23CustomStringConvertible", "itemDesc"]
+- !private ["Ps23CustomStringConvertible", "itemPrice"]
+- !private ["Ps23CustomStringConvertible", "itemTitle"]
+- !private ["Ps23CustomStringConvertible", "itemZip"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "popViewController"]
-- ["Ps23CustomStringConvertible", "postAndReturn"]
-- ["Ps23CustomStringConvertible", "postButton"]
 - !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "putFile"]
@@ -233,16 +199,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "uid"]
 - !private ["Ps23CustomStringConvertible", "updateChildValues"]
-- ["Ps23CustomStringConvertible", "uploadImage"]
-- ["Ps23CustomStringConvertible", "uploadImageAction"]
-- ["Ps23CustomStringConvertible", "uuid"]
+- !private ["Ps23CustomStringConvertible", "uuid"]
 - ["Ps23CustomStringConvertible", "uuidString"]
 - !private ["Ps23CustomStringConvertible", "view"]
-- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Vs10Dictionary", "Key"]
-- !private ["Vs10Dictionary", "Value"]
-- ["Vs10Dictionary", "deinit"]
 - !private ["Ps9Equatable", "FIRAuth"]
 - !private ["Ps9Equatable", "FIRDatabase"]
 - !private ["Ps9Equatable", "FIRStorage"]
@@ -254,24 +215,20 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addGestureRecognizer"]
 - !private ["Ps9Equatable", "auth"]
-- ["Ps9Equatable", "cancelButton"]
-- ["Ps9Equatable", "cancelPost"]
 - !private ["Ps9Equatable", "child"]
 - !private ["Ps9Equatable", "currentUser"]
 - !private ["Ps9Equatable", "database"]
-- ["Ps9Equatable", "dismissKeyboard"]
+- !private ["Ps9Equatable", "dismissKeyboard"]
 - !private ["Ps9Equatable", "downloadURL"]
 - !private ["Ps9Equatable", "endEditing"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
-- ["Ps9Equatable", "itemDesc"]
-- ["Ps9Equatable", "itemPrice"]
-- ["Ps9Equatable", "itemTitle"]
-- ["Ps9Equatable", "itemZip"]
+- !private ["Ps9Equatable", "itemDesc"]
+- !private ["Ps9Equatable", "itemPrice"]
+- !private ["Ps9Equatable", "itemTitle"]
+- !private ["Ps9Equatable", "itemZip"]
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "popViewController"]
-- ["Ps9Equatable", "postAndReturn"]
-- ["Ps9Equatable", "postButton"]
 - !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "putFile"]
@@ -281,42 +238,28 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "uid"]
 - !private ["Ps9Equatable", "updateChildValues"]
-- ["Ps9Equatable", "uploadImage"]
-- ["Ps9Equatable", "uploadImageAction"]
-- ["Ps9Equatable", "uuid"]
+- !private ["Ps9Equatable", "uuid"]
 - ["Ps9Equatable", "uuidString"]
 - !private ["Ps9Equatable", "view"]
-- ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- !private ["Ps5Error", "deinit"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["CSo7FIRAuth", "auth"]
 - !private ["CSo7FIRAuth", "currentUser"]
-- ["CSo7FIRAuth", "deinit"]
 - !private ["CSo11FIRDatabase", "database"]
-- ["CSo11FIRDatabase", "deinit"]
 - !private ["CSo11FIRDatabase", "reference"]
 - !private ["CSo16FIRDatabaseQuery", "child"]
 - !private ["CSo16FIRDatabaseQuery", "updateChildValues"]
 - !private ["CSo20FIRDatabaseReference", "child"]
-- ["CSo20FIRDatabaseReference", "deinit"]
 - !private ["CSo20FIRDatabaseReference", "updateChildValues"]
-- ["CSo10FIRStorage", "deinit"]
 - !private ["CSo10FIRStorage", "reference"]
 - !private ["CSo10FIRStorage", "storage"]
-- !private ["CSo18FIRStorageMetadata", "deinit"]
 - !private ["CSo18FIRStorageMetadata", "downloadURL"]
 - !private ["CSo19FIRStorageReference", "child"]
-- ["CSo19FIRStorageReference", "deinit"]
 - !private ["CSo19FIRStorageReference", "putFile"]
-- ["CSo20FIRStorageUploadTask", "deinit"]
-- ["CSo7FIRUser", "deinit"]
 - !private ["CSo7FIRUser", "uid"]
 - !private ["PSo11FIRUserInfo", "uid"]
 - !private ["Ps8Hashable", "FIRAuth"]
@@ -330,24 +273,20 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addGestureRecognizer"]
 - !private ["Ps8Hashable", "auth"]
-- ["Ps8Hashable", "cancelButton"]
-- ["Ps8Hashable", "cancelPost"]
 - !private ["Ps8Hashable", "child"]
 - !private ["Ps8Hashable", "currentUser"]
 - !private ["Ps8Hashable", "database"]
-- ["Ps8Hashable", "dismissKeyboard"]
+- !private ["Ps8Hashable", "dismissKeyboard"]
 - !private ["Ps8Hashable", "downloadURL"]
 - !private ["Ps8Hashable", "endEditing"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
-- ["Ps8Hashable", "itemDesc"]
-- ["Ps8Hashable", "itemPrice"]
-- ["Ps8Hashable", "itemTitle"]
-- ["Ps8Hashable", "itemZip"]
+- !private ["Ps8Hashable", "itemDesc"]
+- !private ["Ps8Hashable", "itemPrice"]
+- !private ["Ps8Hashable", "itemTitle"]
+- !private ["Ps8Hashable", "itemZip"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "popViewController"]
-- ["Ps8Hashable", "postAndReturn"]
-- ["Ps8Hashable", "postButton"]
 - !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "putFile"]
@@ -357,23 +296,14 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "uid"]
 - !private ["Ps8Hashable", "updateChildValues"]
-- ["Ps8Hashable", "uploadImage"]
-- ["Ps8Hashable", "uploadImageAction"]
-- ["Ps8Hashable", "uuid"]
+- !private ["Ps8Hashable", "uuid"]
 - ["Ps8Hashable", "uuidString"]
 - !private ["Ps8Hashable", "view"]
-- ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
-- ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Key"]
-- !private ["Ps9Indexable", "Value"]
-- !private ["Ps13IndexableBase", "Key"]
-- !private ["Ps13IndexableBase", "Value"]
-- ["Si", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
-- ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "FIRAuth"]
 - !private ["PSo8NSCoding", "FIRDatabase"]
 - !private ["PSo8NSCoding", "FIRStorage"]
@@ -383,28 +313,22 @@ depends-member:
 - !private ["PSo8NSCoding", "URL"]
 - ["PSo8NSCoding", "UUID"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
-- ["PSo8NSCoding", "cancelButton"]
-- ["PSo8NSCoding", "cancelPost"]
-- ["PSo8NSCoding", "dismissKeyboard"]
+- !private ["PSo8NSCoding", "dismissKeyboard"]
 - !private ["PSo8NSCoding", "endEditing"]
 - !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "itemDesc"]
-- ["PSo8NSCoding", "itemPrice"]
-- ["PSo8NSCoding", "itemTitle"]
-- ["PSo8NSCoding", "itemZip"]
+- !private ["PSo8NSCoding", "itemDesc"]
+- !private ["PSo8NSCoding", "itemPrice"]
+- !private ["PSo8NSCoding", "itemTitle"]
+- !private ["PSo8NSCoding", "itemZip"]
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "popViewController"]
-- ["PSo8NSCoding", "postAndReturn"]
-- ["PSo8NSCoding", "postButton"]
 - !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - !private ["PSo8NSCoding", "text"]
-- ["PSo8NSCoding", "uploadImage"]
-- ["PSo8NSCoding", "uploadImageAction"]
-- ["PSo8NSCoding", "uuid"]
+- !private ["PSo8NSCoding", "uuid"]
 - !private ["PSo8NSCoding", "view"]
-- ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "downloadURL"]
 - !private ["PSo9NSCopying", "init"]
@@ -416,25 +340,19 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UITapGestureRecognizer"]
 - !private ["PSo26NSExtensionRequestHandling", "URL"]
 - ["PSo26NSExtensionRequestHandling", "UUID"]
-- ["PSo26NSExtensionRequestHandling", "cancelButton"]
-- ["PSo26NSExtensionRequestHandling", "cancelPost"]
-- ["PSo26NSExtensionRequestHandling", "dismissKeyboard"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissKeyboard"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
-- ["PSo26NSExtensionRequestHandling", "itemDesc"]
-- ["PSo26NSExtensionRequestHandling", "itemPrice"]
-- ["PSo26NSExtensionRequestHandling", "itemTitle"]
-- ["PSo26NSExtensionRequestHandling", "itemZip"]
+- !private ["PSo26NSExtensionRequestHandling", "itemDesc"]
+- !private ["PSo26NSExtensionRequestHandling", "itemPrice"]
+- !private ["PSo26NSExtensionRequestHandling", "itemTitle"]
+- !private ["PSo26NSExtensionRequestHandling", "itemZip"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "popViewController"]
-- ["PSo26NSExtensionRequestHandling", "postAndReturn"]
-- ["PSo26NSExtensionRequestHandling", "postButton"]
 - !private ["PSo26NSExtensionRequestHandling", "present"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
-- ["PSo26NSExtensionRequestHandling", "uploadImage"]
-- ["PSo26NSExtensionRequestHandling", "uploadImageAction"]
-- ["PSo26NSExtensionRequestHandling", "uuid"]
+- !private ["PSo26NSExtensionRequestHandling", "uuid"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
-- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "FIRAuth"]
@@ -492,24 +410,20 @@ depends-member:
 - ["PSo16NSObjectProtocol", "UUID"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "auth"]
-- ["PSo16NSObjectProtocol", "cancelButton"]
-- ["PSo16NSObjectProtocol", "cancelPost"]
 - !private ["PSo16NSObjectProtocol", "child"]
 - !private ["PSo16NSObjectProtocol", "currentUser"]
 - !private ["PSo16NSObjectProtocol", "database"]
-- ["PSo16NSObjectProtocol", "dismissKeyboard"]
+- !private ["PSo16NSObjectProtocol", "dismissKeyboard"]
 - !private ["PSo16NSObjectProtocol", "downloadURL"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
-- ["PSo16NSObjectProtocol", "itemDesc"]
-- ["PSo16NSObjectProtocol", "itemPrice"]
-- ["PSo16NSObjectProtocol", "itemTitle"]
-- ["PSo16NSObjectProtocol", "itemZip"]
+- !private ["PSo16NSObjectProtocol", "itemDesc"]
+- !private ["PSo16NSObjectProtocol", "itemPrice"]
+- !private ["PSo16NSObjectProtocol", "itemTitle"]
+- !private ["PSo16NSObjectProtocol", "itemZip"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "popViewController"]
-- ["PSo16NSObjectProtocol", "postAndReturn"]
-- ["PSo16NSObjectProtocol", "postButton"]
 - !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "putFile"]
@@ -519,11 +433,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "uid"]
 - !private ["PSo16NSObjectProtocol", "updateChildValues"]
-- ["PSo16NSObjectProtocol", "uploadImage"]
-- ["PSo16NSObjectProtocol", "uploadImageAction"]
-- ["PSo16NSObjectProtocol", "uuid"]
+- !private ["PSo16NSObjectProtocol", "uuid"]
 - !private ["PSo16NSObjectProtocol", "view"]
-- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
@@ -557,13 +469,8 @@ depends-member:
 - ["C5Ketch7NewItem", "uuid"]
 - !private ["C5Ketch7NewItem", "view"]
 - ["C5Ketch7NewItem", "viewDidLoad"]
-- ["Sq", "deinit"]
 - ["P10Foundation20ReferenceConvertible", "init"]
 - ["P10Foundation20ReferenceConvertible", "uuidString"]
-- ["V10ObjectiveC8Selector", "deinit"]
-- !private ["Ps8Sequence", "Key"]
-- !private ["Ps8Sequence", "Value"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
@@ -584,28 +491,22 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "URL"]
 - ["PSo21UIAppearanceContainer", "UUID"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
-- ["PSo21UIAppearanceContainer", "cancelButton"]
-- ["PSo21UIAppearanceContainer", "cancelPost"]
-- ["PSo21UIAppearanceContainer", "dismissKeyboard"]
+- !private ["PSo21UIAppearanceContainer", "dismissKeyboard"]
 - !private ["PSo21UIAppearanceContainer", "endEditing"]
 - !private ["PSo21UIAppearanceContainer", "init"]
-- ["PSo21UIAppearanceContainer", "itemDesc"]
-- ["PSo21UIAppearanceContainer", "itemPrice"]
-- ["PSo21UIAppearanceContainer", "itemTitle"]
-- ["PSo21UIAppearanceContainer", "itemZip"]
+- !private ["PSo21UIAppearanceContainer", "itemDesc"]
+- !private ["PSo21UIAppearanceContainer", "itemPrice"]
+- !private ["PSo21UIAppearanceContainer", "itemTitle"]
+- !private ["PSo21UIAppearanceContainer", "itemZip"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "popViewController"]
-- ["PSo21UIAppearanceContainer", "postAndReturn"]
-- ["PSo21UIAppearanceContainer", "postButton"]
 - !private ["PSo21UIAppearanceContainer", "present"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - !private ["PSo21UIAppearanceContainer", "text"]
-- ["PSo21UIAppearanceContainer", "uploadImage"]
-- ["PSo21UIAppearanceContainer", "uploadImageAction"]
-- ["PSo21UIAppearanceContainer", "uuid"]
+- !private ["PSo21UIAppearanceContainer", "uuid"]
 - !private ["PSo21UIAppearanceContainer", "view"]
-- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "FIRAuth"]
 - !private ["PSo18UIContentContainer", "FIRDatabase"]
@@ -615,25 +516,19 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UITapGestureRecognizer"]
 - !private ["PSo18UIContentContainer", "URL"]
 - ["PSo18UIContentContainer", "UUID"]
-- ["PSo18UIContentContainer", "cancelButton"]
-- ["PSo18UIContentContainer", "cancelPost"]
-- ["PSo18UIContentContainer", "dismissKeyboard"]
+- !private ["PSo18UIContentContainer", "dismissKeyboard"]
 - !private ["PSo18UIContentContainer", "init"]
-- ["PSo18UIContentContainer", "itemDesc"]
-- ["PSo18UIContentContainer", "itemPrice"]
-- ["PSo18UIContentContainer", "itemTitle"]
-- ["PSo18UIContentContainer", "itemZip"]
+- !private ["PSo18UIContentContainer", "itemDesc"]
+- !private ["PSo18UIContentContainer", "itemPrice"]
+- !private ["PSo18UIContentContainer", "itemTitle"]
+- !private ["PSo18UIContentContainer", "itemZip"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "popViewController"]
-- ["PSo18UIContentContainer", "postAndReturn"]
-- ["PSo18UIContentContainer", "postButton"]
 - !private ["PSo18UIContentContainer", "present"]
 - !private ["PSo18UIContentContainer", "print"]
-- ["PSo18UIContentContainer", "uploadImage"]
-- ["PSo18UIContentContainer", "uploadImageAction"]
-- ["PSo18UIContentContainer", "uuid"]
+- !private ["PSo18UIContentContainer", "uuid"]
 - !private ["PSo18UIContentContainer", "view"]
-- ["PSo18UIContentContainer", "viewDidLoad"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "resignFirstResponder"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
@@ -656,28 +551,22 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "URL"]
 - ["PSo18UIFocusEnvironment", "UUID"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
-- ["PSo18UIFocusEnvironment", "cancelButton"]
-- ["PSo18UIFocusEnvironment", "cancelPost"]
-- ["PSo18UIFocusEnvironment", "dismissKeyboard"]
+- !private ["PSo18UIFocusEnvironment", "dismissKeyboard"]
 - !private ["PSo18UIFocusEnvironment", "endEditing"]
 - !private ["PSo18UIFocusEnvironment", "init"]
-- ["PSo18UIFocusEnvironment", "itemDesc"]
-- ["PSo18UIFocusEnvironment", "itemPrice"]
-- ["PSo18UIFocusEnvironment", "itemTitle"]
-- ["PSo18UIFocusEnvironment", "itemZip"]
+- !private ["PSo18UIFocusEnvironment", "itemDesc"]
+- !private ["PSo18UIFocusEnvironment", "itemPrice"]
+- !private ["PSo18UIFocusEnvironment", "itemTitle"]
+- !private ["PSo18UIFocusEnvironment", "itemZip"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "popViewController"]
-- ["PSo18UIFocusEnvironment", "postAndReturn"]
-- ["PSo18UIFocusEnvironment", "postButton"]
 - !private ["PSo18UIFocusEnvironment", "present"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - !private ["PSo18UIFocusEnvironment", "text"]
-- ["PSo18UIFocusEnvironment", "uploadImage"]
-- ["PSo18UIFocusEnvironment", "uploadImageAction"]
-- ["PSo18UIFocusEnvironment", "uuid"]
+- !private ["PSo18UIFocusEnvironment", "uuid"]
 - !private ["PSo18UIFocusEnvironment", "view"]
-- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addGestureRecognizer"]
 - !private ["PSo11UIFocusItem", "endEditing"]
@@ -687,7 +576,6 @@ depends-member:
 - !private ["CSo21UIInputViewController", "dismissKeyboard"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
-- ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "popViewController"]
 - !private ["CSo11UIResponder", "FIRAuth"]
 - !private ["CSo11UIResponder", "FIRDatabase"]
@@ -732,28 +620,22 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "URL"]
 - ["PSo30UIResponderStandardEditActions", "UUID"]
 - !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
-- ["PSo30UIResponderStandardEditActions", "cancelButton"]
-- ["PSo30UIResponderStandardEditActions", "cancelPost"]
-- ["PSo30UIResponderStandardEditActions", "dismissKeyboard"]
+- !private ["PSo30UIResponderStandardEditActions", "dismissKeyboard"]
 - !private ["PSo30UIResponderStandardEditActions", "endEditing"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- ["PSo30UIResponderStandardEditActions", "itemDesc"]
-- ["PSo30UIResponderStandardEditActions", "itemPrice"]
-- ["PSo30UIResponderStandardEditActions", "itemTitle"]
-- ["PSo30UIResponderStandardEditActions", "itemZip"]
+- !private ["PSo30UIResponderStandardEditActions", "itemDesc"]
+- !private ["PSo30UIResponderStandardEditActions", "itemPrice"]
+- !private ["PSo30UIResponderStandardEditActions", "itemTitle"]
+- !private ["PSo30UIResponderStandardEditActions", "itemZip"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - !private ["PSo30UIResponderStandardEditActions", "popViewController"]
-- ["PSo30UIResponderStandardEditActions", "postAndReturn"]
-- ["PSo30UIResponderStandardEditActions", "postButton"]
 - !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
-- ["PSo30UIResponderStandardEditActions", "uploadImage"]
-- ["PSo30UIResponderStandardEditActions", "uploadImageAction"]
-- ["PSo30UIResponderStandardEditActions", "uuid"]
+- !private ["PSo30UIResponderStandardEditActions", "uuid"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
-- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "FIRAuth"]
 - !private ["PSo16UIStateRestoring", "FIRDatabase"]
@@ -763,30 +645,22 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UITapGestureRecognizer"]
 - !private ["PSo16UIStateRestoring", "URL"]
 - ["PSo16UIStateRestoring", "UUID"]
-- ["PSo16UIStateRestoring", "cancelButton"]
-- ["PSo16UIStateRestoring", "cancelPost"]
-- ["PSo16UIStateRestoring", "dismissKeyboard"]
+- !private ["PSo16UIStateRestoring", "dismissKeyboard"]
 - !private ["PSo16UIStateRestoring", "init"]
-- ["PSo16UIStateRestoring", "itemDesc"]
-- ["PSo16UIStateRestoring", "itemPrice"]
-- ["PSo16UIStateRestoring", "itemTitle"]
-- ["PSo16UIStateRestoring", "itemZip"]
+- !private ["PSo16UIStateRestoring", "itemDesc"]
+- !private ["PSo16UIStateRestoring", "itemPrice"]
+- !private ["PSo16UIStateRestoring", "itemTitle"]
+- !private ["PSo16UIStateRestoring", "itemZip"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "popViewController"]
-- ["PSo16UIStateRestoring", "postAndReturn"]
-- ["PSo16UIStateRestoring", "postButton"]
 - !private ["PSo16UIStateRestoring", "present"]
 - !private ["PSo16UIStateRestoring", "print"]
-- ["PSo16UIStateRestoring", "uploadImage"]
-- ["PSo16UIStateRestoring", "uploadImageAction"]
-- ["PSo16UIStateRestoring", "uuid"]
+- !private ["PSo16UIStateRestoring", "uuid"]
 - !private ["PSo16UIStateRestoring", "view"]
-- ["PSo16UIStateRestoring", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["CSo12UIStoryboard", "deinit"]
 - !private ["CSo12UIStoryboard", "init"]
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
-- ["CSo22UITapGestureRecognizer", "deinit"]
 - !private ["CSo22UITapGestureRecognizer", "init"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
@@ -804,28 +678,22 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "URL"]
 - ["PSo18UITraitEnvironment", "UUID"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
-- ["PSo18UITraitEnvironment", "cancelButton"]
-- ["PSo18UITraitEnvironment", "cancelPost"]
-- ["PSo18UITraitEnvironment", "dismissKeyboard"]
+- !private ["PSo18UITraitEnvironment", "dismissKeyboard"]
 - !private ["PSo18UITraitEnvironment", "endEditing"]
 - !private ["PSo18UITraitEnvironment", "init"]
-- ["PSo18UITraitEnvironment", "itemDesc"]
-- ["PSo18UITraitEnvironment", "itemPrice"]
-- ["PSo18UITraitEnvironment", "itemTitle"]
-- ["PSo18UITraitEnvironment", "itemZip"]
+- !private ["PSo18UITraitEnvironment", "itemDesc"]
+- !private ["PSo18UITraitEnvironment", "itemPrice"]
+- !private ["PSo18UITraitEnvironment", "itemTitle"]
+- !private ["PSo18UITraitEnvironment", "itemZip"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "popViewController"]
-- ["PSo18UITraitEnvironment", "postAndReturn"]
-- ["PSo18UITraitEnvironment", "postButton"]
 - !private ["PSo18UITraitEnvironment", "present"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - !private ["PSo18UITraitEnvironment", "text"]
-- ["PSo18UITraitEnvironment", "uploadImage"]
-- ["PSo18UITraitEnvironment", "uploadImageAction"]
-- ["PSo18UITraitEnvironment", "uuid"]
+- !private ["PSo18UITraitEnvironment", "uuid"]
 - !private ["PSo18UITraitEnvironment", "view"]
-- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addGestureRecognizer"]
 - !private ["CSo6UIView", "endEditing"]
@@ -844,7 +712,6 @@ depends-member:
 - ["CSo16UIViewController", "UUID"]
 - ["CSo16UIViewController", "cancelButton"]
 - ["CSo16UIViewController", "cancelPost"]
-- ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "dismissKeyboard"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "itemDesc"]
@@ -863,9 +730,7 @@ depends-member:
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
-- ["V10Foundation3URL", "deinit"]
 - !private ["V10Foundation3URL", "init"]
-- ["V10Foundation4UUID", "deinit"]
 - ["V10Foundation4UUID", "init"]
 - ["V10Foundation4UUID", "uuidString"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
@@ -878,6 +743,7 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "FIRAuth"]
 - !private ["Ps9_Hashable", "FIRDatabase"]
@@ -890,24 +756,20 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addGestureRecognizer"]
 - !private ["Ps9_Hashable", "auth"]
-- ["Ps9_Hashable", "cancelButton"]
-- ["Ps9_Hashable", "cancelPost"]
 - !private ["Ps9_Hashable", "child"]
 - !private ["Ps9_Hashable", "currentUser"]
 - !private ["Ps9_Hashable", "database"]
-- ["Ps9_Hashable", "dismissKeyboard"]
+- !private ["Ps9_Hashable", "dismissKeyboard"]
 - !private ["Ps9_Hashable", "downloadURL"]
 - !private ["Ps9_Hashable", "endEditing"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
-- ["Ps9_Hashable", "itemDesc"]
-- ["Ps9_Hashable", "itemPrice"]
-- ["Ps9_Hashable", "itemTitle"]
-- ["Ps9_Hashable", "itemZip"]
+- !private ["Ps9_Hashable", "itemDesc"]
+- !private ["Ps9_Hashable", "itemPrice"]
+- !private ["Ps9_Hashable", "itemTitle"]
+- !private ["Ps9_Hashable", "itemZip"]
 - !private ["Ps9_Hashable", "navigationController"]
 - !private ["Ps9_Hashable", "popViewController"]
-- ["Ps9_Hashable", "postAndReturn"]
-- ["Ps9_Hashable", "postButton"]
 - !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "putFile"]
@@ -917,57 +779,41 @@ depends-member:
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "uid"]
 - !private ["Ps9_Hashable", "updateChildValues"]
-- ["Ps9_Hashable", "uploadImage"]
-- ["Ps9_Hashable", "uploadImageAction"]
-- ["Ps9_Hashable", "uuid"]
+- !private ["Ps9_Hashable", "uuid"]
 - ["Ps9_Hashable", "uuidString"]
 - !private ["Ps9_Hashable", "view"]
-- ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "Key"]
-- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - ["Ps21_ObjectiveCBridgeable", "uuidString"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sb"
+- !private "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
-- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Vs10Dictionary"
 - "Ps9Equatable"
-- !private "Ps5Error"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- "CSo7FIRAuth"
-- "CSo11FIRDatabase"
+- !private "CSo7FIRAuth"
+- !private "CSo11FIRDatabase"
 - !private "CSo16FIRDatabaseQuery"
-- "CSo20FIRDatabaseReference"
-- "CSo10FIRStorage"
+- !private "CSo20FIRDatabaseReference"
+- !private "CSo10FIRStorage"
 - !private "CSo18FIRStorageMetadata"
-- "CSo19FIRStorageReference"
-- "CSo20FIRStorageUploadTask"
-- "CSo7FIRUser"
+- !private "CSo19FIRStorageReference"
+- !private "CSo7FIRUser"
 - !private "PSo11FIRUserInfo"
 - "Ps8Hashable"
-- "SQ"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- "Si"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
-- "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -977,11 +823,8 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "C5Ketch7NewItem"
-- "Sq"
 - "P10Foundation20ReferenceConvertible"
-- "V10ObjectiveC8Selector"
-- !private "Ps8Sequence"
-- "SS"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
@@ -997,12 +840,12 @@ depends-nominal:
 - !private "CSo19UIGestureRecognizer"
 - !private "CSo21UIInputViewController"
 - !private "PSo10UIKeyInput"
-- "CSo22UINavigationController"
+- !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
 - !private "CSo12UIStoryboard"
-- "CSo22UITapGestureRecognizer"
+- !private "CSo22UITapGestureRecognizer"
 - !private "CSo11UITextField"
 - !private "PSo11UITextInput"
 - !private "PSo19UITextInputDelegate"
@@ -1010,7 +853,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- "V10Foundation3URL"
+- !private "V10Foundation3URL"
 - "V10Foundation4UUID"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
@@ -1019,10 +862,10 @@ depends-nominal:
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps34_ExpressibleByFileReferenceLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
@@ -1030,10 +873,17 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"

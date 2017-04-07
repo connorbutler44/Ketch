@@ -12,6 +12,7 @@ import Firebase
 class PopupViewController: UIViewController {
 
     @IBOutlet weak var zipcodeID: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
@@ -30,7 +31,7 @@ class PopupViewController: UIViewController {
         let ref = FIRDatabase.database().reference(fromURL: "https://ketch-b8d8a.firebaseio.com/")
         //values to be put into database
         let usersReference = ref.child("users").child(uid!)
-        let values = ["zipcode": self.zipcodeID.text]
+        let values = ["zipcode": zipcodeID.text]
         usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
             if err != nil {
                 print(err ?? "")

@@ -1,9 +1,9 @@
 dependencies: \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphValueContainer.m \
+  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKShareKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Target\ Support\ Files/FBSDKShareKit/FBSDKShareKit-prefix.pch \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphValueContainer.h \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareOpenGraphValueContainer+Internal.h \
-  /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKShareKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap \
   /Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Bolts/Bolts/Common/Bolts.h \

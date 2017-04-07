@@ -6,32 +6,32 @@ provides-nominal:
 provides-member:
 - ["C5Ketch8UserCell", ""]
 provides-dynamic-lookup:
-- "timeLabel"
+- "layoutSubviews"
 - "message"
 - "profileImageView"
-- "layoutSubviews"
+- "timeLabel"
 depends-top-level:
-- !private "Date"
-- "UITableViewCell"
-- !private "DateFormatter"
-- !private "NSDate"
 - !private "AnyObject"
 - "AssignmentPrecedence"
+- "BooleanLiteralType"
 - "CastingPrecedence"
-- "NSCoder"
-- "String"
-- "UserCell"
-- "UIColor"
-- !private "StringLiteralType"
-- "UIImageView"
-- !private "fatalError"
-- "UILabel"
+- !private "Date"
+- !private "DateFormatter"
 - !private "FIRDatabase"
 - "Message"
+- "NSCoder"
+- !private "NSDate"
+- "String"
+- !private "StringLiteralType"
+- "UIColor"
 - "UIFont"
-- "UITableViewCellStyle"
-- "BooleanLiteralType"
 - !private "UIImage"
+- "UIImageView"
+- "UILabel"
+- "UITableViewCell"
+- "UITableViewCellStyle"
+- "UserCell"
+- !private "fatalError"
 depends-member:
 - !private ["Ps9AnyObject", "DateFormatter"]
 - !private ["Ps9AnyObject", "FIRDatabase"]
@@ -59,31 +59,29 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isActive"]
 - ["Ps9AnyObject", "layer"]
-- ["Ps9AnyObject", "layoutSubviews"]
+- !private ["Ps9AnyObject", "layoutSubviews"]
 - !private ["Ps9AnyObject", "leftAnchor"]
 - ["Ps9AnyObject", "lightGray"]
 - ["Ps9AnyObject", "masksToBounds"]
-- ["Ps9AnyObject", "message"]
+- !private ["Ps9AnyObject", "message"]
 - !private ["Ps9AnyObject", "observeSingleEvent"]
-- ["Ps9AnyObject", "profileImageView"]
+- !private ["Ps9AnyObject", "profileImageView"]
 - !private ["Ps9AnyObject", "reference"]
 - !private ["Ps9AnyObject", "rightAnchor"]
-- ["Ps9AnyObject", "setupNameAndProfileImage"]
+- !private ["Ps9AnyObject", "setupNameAndProfileImage"]
 - !private ["Ps9AnyObject", "string"]
 - ["Ps9AnyObject", "systemFont"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "textColor"]
 - !private ["Ps9AnyObject", "textLabel"]
-- ["Ps9AnyObject", "timeLabel"]
+- !private ["Ps9AnyObject", "timeLabel"]
 - !private ["Ps9AnyObject", "timestamp"]
 - !private ["Ps9AnyObject", "topAnchor"]
 - ["Ps9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "widthAnchor"]
 - ["Ps9AnyObject", ""]
-- ["Sb", "deinit"]
 - ["CSo7CALayer", "cornerRadius"]
-- ["CSo7CALayer", "deinit"]
 - ["CSo7CALayer", "masksToBounds"]
 - !private ["PSo15CALayerDelegate", "DateFormatter"]
 - !private ["PSo15CALayerDelegate", "FIRDatabase"]
@@ -103,28 +101,25 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "imageView"]
 - ["PSo15CALayerDelegate", "init"]
 - ["PSo15CALayerDelegate", "layer"]
-- ["PSo15CALayerDelegate", "layoutSubviews"]
+- !private ["PSo15CALayerDelegate", "layoutSubviews"]
 - !private ["PSo15CALayerDelegate", "leftAnchor"]
-- ["PSo15CALayerDelegate", "message"]
-- ["PSo15CALayerDelegate", "profileImageView"]
+- !private ["PSo15CALayerDelegate", "message"]
+- !private ["PSo15CALayerDelegate", "profileImageView"]
 - !private ["PSo15CALayerDelegate", "rightAnchor"]
-- ["PSo15CALayerDelegate", "setupNameAndProfileImage"]
+- !private ["PSo15CALayerDelegate", "setupNameAndProfileImage"]
 - !private ["PSo15CALayerDelegate", "text"]
 - ["PSo15CALayerDelegate", "textColor"]
 - !private ["PSo15CALayerDelegate", "textLabel"]
-- ["PSo15CALayerDelegate", "timeLabel"]
+- !private ["PSo15CALayerDelegate", "timeLabel"]
 - !private ["PSo15CALayerDelegate", "topAnchor"]
 - ["PSo15CALayerDelegate", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo15CALayerDelegate", "widthAnchor"]
 - ["PSo15CALayerDelegate", ""]
 - ["PSo13CAMediaTiming", "cornerRadius"]
 - ["PSo13CAMediaTiming", "masksToBounds"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["Ps7CVarArg", "DateFormatter"]
 - !private ["Ps7CVarArg", "FIRDatabase"]
-- !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "NSDate"]
-- !private ["Ps7CVarArg", "SubSequence"]
 - ["Ps7CVarArg", "UIColor"]
 - ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIImage"]
@@ -148,40 +143,34 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isActive"]
 - ["Ps7CVarArg", "layer"]
-- ["Ps7CVarArg", "layoutSubviews"]
+- !private ["Ps7CVarArg", "layoutSubviews"]
 - !private ["Ps7CVarArg", "leftAnchor"]
 - ["Ps7CVarArg", "lightGray"]
 - ["Ps7CVarArg", "masksToBounds"]
-- ["Ps7CVarArg", "message"]
+- !private ["Ps7CVarArg", "message"]
 - !private ["Ps7CVarArg", "observeSingleEvent"]
-- ["Ps7CVarArg", "profileImageView"]
+- !private ["Ps7CVarArg", "profileImageView"]
 - !private ["Ps7CVarArg", "reference"]
 - !private ["Ps7CVarArg", "rightAnchor"]
-- ["Ps7CVarArg", "setupNameAndProfileImage"]
+- !private ["Ps7CVarArg", "setupNameAndProfileImage"]
 - !private ["Ps7CVarArg", "string"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "systemFont"]
 - !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "textColor"]
 - !private ["Ps7CVarArg", "textLabel"]
-- ["Ps7CVarArg", "timeLabel"]
+- !private ["Ps7CVarArg", "timeLabel"]
 - !private ["Ps7CVarArg", "timestamp"]
 - !private ["Ps7CVarArg", "topAnchor"]
 - ["Ps7CVarArg", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps7CVarArg", "value"]
 - !private ["Ps7CVarArg", "widthAnchor"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps10Collection", "Index"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "SubSequence"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "DateFormatter"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
-- !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "NSDate"]
-- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - ["Ps28CustomDebugStringConvertible", "UIColor"]
 - ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
@@ -205,23 +194,23 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isActive"]
 - ["Ps28CustomDebugStringConvertible", "layer"]
-- ["Ps28CustomDebugStringConvertible", "layoutSubviews"]
+- !private ["Ps28CustomDebugStringConvertible", "layoutSubviews"]
 - !private ["Ps28CustomDebugStringConvertible", "leftAnchor"]
 - ["Ps28CustomDebugStringConvertible", "lightGray"]
 - ["Ps28CustomDebugStringConvertible", "masksToBounds"]
-- ["Ps28CustomDebugStringConvertible", "message"]
+- !private ["Ps28CustomDebugStringConvertible", "message"]
 - !private ["Ps28CustomDebugStringConvertible", "observeSingleEvent"]
-- ["Ps28CustomDebugStringConvertible", "profileImageView"]
+- !private ["Ps28CustomDebugStringConvertible", "profileImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "reference"]
 - !private ["Ps28CustomDebugStringConvertible", "rightAnchor"]
-- ["Ps28CustomDebugStringConvertible", "setupNameAndProfileImage"]
+- !private ["Ps28CustomDebugStringConvertible", "setupNameAndProfileImage"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "systemFont"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "textColor"]
 - !private ["Ps28CustomDebugStringConvertible", "textLabel"]
-- ["Ps28CustomDebugStringConvertible", "timeLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "timeLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "timestamp"]
 - !private ["Ps28CustomDebugStringConvertible", "topAnchor"]
 - ["Ps28CustomDebugStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
@@ -229,15 +218,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "widthAnchor"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "Index"]
-- !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "DateFormatter"]
 - !private ["Ps23CustomStringConvertible", "FIRDatabase"]
-- !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "NSDate"]
-- !private ["Ps23CustomStringConvertible", "SubSequence"]
 - ["Ps23CustomStringConvertible", "UIColor"]
 - ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
@@ -261,39 +246,33 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isActive"]
 - ["Ps23CustomStringConvertible", "layer"]
-- ["Ps23CustomStringConvertible", "layoutSubviews"]
+- !private ["Ps23CustomStringConvertible", "layoutSubviews"]
 - !private ["Ps23CustomStringConvertible", "leftAnchor"]
 - ["Ps23CustomStringConvertible", "lightGray"]
 - ["Ps23CustomStringConvertible", "masksToBounds"]
-- ["Ps23CustomStringConvertible", "message"]
+- !private ["Ps23CustomStringConvertible", "message"]
 - !private ["Ps23CustomStringConvertible", "observeSingleEvent"]
-- ["Ps23CustomStringConvertible", "profileImageView"]
+- !private ["Ps23CustomStringConvertible", "profileImageView"]
 - !private ["Ps23CustomStringConvertible", "reference"]
 - !private ["Ps23CustomStringConvertible", "rightAnchor"]
-- ["Ps23CustomStringConvertible", "setupNameAndProfileImage"]
+- !private ["Ps23CustomStringConvertible", "setupNameAndProfileImage"]
 - !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "systemFont"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "textColor"]
 - !private ["Ps23CustomStringConvertible", "textLabel"]
-- ["Ps23CustomStringConvertible", "timeLabel"]
+- !private ["Ps23CustomStringConvertible", "timeLabel"]
 - !private ["Ps23CustomStringConvertible", "timestamp"]
 - !private ["Ps23CustomStringConvertible", "topAnchor"]
 - ["Ps23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "widthAnchor"]
 - ["Ps23CustomStringConvertible", ""]
-- ["V10Foundation4Date", "deinit"]
 - !private ["CSo13DateFormatter", "dateFormat"]
-- ["CSo13DateFormatter", "deinit"]
 - !private ["CSo13DateFormatter", "init"]
 - !private ["CSo13DateFormatter", "string"]
-- !private ["Vs10Dictionary", "Index"]
-- !private ["Vs10Dictionary", "SubSequence"]
-- !private ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
-- ["Sd", "deinit"]
 - !private ["Ps9Equatable", "DateFormatter"]
 - !private ["Ps9Equatable", "FIRDatabase"]
 - !private ["Ps9Equatable", "NSDate"]
@@ -320,23 +299,23 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isActive"]
 - ["Ps9Equatable", "layer"]
-- ["Ps9Equatable", "layoutSubviews"]
+- !private ["Ps9Equatable", "layoutSubviews"]
 - !private ["Ps9Equatable", "leftAnchor"]
 - ["Ps9Equatable", "lightGray"]
 - ["Ps9Equatable", "masksToBounds"]
-- ["Ps9Equatable", "message"]
+- !private ["Ps9Equatable", "message"]
 - !private ["Ps9Equatable", "observeSingleEvent"]
-- ["Ps9Equatable", "profileImageView"]
+- !private ["Ps9Equatable", "profileImageView"]
 - !private ["Ps9Equatable", "reference"]
 - !private ["Ps9Equatable", "rightAnchor"]
-- ["Ps9Equatable", "setupNameAndProfileImage"]
+- !private ["Ps9Equatable", "setupNameAndProfileImage"]
 - !private ["Ps9Equatable", "string"]
 - !private ["Ps9Equatable", "subtitle"]
 - ["Ps9Equatable", "systemFont"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "textColor"]
 - !private ["Ps9Equatable", "textLabel"]
-- ["Ps9Equatable", "timeLabel"]
+- !private ["Ps9Equatable", "timeLabel"]
 - !private ["Ps9Equatable", "timestamp"]
 - !private ["Ps9Equatable", "topAnchor"]
 - ["Ps9Equatable", "translatesAutoresizingMaskIntoConstraints"]
@@ -344,26 +323,19 @@ depends-member:
 - !private ["Ps9Equatable", "widthAnchor"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "doubleValue"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps25ExpressibleByFloatLiteral", "doubleValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "doubleValue"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["OSC16FIRDataEventType", "deinit"]
 - !private ["OSC16FIRDataEventType", "value"]
-- !private ["CSo15FIRDataSnapshot", "deinit"]
 - !private ["CSo15FIRDataSnapshot", "value"]
 - !private ["CSo11FIRDatabase", "database"]
-- !private ["CSo11FIRDatabase", "deinit"]
 - !private ["CSo11FIRDatabase", "reference"]
 - !private ["CSo16FIRDatabaseQuery", "child"]
 - !private ["CSo16FIRDatabaseQuery", "observeSingleEvent"]
 - !private ["CSo20FIRDatabaseReference", "child"]
-- !private ["CSo20FIRDatabaseReference", "deinit"]
 - !private ["CSo20FIRDatabaseReference", "observeSingleEvent"]
 - !private ["CSo9Formatter", "dateFormat"]
 - !private ["CSo9Formatter", "init"]
@@ -394,42 +366,29 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isActive"]
 - ["Ps8Hashable", "layer"]
-- ["Ps8Hashable", "layoutSubviews"]
+- !private ["Ps8Hashable", "layoutSubviews"]
 - !private ["Ps8Hashable", "leftAnchor"]
 - ["Ps8Hashable", "lightGray"]
 - ["Ps8Hashable", "masksToBounds"]
-- ["Ps8Hashable", "message"]
+- !private ["Ps8Hashable", "message"]
 - !private ["Ps8Hashable", "observeSingleEvent"]
-- ["Ps8Hashable", "profileImageView"]
+- !private ["Ps8Hashable", "profileImageView"]
 - !private ["Ps8Hashable", "reference"]
 - !private ["Ps8Hashable", "rightAnchor"]
-- ["Ps8Hashable", "setupNameAndProfileImage"]
+- !private ["Ps8Hashable", "setupNameAndProfileImage"]
 - !private ["Ps8Hashable", "string"]
 - !private ["Ps8Hashable", "subtitle"]
 - ["Ps8Hashable", "systemFont"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "textColor"]
 - !private ["Ps8Hashable", "textLabel"]
-- ["Ps8Hashable", "timeLabel"]
+- !private ["Ps8Hashable", "timeLabel"]
 - !private ["Ps8Hashable", "timestamp"]
 - !private ["Ps8Hashable", "topAnchor"]
 - ["Ps8Hashable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "widthAnchor"]
 - ["Ps8Hashable", ""]
-- !private ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Index"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "SubSequence"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "subscript"]
-- !private ["Ps13IndexableBase", "Index"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "SubSequence"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "subscript"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["C5Ketch7Message", "chatPartnerID"]
 - !private ["C5Ketch7Message", "text"]
@@ -456,19 +415,19 @@ depends-member:
 - !private ["PSo8NSCoding", "imageView"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "layer"]
-- ["PSo8NSCoding", "layoutSubviews"]
+- !private ["PSo8NSCoding", "layoutSubviews"]
 - !private ["PSo8NSCoding", "leftAnchor"]
 - ["PSo8NSCoding", "lightGray"]
 - ["PSo8NSCoding", "masksToBounds"]
-- ["PSo8NSCoding", "message"]
-- ["PSo8NSCoding", "profileImageView"]
+- !private ["PSo8NSCoding", "message"]
+- !private ["PSo8NSCoding", "profileImageView"]
 - !private ["PSo8NSCoding", "rightAnchor"]
-- ["PSo8NSCoding", "setupNameAndProfileImage"]
+- !private ["PSo8NSCoding", "setupNameAndProfileImage"]
 - !private ["PSo8NSCoding", "string"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textColor"]
 - !private ["PSo8NSCoding", "textLabel"]
-- ["PSo8NSCoding", "timeLabel"]
+- !private ["PSo8NSCoding", "timeLabel"]
 - !private ["PSo8NSCoding", "topAnchor"]
 - ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo8NSCoding", "widthAnchor"]
@@ -479,17 +438,12 @@ depends-member:
 - ["PSo9NSCopying", "lightGray"]
 - !private ["PSo9NSCopying", "string"]
 - ["PSo9NSCopying", "systemFont"]
-- ["CSo6NSDate", "deinit"]
 - !private ["CSo6NSDate", "init"]
 - !private ["CSo14NSLayoutAnchor", "constraint"]
-- ["CSo18NSLayoutConstraint", "deinit"]
 - !private ["CSo18NSLayoutConstraint", "isActive"]
 - !private ["CSo17NSLayoutDimension", "constraint"]
-- ["CSo17NSLayoutDimension", "deinit"]
 - !private ["CSo19NSLayoutXAxisAnchor", "constraint"]
-- ["CSo19NSLayoutXAxisAnchor", "deinit"]
 - !private ["CSo19NSLayoutYAxisAnchor", "constraint"]
-- ["CSo19NSLayoutYAxisAnchor", "deinit"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSNumber", "doubleValue"]
 - !private ["CSo8NSObject", "AnyObject"]
@@ -571,22 +525,22 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isActive"]
 - ["PSo16NSObjectProtocol", "layer"]
-- ["PSo16NSObjectProtocol", "layoutSubviews"]
+- !private ["PSo16NSObjectProtocol", "layoutSubviews"]
 - !private ["PSo16NSObjectProtocol", "leftAnchor"]
 - ["PSo16NSObjectProtocol", "lightGray"]
 - ["PSo16NSObjectProtocol", "masksToBounds"]
-- ["PSo16NSObjectProtocol", "message"]
+- !private ["PSo16NSObjectProtocol", "message"]
 - !private ["PSo16NSObjectProtocol", "observeSingleEvent"]
-- ["PSo16NSObjectProtocol", "profileImageView"]
+- !private ["PSo16NSObjectProtocol", "profileImageView"]
 - !private ["PSo16NSObjectProtocol", "reference"]
 - !private ["PSo16NSObjectProtocol", "rightAnchor"]
-- ["PSo16NSObjectProtocol", "setupNameAndProfileImage"]
+- !private ["PSo16NSObjectProtocol", "setupNameAndProfileImage"]
 - !private ["PSo16NSObjectProtocol", "string"]
 - ["PSo16NSObjectProtocol", "systemFont"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
-- ["PSo16NSObjectProtocol", "timeLabel"]
+- !private ["PSo16NSObjectProtocol", "timeLabel"]
 - !private ["PSo16NSObjectProtocol", "timestamp"]
 - !private ["PSo16NSObjectProtocol", "topAnchor"]
 - ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
@@ -598,23 +552,10 @@ depends-member:
 - ["PSo14NSSecureCoding", "lightGray"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo7NSValue", "doubleValue"]
-- ["Os5Never", "deinit"]
-- ["Sq", "deinit"]
 - !private ["Ps16RawRepresentable", "subtitle"]
 - !private ["Ps16RawRepresentable", "value"]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Index"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "SubSequence"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "subscript"]
-- !private ["Vs5Slice", "Index"]
-- !private ["Vs5Slice", "Iterator"]
-- !private ["Vs5Slice", "SubSequence"]
-- !private ["Vs5Slice", "_Element"]
-- ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
@@ -636,16 +577,16 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "imageView"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "layer"]
-- ["PSo29UIAccessibilityIdentification", "layoutSubviews"]
+- !private ["PSo29UIAccessibilityIdentification", "layoutSubviews"]
 - !private ["PSo29UIAccessibilityIdentification", "leftAnchor"]
-- ["PSo29UIAccessibilityIdentification", "message"]
-- ["PSo29UIAccessibilityIdentification", "profileImageView"]
+- !private ["PSo29UIAccessibilityIdentification", "message"]
+- !private ["PSo29UIAccessibilityIdentification", "profileImageView"]
 - !private ["PSo29UIAccessibilityIdentification", "rightAnchor"]
-- ["PSo29UIAccessibilityIdentification", "setupNameAndProfileImage"]
+- !private ["PSo29UIAccessibilityIdentification", "setupNameAndProfileImage"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
-- ["PSo29UIAccessibilityIdentification", "timeLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "timeLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "topAnchor"]
 - ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo29UIAccessibilityIdentification", "widthAnchor"]
@@ -668,16 +609,16 @@ depends-member:
 - !private ["PSo12UIAppearance", "imageView"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "layer"]
-- ["PSo12UIAppearance", "layoutSubviews"]
+- !private ["PSo12UIAppearance", "layoutSubviews"]
 - !private ["PSo12UIAppearance", "leftAnchor"]
-- ["PSo12UIAppearance", "message"]
-- ["PSo12UIAppearance", "profileImageView"]
+- !private ["PSo12UIAppearance", "message"]
+- !private ["PSo12UIAppearance", "profileImageView"]
 - !private ["PSo12UIAppearance", "rightAnchor"]
-- ["PSo12UIAppearance", "setupNameAndProfileImage"]
+- !private ["PSo12UIAppearance", "setupNameAndProfileImage"]
 - !private ["PSo12UIAppearance", "text"]
 - ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "textLabel"]
-- ["PSo12UIAppearance", "timeLabel"]
+- !private ["PSo12UIAppearance", "timeLabel"]
 - !private ["PSo12UIAppearance", "topAnchor"]
 - ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo12UIAppearance", "widthAnchor"]
@@ -700,21 +641,20 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "layer"]
-- ["PSo21UIAppearanceContainer", "layoutSubviews"]
+- !private ["PSo21UIAppearanceContainer", "layoutSubviews"]
 - !private ["PSo21UIAppearanceContainer", "leftAnchor"]
-- ["PSo21UIAppearanceContainer", "message"]
-- ["PSo21UIAppearanceContainer", "profileImageView"]
+- !private ["PSo21UIAppearanceContainer", "message"]
+- !private ["PSo21UIAppearanceContainer", "profileImageView"]
 - !private ["PSo21UIAppearanceContainer", "rightAnchor"]
-- ["PSo21UIAppearanceContainer", "setupNameAndProfileImage"]
+- !private ["PSo21UIAppearanceContainer", "setupNameAndProfileImage"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
-- ["PSo21UIAppearanceContainer", "timeLabel"]
+- !private ["PSo21UIAppearanceContainer", "timeLabel"]
 - !private ["PSo21UIAppearanceContainer", "topAnchor"]
 - ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo21UIAppearanceContainer", "widthAnchor"]
 - ["PSo21UIAppearanceContainer", ""]
-- ["CSo7UIColor", "deinit"]
 - ["CSo7UIColor", "lightGray"]
 - ["PSo30UIContentSizeCategoryAdjusting", "font"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "heightAnchor"]
@@ -743,16 +683,16 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "imageView"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "layer"]
-- ["PSo17UICoordinateSpace", "layoutSubviews"]
+- !private ["PSo17UICoordinateSpace", "layoutSubviews"]
 - !private ["PSo17UICoordinateSpace", "leftAnchor"]
-- ["PSo17UICoordinateSpace", "message"]
-- ["PSo17UICoordinateSpace", "profileImageView"]
+- !private ["PSo17UICoordinateSpace", "message"]
+- !private ["PSo17UICoordinateSpace", "profileImageView"]
 - !private ["PSo17UICoordinateSpace", "rightAnchor"]
-- ["PSo17UICoordinateSpace", "setupNameAndProfileImage"]
+- !private ["PSo17UICoordinateSpace", "setupNameAndProfileImage"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
-- ["PSo17UICoordinateSpace", "timeLabel"]
+- !private ["PSo17UICoordinateSpace", "timeLabel"]
 - !private ["PSo17UICoordinateSpace", "topAnchor"]
 - ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo17UICoordinateSpace", "widthAnchor"]
@@ -775,16 +715,16 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "imageView"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "layer"]
-- ["PSo13UIDynamicItem", "layoutSubviews"]
+- !private ["PSo13UIDynamicItem", "layoutSubviews"]
 - !private ["PSo13UIDynamicItem", "leftAnchor"]
-- ["PSo13UIDynamicItem", "message"]
-- ["PSo13UIDynamicItem", "profileImageView"]
+- !private ["PSo13UIDynamicItem", "message"]
+- !private ["PSo13UIDynamicItem", "profileImageView"]
 - !private ["PSo13UIDynamicItem", "rightAnchor"]
-- ["PSo13UIDynamicItem", "setupNameAndProfileImage"]
+- !private ["PSo13UIDynamicItem", "setupNameAndProfileImage"]
 - !private ["PSo13UIDynamicItem", "text"]
 - ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
-- ["PSo13UIDynamicItem", "timeLabel"]
+- !private ["PSo13UIDynamicItem", "timeLabel"]
 - !private ["PSo13UIDynamicItem", "topAnchor"]
 - ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo13UIDynamicItem", "widthAnchor"]
@@ -807,16 +747,16 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "layer"]
-- ["PSo18UIFocusEnvironment", "layoutSubviews"]
+- !private ["PSo18UIFocusEnvironment", "layoutSubviews"]
 - !private ["PSo18UIFocusEnvironment", "leftAnchor"]
-- ["PSo18UIFocusEnvironment", "message"]
-- ["PSo18UIFocusEnvironment", "profileImageView"]
+- !private ["PSo18UIFocusEnvironment", "message"]
+- !private ["PSo18UIFocusEnvironment", "profileImageView"]
 - !private ["PSo18UIFocusEnvironment", "rightAnchor"]
-- ["PSo18UIFocusEnvironment", "setupNameAndProfileImage"]
+- !private ["PSo18UIFocusEnvironment", "setupNameAndProfileImage"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
-- ["PSo18UIFocusEnvironment", "timeLabel"]
+- !private ["PSo18UIFocusEnvironment", "timeLabel"]
 - !private ["PSo18UIFocusEnvironment", "topAnchor"]
 - ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo18UIFocusEnvironment", "widthAnchor"]
@@ -839,21 +779,20 @@ depends-member:
 - !private ["PSo11UIFocusItem", "imageView"]
 - ["PSo11UIFocusItem", "init"]
 - ["PSo11UIFocusItem", "layer"]
-- ["PSo11UIFocusItem", "layoutSubviews"]
+- !private ["PSo11UIFocusItem", "layoutSubviews"]
 - !private ["PSo11UIFocusItem", "leftAnchor"]
-- ["PSo11UIFocusItem", "message"]
-- ["PSo11UIFocusItem", "profileImageView"]
+- !private ["PSo11UIFocusItem", "message"]
+- !private ["PSo11UIFocusItem", "profileImageView"]
 - !private ["PSo11UIFocusItem", "rightAnchor"]
-- ["PSo11UIFocusItem", "setupNameAndProfileImage"]
+- !private ["PSo11UIFocusItem", "setupNameAndProfileImage"]
 - !private ["PSo11UIFocusItem", "text"]
 - ["PSo11UIFocusItem", "textColor"]
 - !private ["PSo11UIFocusItem", "textLabel"]
-- ["PSo11UIFocusItem", "timeLabel"]
+- !private ["PSo11UIFocusItem", "timeLabel"]
 - !private ["PSo11UIFocusItem", "topAnchor"]
 - ["PSo11UIFocusItem", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo11UIFocusItem", "widthAnchor"]
 - ["PSo11UIFocusItem", ""]
-- ["CSo6UIFont", "deinit"]
 - ["CSo6UIFont", "systemFont"]
 - !private ["PSo27UIGestureRecognizerDelegate", "DateFormatter"]
 - !private ["PSo27UIGestureRecognizerDelegate", "FIRDatabase"]
@@ -868,20 +807,19 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "detailTextLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "fatalError"]
 - !private ["PSo27UIGestureRecognizerDelegate", "imageView"]
-- ["PSo27UIGestureRecognizerDelegate", "init"]
-- ["PSo27UIGestureRecognizerDelegate", "layoutSubviews"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "layoutSubviews"]
 - !private ["PSo27UIGestureRecognizerDelegate", "leftAnchor"]
-- ["PSo27UIGestureRecognizerDelegate", "message"]
-- ["PSo27UIGestureRecognizerDelegate", "profileImageView"]
+- !private ["PSo27UIGestureRecognizerDelegate", "message"]
+- !private ["PSo27UIGestureRecognizerDelegate", "profileImageView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "rightAnchor"]
-- ["PSo27UIGestureRecognizerDelegate", "setupNameAndProfileImage"]
+- !private ["PSo27UIGestureRecognizerDelegate", "setupNameAndProfileImage"]
 - !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
-- ["PSo27UIGestureRecognizerDelegate", "timeLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "timeLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "topAnchor"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "centerYAnchor"]
-- ["CSo11UIImageView", "deinit"]
 - !private ["CSo11UIImageView", "heightAnchor"]
 - !private ["CSo11UIImageView", "image"]
 - ["CSo11UIImageView", "init"]
@@ -889,7 +827,6 @@ depends-member:
 - !private ["CSo11UIImageView", "leftAnchor"]
 - ["CSo11UIImageView", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["CSo11UIImageView", "widthAnchor"]
-- ["CSo7UILabel", "deinit"]
 - ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "heightAnchor"]
 - ["CSo7UILabel", "init"]
@@ -954,16 +891,16 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "imageView"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "layer"]
-- ["PSo30UIResponderStandardEditActions", "layoutSubviews"]
+- !private ["PSo30UIResponderStandardEditActions", "layoutSubviews"]
 - !private ["PSo30UIResponderStandardEditActions", "leftAnchor"]
-- ["PSo30UIResponderStandardEditActions", "message"]
-- ["PSo30UIResponderStandardEditActions", "profileImageView"]
+- !private ["PSo30UIResponderStandardEditActions", "message"]
+- !private ["PSo30UIResponderStandardEditActions", "profileImageView"]
 - !private ["PSo30UIResponderStandardEditActions", "rightAnchor"]
-- ["PSo30UIResponderStandardEditActions", "setupNameAndProfileImage"]
+- !private ["PSo30UIResponderStandardEditActions", "setupNameAndProfileImage"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "textColor"]
 - !private ["PSo30UIResponderStandardEditActions", "textLabel"]
-- ["PSo30UIResponderStandardEditActions", "timeLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "timeLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "topAnchor"]
 - ["PSo30UIResponderStandardEditActions", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo30UIResponderStandardEditActions", "widthAnchor"]
@@ -984,7 +921,6 @@ depends-member:
 - ["CSo15UITableViewCell", "UITableViewCellStyle"]
 - !private ["CSo15UITableViewCell", "addSubview"]
 - !private ["CSo15UITableViewCell", "centerYAnchor"]
-- ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "detailTextLabel"]
 - !private ["CSo15UITableViewCell", "fatalError"]
 - !private ["CSo15UITableViewCell", "imageView"]
@@ -999,7 +935,6 @@ depends-member:
 - ["CSo15UITableViewCell", "timeLabel"]
 - !private ["CSo15UITableViewCell", "topAnchor"]
 - ["CSo15UITableViewCell", ""]
-- ["OSC20UITableViewCellStyle", "deinit"]
 - !private ["OSC20UITableViewCellStyle", "subtitle"]
 - !private ["PSo18UITraitEnvironment", "DateFormatter"]
 - !private ["PSo18UITraitEnvironment", "FIRDatabase"]
@@ -1019,16 +954,16 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "layer"]
-- ["PSo18UITraitEnvironment", "layoutSubviews"]
+- !private ["PSo18UITraitEnvironment", "layoutSubviews"]
 - !private ["PSo18UITraitEnvironment", "leftAnchor"]
-- ["PSo18UITraitEnvironment", "message"]
-- ["PSo18UITraitEnvironment", "profileImageView"]
+- !private ["PSo18UITraitEnvironment", "message"]
+- !private ["PSo18UITraitEnvironment", "profileImageView"]
 - !private ["PSo18UITraitEnvironment", "rightAnchor"]
-- ["PSo18UITraitEnvironment", "setupNameAndProfileImage"]
+- !private ["PSo18UITraitEnvironment", "setupNameAndProfileImage"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
-- ["PSo18UITraitEnvironment", "timeLabel"]
+- !private ["PSo18UITraitEnvironment", "timeLabel"]
 - !private ["PSo18UITraitEnvironment", "topAnchor"]
 - ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo18UITraitEnvironment", "widthAnchor"]
@@ -1070,7 +1005,6 @@ depends-member:
 - !private ["CSo6UIView", "topAnchor"]
 - ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["CSo6UIView", "widthAnchor"]
-- ["Su", "deinit"]
 - !private ["C5Ketch8UserCell", "AnyObject"]
 - !private ["C5Ketch8UserCell", "Date"]
 - !private ["C5Ketch8UserCell", "DateFormatter"]
@@ -1119,16 +1053,16 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageView"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "layoutSubviews"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layoutSubviews"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "leftAnchor"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "message"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "profileImageView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "message"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "profileImageView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rightAnchor"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setupNameAndProfileImage"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setupNameAndProfileImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textLabel"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "timeLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "timeLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "topAnchor"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "widthAnchor"]
@@ -1139,6 +1073,7 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - ["Ps26_ExpressibleByColorLiteral", "lightGray"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "doubleValue"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "DateFormatter"]
@@ -1167,40 +1102,38 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isActive"]
 - ["Ps9_Hashable", "layer"]
-- ["Ps9_Hashable", "layoutSubviews"]
+- !private ["Ps9_Hashable", "layoutSubviews"]
 - !private ["Ps9_Hashable", "leftAnchor"]
 - ["Ps9_Hashable", "lightGray"]
 - ["Ps9_Hashable", "masksToBounds"]
-- ["Ps9_Hashable", "message"]
+- !private ["Ps9_Hashable", "message"]
 - !private ["Ps9_Hashable", "observeSingleEvent"]
-- ["Ps9_Hashable", "profileImageView"]
+- !private ["Ps9_Hashable", "profileImageView"]
 - !private ["Ps9_Hashable", "reference"]
 - !private ["Ps9_Hashable", "rightAnchor"]
-- ["Ps9_Hashable", "setupNameAndProfileImage"]
+- !private ["Ps9_Hashable", "setupNameAndProfileImage"]
 - !private ["Ps9_Hashable", "string"]
 - !private ["Ps9_Hashable", "subtitle"]
 - ["Ps9_Hashable", "systemFont"]
 - !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "textColor"]
 - !private ["Ps9_Hashable", "textLabel"]
-- ["Ps9_Hashable", "timeLabel"]
+- !private ["Ps9_Hashable", "timeLabel"]
 - !private ["Ps9_Hashable", "timestamp"]
 - !private ["Ps9_Hashable", "topAnchor"]
 - ["Ps9_Hashable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps9_Hashable", "value"]
 - !private ["Ps9_Hashable", "widthAnchor"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sb"
 - "CSo7CALayer"
 - "PSo15CALayerDelegate"
 - "PSo13CAMediaTiming"
-- "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
@@ -1208,17 +1141,14 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "V10Foundation4Date"
-- "CSo13DateFormatter"
+- !private "CSo13DateFormatter"
 - !private "Vs10Dictionary"
-- "Sd"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "OSC16FIRDataEventType"
@@ -1228,22 +1158,17 @@ depends-nominal:
 - !private "CSo20FIRDatabaseReference"
 - !private "CSo9Formatter"
 - "Ps8Hashable"
-- !private "SQ"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "C5Ketch7Message"
 - !private "Ps10MirrorPath"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
-- "CSo6NSDate"
+- !private "CSo6NSDate"
 - !private "CSo14NSLayoutAnchor"
-- "CSo18NSLayoutConstraint"
-- "CSo17NSLayoutDimension"
-- "CSo19NSLayoutXAxisAnchor"
-- "CSo19NSLayoutYAxisAnchor"
+- !private "CSo18NSLayoutConstraint"
+- !private "CSo17NSLayoutDimension"
+- !private "CSo19NSLayoutXAxisAnchor"
+- !private "CSo19NSLayoutYAxisAnchor"
 - !private "PSo16NSMutableCopying"
 - !private "CSo8NSNumber"
 - "CSo8NSObject"
@@ -1251,13 +1176,10 @@ depends-nominal:
 - "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "CSo7NSValue"
-- "Os5Never"
-- "Sq"
 - !private "Ps16RawRepresentable"
 - !private "Ps8Sequence"
-- !private "Vs5Slice"
-- "Vs12StaticString"
-- "SS"
+- !private "Vs12StaticString"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - "PSo29UIAccessibilityIdentification"
@@ -1277,10 +1199,9 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "CSo15UITableViewCell"
-- "OSC20UITableViewCellStyle"
+- !private "OSC20UITableViewCellStyle"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- "Su"
 - "C5Ketch8UserCell"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
@@ -1289,8 +1210,11 @@ depends-nominal:
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - "Ps26_ExpressibleByColorLiteral"
 - !private "Ps26_ExpressibleByImageLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
 - !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
@@ -1299,10 +1223,17 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"

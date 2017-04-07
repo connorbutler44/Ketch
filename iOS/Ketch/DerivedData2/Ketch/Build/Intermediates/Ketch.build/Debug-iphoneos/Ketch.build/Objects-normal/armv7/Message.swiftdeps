@@ -6,53 +6,43 @@ provides-nominal:
 provides-member:
 - ["C5Ketch7Message", ""]
 provides-dynamic-lookup:
-- "timestamp"
 - "chatPartnerID"
-- "text"
 - "fromID"
+- "text"
+- "timestamp"
 - "toID"
 depends-top-level:
+- !private "=="
+- !private "FIRAuth"
 - "Message"
 - "NSNumber"
-- !private "FIRAuth"
+- "NSObject"
 - "String"
 - "TernaryPrecedence"
-- "NSObject"
-- !private "=="
 depends-member:
 - !private ["Ps9AnyObject", "FIRAuth"]
 - !private ["Ps9AnyObject", "auth"]
-- ["Ps9AnyObject", "chatPartnerID"]
 - !private ["Ps9AnyObject", "currentUser"]
-- ["Ps9AnyObject", "fromID"]
+- !private ["Ps9AnyObject", "fromID"]
 - !private ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "text"]
-- ["Ps9AnyObject", "timestamp"]
-- ["Ps9AnyObject", "toID"]
+- !private ["Ps9AnyObject", "toID"]
 - !private ["Ps9AnyObject", "uid"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "FIRAuth"]
 - !private ["Ps7CVarArg", "auth"]
-- ["Ps7CVarArg", "chatPartnerID"]
 - !private ["Ps7CVarArg", "currentUser"]
-- ["Ps7CVarArg", "fromID"]
+- !private ["Ps7CVarArg", "fromID"]
 - !private ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "text"]
-- ["Ps7CVarArg", "timestamp"]
-- ["Ps7CVarArg", "toID"]
+- !private ["Ps7CVarArg", "toID"]
 - !private ["Ps7CVarArg", "uid"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
 - !private ["Ps28CustomDebugStringConvertible", "auth"]
-- ["Ps28CustomDebugStringConvertible", "chatPartnerID"]
 - !private ["Ps28CustomDebugStringConvertible", "currentUser"]
-- ["Ps28CustomDebugStringConvertible", "fromID"]
+- !private ["Ps28CustomDebugStringConvertible", "fromID"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "text"]
-- ["Ps28CustomDebugStringConvertible", "timestamp"]
-- ["Ps28CustomDebugStringConvertible", "toID"]
+- !private ["Ps28CustomDebugStringConvertible", "toID"]
 - !private ["Ps28CustomDebugStringConvertible", "uid"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -60,44 +50,33 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "FIRAuth"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "auth"]
-- ["Ps23CustomStringConvertible", "chatPartnerID"]
 - !private ["Ps23CustomStringConvertible", "currentUser"]
-- ["Ps23CustomStringConvertible", "fromID"]
+- !private ["Ps23CustomStringConvertible", "fromID"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "text"]
-- ["Ps23CustomStringConvertible", "timestamp"]
-- ["Ps23CustomStringConvertible", "toID"]
+- !private ["Ps23CustomStringConvertible", "toID"]
 - !private ["Ps23CustomStringConvertible", "uid"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "FIRAuth"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "auth"]
-- ["Ps9Equatable", "chatPartnerID"]
 - !private ["Ps9Equatable", "currentUser"]
-- ["Ps9Equatable", "fromID"]
+- !private ["Ps9Equatable", "fromID"]
 - !private ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "text"]
-- ["Ps9Equatable", "timestamp"]
-- ["Ps9Equatable", "toID"]
+- !private ["Ps9Equatable", "toID"]
 - !private ["Ps9Equatable", "uid"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["CSo7FIRAuth", "auth"]
 - !private ["CSo7FIRAuth", "currentUser"]
-- ["CSo7FIRAuth", "deinit"]
-- ["CSo7FIRUser", "deinit"]
 - !private ["CSo7FIRUser", "uid"]
 - !private ["PSo11FIRUserInfo", "uid"]
 - !private ["Ps8Hashable", "FIRAuth"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "auth"]
-- ["Ps8Hashable", "chatPartnerID"]
 - !private ["Ps8Hashable", "currentUser"]
-- ["Ps8Hashable", "fromID"]
+- !private ["Ps8Hashable", "fromID"]
 - !private ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "text"]
-- ["Ps8Hashable", "timestamp"]
-- ["Ps8Hashable", "toID"]
+- !private ["Ps8Hashable", "toID"]
 - !private ["Ps8Hashable", "uid"]
 - ["Ps8Hashable", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
@@ -117,7 +96,6 @@ depends-member:
 - !private ["CSo8NSObject", "auth"]
 - ["CSo8NSObject", "chatPartnerID"]
 - !private ["CSo8NSObject", "currentUser"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "fromID"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "text"]
@@ -127,34 +105,26 @@ depends-member:
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "FIRAuth"]
 - !private ["PSo16NSObjectProtocol", "auth"]
-- ["PSo16NSObjectProtocol", "chatPartnerID"]
 - !private ["PSo16NSObjectProtocol", "currentUser"]
-- ["PSo16NSObjectProtocol", "fromID"]
+- !private ["PSo16NSObjectProtocol", "fromID"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "text"]
-- ["PSo16NSObjectProtocol", "timestamp"]
-- ["PSo16NSObjectProtocol", "toID"]
+- !private ["PSo16NSObjectProtocol", "toID"]
 - !private ["PSo16NSObjectProtocol", "uid"]
 - ["PSo16NSObjectProtocol", ""]
-- ["Sq", "deinit"]
-- ["SS", "deinit"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "FIRAuth"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "auth"]
-- ["Ps9_Hashable", "chatPartnerID"]
 - !private ["Ps9_Hashable", "currentUser"]
-- ["Ps9_Hashable", "fromID"]
+- !private ["Ps9_Hashable", "fromID"]
 - !private ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "text"]
-- ["Ps9_Hashable", "timestamp"]
-- ["Ps9_Hashable", "toID"]
+- !private ["Ps9_Hashable", "toID"]
 - !private ["Ps9_Hashable", "uid"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sb"
+- !private "Sb"
 - "Ps7CVarArg"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
@@ -162,16 +132,14 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- "CSo7FIRAuth"
-- "CSo7FIRUser"
+- !private "CSo7FIRAuth"
+- !private "CSo7FIRUser"
 - !private "PSo11FIRUserInfo"
 - "Ps8Hashable"
 - !private "Ps25LosslessStringConvertible"
 - "C5Ketch7Message"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "Sq"
-- "SS"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -182,10 +150,17 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"

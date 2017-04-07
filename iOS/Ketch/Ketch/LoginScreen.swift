@@ -100,7 +100,7 @@ class LoginScreen: UIViewController, FBSDKLoginButtonDelegate {
             let ref = FIRDatabase.database().reference(fromURL: "https://ketch-b8d8a.firebaseio.com/")
             //values to be put into database
             let usersReference = ref.child("users").child(uid)
-            let values = ["name": user?.displayName, "email": user?.email]
+            let values = ["name": user?.displayName, "email": user?.email, "zipcode": ""]
             //puts user into database
             usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
                 if err != nil {
