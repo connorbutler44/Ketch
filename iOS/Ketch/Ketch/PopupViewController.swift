@@ -17,7 +17,7 @@ class PopupViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         self.showAnimate()
-
+        self.zipcodeID.keyboardType = UIKeyboardType.numberPad;
         // Do any additional setup after loading the view.
     }
 

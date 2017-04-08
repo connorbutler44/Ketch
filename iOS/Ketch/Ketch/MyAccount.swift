@@ -32,6 +32,7 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
             self.checkButton.isHidden = true
             self.editImage.isHidden = false
             textFieldDeactive()
+            self.zipLabel.keyboardType = UIKeyboardType.numberPad
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
             
             view.addGestureRecognizer(tap)

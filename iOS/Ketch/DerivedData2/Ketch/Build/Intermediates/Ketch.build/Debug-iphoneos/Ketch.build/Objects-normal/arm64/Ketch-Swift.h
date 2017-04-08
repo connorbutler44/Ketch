@@ -445,6 +445,16 @@ SWIFT_CLASS("_TtC5Ketch8UserCell")
 @end
 
 
+SWIFT_CLASS("_TtC5Ketch20UserRatingController")
+@interface UserRatingController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)dismissKeyboard;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC5Ketch12splashScreen")
 @interface splashScreen : UIViewController
 - (void)viewDidLoad;
