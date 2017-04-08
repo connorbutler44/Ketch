@@ -97,8 +97,9 @@ class NewItem: UIViewController {
     }
     
     @IBAction func cancelPost(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "Dashboard")
-        self.present(controller, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let controller = storyboard.instantiateViewController(withIdentifier: "Dashboard")
+        //self.present(controller, animated: true, completion: nil)
     }
 }

@@ -1,10 +1,10 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
 options: "be522f15b5ee802342f11eb09a05885e"
-build_time: [544924493, 307084000]
+build_time: [544924588, 375815000]
 inputs:
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/user.swift": [544919998, 0]
-  "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/NewItemController.swift": [544924305, 0]
-  "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/SellingPostTableController.swift": [544924488, 0]
+  "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/NewItemController.swift": [544924588, 0]
+  "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/SellingPostTableController.swift": [544924538, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/CollectionViewCell.swift": [543659640, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/Message.swift": [543699937, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/AppDelegate.swift": [544861954, 0]

@@ -26,7 +26,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zd-sc-FQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="331.48425787106447"/>
+            <point key="canvasLocation" x="1833" y="331"/>
         </scene>
         <!--Popup View Controller-->
         <scene sceneID="6mw-6B-2Z7">
@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1k-Of-Kht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2868" y="384.55772113943033"/>
+            <point key="canvasLocation" x="3561" y="-349"/>
         </scene>
         <!--My Account-->
         <scene sceneID="RbR-Ds-1DH">
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NN-tD-hVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2.3999999999999999" y="791.15442278860576"/>
+            <point key="canvasLocation" x="-1" y="777"/>
         </scene>
         <!--Selling Post-->
         <scene sceneID="QJ8-yR-umx">
@@ -330,14 +330,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="MUR-5S-sZR" customClass="CollectionViewCell" customModule="Ketch" customModuleProvider="target">
-                                        <rect key="frame" x="37" y="0.0" width="300" height="250"/>
+                                        <rect key="frame" x="37" y="0.0" width="301" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="301" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3Z-mq-Rpf">
-                                                    <rect key="frame" x="-1" y="0.0" width="301" height="250"/>
+                                                    <rect key="frame" x="-1" y="0.0" width="302" height="250"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDJ-0q-GXO">
@@ -374,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wA2-gj-TXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3626.4000000000001" y="-371.06446776611699"/>
+            <point key="canvasLocation" x="1833" y="-349"/>
         </scene>
         <!--Individual Item View Controller-->
         <scene sceneID="19d-5J-MfN">
@@ -401,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4s-5P-Y2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4468" y="-371.06446776611699"/>
+            <point key="canvasLocation" x="2686" y="-349"/>
         </scene>
         <!--AddItem-->
         <scene sceneID="txd-d3-xAw">
@@ -428,7 +428,6 @@
                                         </state>
                                         <connections>
                                             <action selector="postAndReturn:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="GeR-Et-prz"/>
-                                            <action selector="postItem:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="uYn-Qy-yDN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -627,7 +626,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M97-ga-7Ji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2687.1999999999998" y="-371.06446776611699"/>
+            <point key="canvasLocation" x="897" y="-349"/>
         </scene>
         <!--Chat-->
         <scene sceneID="fJc-vh-EkG">
@@ -646,7 +645,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaO-7P-gLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.79999999999995" y="331.48425787106447"/>
+            <point key="canvasLocation" x="897" y="331"/>
         </scene>
         <!--Post-->
         <scene sceneID="drY-2X-MzP">
