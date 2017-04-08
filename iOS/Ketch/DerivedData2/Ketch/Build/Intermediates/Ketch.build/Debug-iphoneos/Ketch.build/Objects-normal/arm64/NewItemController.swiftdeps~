@@ -16,7 +16,6 @@ provides-dynamic-lookup:
 - "postAndReturn"
 - "postButton"
 - "uploadImage"
-- "uploadImageAction"
 - "uuid"
 - "viewDidLoad"
 depends-top-level:
@@ -396,7 +395,6 @@ depends-member:
 - !private ["CSo8NSObject", "uid"]
 - !private ["CSo8NSObject", "updateChildValues"]
 - ["CSo8NSObject", "uploadImage"]
-- ["CSo8NSObject", "uploadImageAction"]
 - ["CSo8NSObject", "uuid"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -465,7 +463,6 @@ depends-member:
 - !private ["C5Ketch7NewItem", "present"]
 - !private ["C5Ketch7NewItem", "print"]
 - ["C5Ketch7NewItem", "uploadImage"]
-- ["C5Ketch7NewItem", "uploadImageAction"]
 - ["C5Ketch7NewItem", "uuid"]
 - !private ["C5Ketch7NewItem", "view"]
 - ["C5Ketch7NewItem", "viewDidLoad"]
@@ -607,7 +604,6 @@ depends-member:
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "uploadImage"]
-- ["CSo11UIResponder", "uploadImageAction"]
 - ["CSo11UIResponder", "uuid"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
@@ -725,7 +721,6 @@ depends-member:
 - !private ["CSo16UIViewController", "present"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "uploadImage"]
-- ["CSo16UIViewController", "uploadImageAction"]
 - ["CSo16UIViewController", "uuid"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -992,4 +987,4 @@ depends-external:
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "cef59f2b9777d8baef385f70c384afa0"
+interface-hash: "5c49f2165b0e318d1d9a4bea5ae03fb9"

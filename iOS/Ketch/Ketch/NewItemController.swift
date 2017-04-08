@@ -13,15 +13,15 @@ import FirebaseStorage
 
 class NewItem: UIViewController {
     
-    @IBOutlet var postButton: UIButton!
+    
     @IBOutlet var itemTitle: UITextField!
     @IBOutlet var itemDesc: UITextField!
     @IBOutlet var itemPrice: UITextField!
     @IBOutlet var itemZip: UITextField!
+    @IBOutlet weak var postButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var uploadImage: UIButton!
     
-    @IBOutlet var uploadImage: UIButton!
-    
-    @IBOutlet var cancelButton: UIButton!
     
     let uuid = UUID().uuidString
     
@@ -29,18 +29,16 @@ class NewItem: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
-        
         view.addGestureRecognizer(tap)
         
     }
     
-    @IBAction func postAndReturn(_ sender: UIButton) {
+    
+    
+    @IBAction func postAndReturn(_ sender: Any) {
         let ref = FIRDatabase.database().reference(fromURL: "https://ketch-b8d8a.firebaseio.com/")
         
-
+        
         let iName = itemTitle.text!
         let iDesc = itemDesc.text!
         let iPrice = itemPrice.text!
@@ -51,7 +49,7 @@ class NewItem: UIViewController {
         let userItemReference = ref.child("user-item").child(uid!)
         
         let values = ["price": iPrice, "seller": uid, "sold": false, "title": iName, "zCode": iZip, "zDesc": iDesc] as [String : Any]
-
+        
         userItemReference.updateChildValues([uuid:1])
         
         itemReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
@@ -62,23 +60,22 @@ class NewItem: UIViewController {
             
             print("Item saved successfully into Firebase")
             
-    
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "Dashboard")
-        self.present(controller, animated: true, completion: nil)
+            
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "Dashboard")
+            self.present(controller, animated: true, completion: nil)
         })
-        
-    
-    
     }
+    
     
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
     
-    @IBAction func uploadImageAction(_ sender: UIButton) {
+    
+    @IBAction func uploadImage(_ sender: Any) {
         let localFile = URL(string: "path/to/image")!
         let storageRef = FIRStorage.storage().reference(forURL: "gs://ketch-b8d8a.appspot.com/")
         let pictureRef = storageRef.child(uuid)
@@ -92,18 +89,16 @@ class NewItem: UIViewController {
             }
         }
         
-        
-        
     }
+    
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         itemZip.resignFirstResponder()
     }
     
-    @IBAction func cancelPost(_ sender: UIButton) {
-        _ = navigationController?.popViewController(animated: true)
-        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //let controller = storyboard.instantiateViewController(withIdentifier: "Dashboard")
-        //self.present(controller, animated: true, completion: nil)
+    @IBAction func cancelPost(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "Dashboard")
+        self.present(controller, animated: true, completion: nil)
     }
 }

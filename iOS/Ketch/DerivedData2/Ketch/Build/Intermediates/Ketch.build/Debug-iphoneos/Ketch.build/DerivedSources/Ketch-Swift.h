@@ -358,20 +358,20 @@ SWIFT_CLASS("_TtC5Ketch9MyAccount")
 
 SWIFT_CLASS("_TtC5Ketch7NewItem")
 @interface NewItem : UIViewController
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified postButton;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemTitle;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemDesc;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemPrice;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemZip;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified uploadImage;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified cancelButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified postButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified cancelButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified uploadImage;
 @property (nonatomic, readonly, copy) NSString * _Nonnull uuid;
 - (void)viewDidLoad;
-- (IBAction)postAndReturn:(UIButton * _Nonnull)sender;
+- (IBAction)postAndReturn:(id _Nonnull)sender;
 - (void)dismissKeyboard;
-- (IBAction)uploadImageAction:(UIButton * _Nonnull)sender;
+- (IBAction)uploadImage:(id _Nonnull)sender;
 - (IBAction)dismissKeyboard:(UITapGestureRecognizer * _Nonnull)sender;
-- (IBAction)cancelPost:(UIButton * _Nonnull)sender;
+- (IBAction)cancelPost:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
