@@ -30,7 +30,8 @@ class NewItem: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        
+        self.itemPrice.keyboardType = UIKeyboardType.numberPad
+        self.itemZip.keyboardType = UIKeyboardType.numberPad
     }
     
     
@@ -48,7 +49,7 @@ class NewItem: UIViewController {
         let itemReference = ref.child("items").child(uuid)
         let userItemReference = ref.child("user-item").child(uid!)
         
-        let values = ["price": iPrice, "seller": uid, "sold": false, "title": iName, "zCode": iZip, "zDesc": iDesc] as [String : Any]
+        let values = ["price": iPrice, "seller": uid, "title": iName, "zipcode": iZip, "desc": iDesc, "itemID": uuid] as [String : Any]
         
         userItemReference.updateChildValues([uuid:1])
         

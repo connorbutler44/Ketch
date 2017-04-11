@@ -259,6 +259,18 @@ SWIFT_CLASS("_TtC5Ketch4Item")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class Items;
+
+SWIFT_CLASS("_TtC5Ketch8ItemCell")
+@interface ItemCell : UITableViewCell
+@property (nonatomic, strong) Items * _Nullable item;
+- (void)layoutSubviews;
+@property (nonatomic, readonly, strong) UIImageView * _Nonnull profileImageView;
+@property (nonatomic, readonly, strong) UILabel * _Nonnull timeLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC5Ketch18ItemListController")
@@ -273,6 +285,17 @@ SWIFT_CLASS("_TtC5Ketch18ItemListController")
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ketch5Items")
+@interface Items : NSObject
+@property (nonatomic, copy) NSString * _Nullable desc;
+@property (nonatomic, copy) NSString * _Nullable price;
+@property (nonatomic, copy) NSString * _Nullable seller;
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable zipcode;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class FBSDKLoginButton;
@@ -305,7 +328,6 @@ SWIFT_CLASS("_TtC5Ketch7Message")
 
 @class UITableView;
 @class NSTimer;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC5Ketch17MessageController")
 @interface MessageController : UITableViewController
@@ -425,9 +447,19 @@ SWIFT_CLASS("_TtC5Ketch26SellingPostTableController")
 @interface SellingPostTableController : UITableViewController
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified myItems;
 @property (nonatomic, strong) IBOutlet UIBarButtonItem * _Null_unspecified newItemButton;
+@property (nonatomic, readonly, copy) NSString * _Nonnull cellID;
 - (void)viewDidLoad;
 - (IBAction)addNewItem:(UIBarButtonItem * _Nonnull)sender;
+@property (nonatomic, copy) NSArray<Items *> * _Nonnull items;
+@property (nonatomic, copy) NSDictionary<NSString *, Items *> * _Nonnull itemsDictionary;
 - (void)updateMyItems;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
+- (void)handleReloadTable;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)fetchUserAndSetupNavBarTitle;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -441,6 +473,16 @@ SWIFT_CLASS("_TtC5Ketch8UserCell")
 @property (nonatomic, readonly, strong) UIImageView * _Nonnull profileImageView;
 @property (nonatomic, readonly, strong) UILabel * _Nonnull timeLabel;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ketch20UserRatingController")
+@interface UserRatingController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)dismissKeyboard;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

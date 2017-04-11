@@ -29,6 +29,8 @@
 		B988BCA91E6417A70069CF69 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988BCA51E6417A70069CF69 /* FBSDKCoreKit.framework */; };
 		B988BCAA1E6417A70069CF69 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988BCA61E6417A70069CF69 /* FBSDKLoginKit.framework */; };
 		B988BCAB1E6417A70069CF69 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988BCA71E6417A70069CF69 /* FBSDKShareKit.framework */; };
+		B98970DD1E9C694000EDDD23 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98970DC1E9C694000EDDD23 /* Items.swift */; };
+		B98970DF1E9C6B0800EDDD23 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98970DE1E9C6B0800EDDD23 /* ItemCell.swift */; };
 		B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */; };
 		B9B3991A1E57AFB10037AA62 /* IndividualItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */; };
 		B9B909191E69473900FBA550 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B909181E69473900FBA550 /* Dashboard.swift */; };
@@ -98,6 +100,8 @@
 		B988BCA51E6417A70069CF69 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../../FacebookSDKs-iOS-4.19.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		B988BCA61E6417A70069CF69 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../FacebookSDKs-iOS-4.19.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		B988BCA71E6417A70069CF69 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../../FacebookSDKs-iOS-4.19.0/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		B98970DC1E9C694000EDDD23 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		B98970DE1E9C6B0800EDDD23 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualItemViewController.swift; sourceTree = "<group>"; };
 		B9B909181E69473900FBA550 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 			children = (
 				B9311DB11E85155300E97547 /* ChatMessageCell.swift */,
 				B9311DB21E85155300E97547 /* UserCell.swift */,
+				B98970DE1E9C6B0800EDDD23 /* ItemCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -197,7 +202,6 @@
 				B9311DB01E85155300E97547 /* ChatLogController.swift */,
 				B9B909181E69473900FBA550 /* Dashboard.swift */,
 				B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */,
-				1555EBB51E8A26CA001D1C8D /* Item.swift */,
 				B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */,
 				B988BCA11E6412FE0069CF69 /* LoginScreen.swift */,
 				B9CCB1171E6D10D600F87E30 /* MessageController.swift */,
@@ -242,6 +246,8 @@
 			children = (
 				B9311DB31E85155300E97547 /* Message.swift */,
 				B9CCB11D1E6D21F400F87E30 /* user.swift */,
+				1555EBB51E8A26CA001D1C8D /* Item.swift */,
+				B98970DC1E9C694000EDDD23 /* Items.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -564,7 +570,9 @@
 				B9CCB1181E6D10D600F87E30 /* MessageController.swift in Sources */,
 				B9B3991A1E57AFB10037AA62 /* IndividualItemViewController.swift in Sources */,
 				B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */,
+				B98970DF1E9C6B0800EDDD23 /* ItemCell.swift in Sources */,
 				1555EBB61E8A26CA001D1C8D /* Item.swift in Sources */,
+				B98970DD1E9C694000EDDD23 /* Items.swift in Sources */,
 				B9CAB8CC1E97006B00F93A07 /* PopupViewController.swift in Sources */,
 				B9311DB51E85155300E97547 /* ChatLogController.swift in Sources */,
 				B988BCA21E6412FE0069CF69 /* LoginScreen.swift in Sources */,

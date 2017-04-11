@@ -9,10 +9,20 @@
 //  This view controller shows an individual item from the ItemListController with it's corresponding data from Firebase
 
 import UIKit
+import Firebase
 
-class IndividualItemViewController: UIViewController {
+class IndividualItemViewController: UIViewController{
 
+    @IBOutlet weak var itemTitle: UILabel!
+    @IBOutlet weak var itemPrice: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var itemDesc: UITextView!
+    
+    var item: Items? {
+        didSet{
+            itemTitle.text = item?.title
+        }
+    }
     
     var image = UIImage()
     
