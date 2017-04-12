@@ -225,27 +225,39 @@ SWIFT_CLASS("_TtC5Ketch18CollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC5Ketch9Dashboard")
 @interface Dashboard : UITabBarController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate>
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)checkIfUserHasZipcode;
-- (void)respondToSwipeGestureWithGesture:(UIGestureRecognizer * _Nonnull)gesture;
 - (void)setUserZipcode;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class Items;
 @class UIImage;
 
 SWIFT_CLASS("_TtC5Ketch28IndividualItemViewController")
-@interface IndividualItemViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
+@interface IndividualItemViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemTitle;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemPrice;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified itemDesc;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descField;
+@property (nonatomic, strong) Items * _Nullable item;
 @property (nonatomic, strong) UIImage * _Nonnull image;
 - (void)viewDidLoad;
+- (void)isFavorited;
+- (void)offers;
+- (void)unfavorite;
+- (void)favorite;
+- (void)setupInputComponents;
+@property (nonatomic, strong) UIImageView * _Nullable bgImage;
+- (void)messageSeller;
+- (void)showChatControllerForUserWithUser:(user * _Nonnull)user;
 - (void)didReceiveMemoryWarning;
+- (void)makeOffer;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -259,7 +271,6 @@ SWIFT_CLASS("_TtC5Ketch4Item")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class Items;
 
 SWIFT_CLASS("_TtC5Ketch8ItemCell")
 @interface ItemCell : UITableViewCell
@@ -291,6 +302,7 @@ SWIFT_CLASS("_TtC5Ketch18ItemListController")
 SWIFT_CLASS("_TtC5Ketch5Items")
 @interface Items : NSObject
 @property (nonatomic, copy) NSString * _Nullable desc;
+@property (nonatomic, copy) NSString * _Nullable itemID;
 @property (nonatomic, copy) NSString * _Nullable price;
 @property (nonatomic, copy) NSString * _Nullable seller;
 @property (nonatomic, copy) NSString * _Nullable title;
@@ -354,6 +366,7 @@ SWIFT_CLASS("_TtC5Ketch17MessageController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC5Ketch9MyAccount")
 @interface MyAccount : UIViewController <FBSDKLoginButtonDelegate>
@@ -459,6 +472,7 @@ SWIFT_CLASS("_TtC5Ketch26SellingPostTableController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)showItemControllerForUserWithItem:(Items * _Nonnull)item;
 - (void)fetchUserAndSetupNavBarTitle;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

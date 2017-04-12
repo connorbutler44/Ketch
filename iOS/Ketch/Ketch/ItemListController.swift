@@ -19,7 +19,12 @@ class ItemListController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.white
+        ]
+        //self.tabBarController?.tabBar.barTintColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
 

@@ -121,7 +121,6 @@ class LoginScreen: UIViewController, FBSDKLoginButtonDelegate {
                 print("Failed to start graph request:", err ?? "")
                 return
             }
-            print(result ?? "MEOW")
         }
     }
     

@@ -15,7 +15,9 @@ class ItemCell: UITableViewCell{
             imageView?.image = UIImage(named: "money")
             setupNameAndProfileImage()
             detailTextLabel?.text = item?.desc
-            timeLabel.text = item?.price
+            
+            let str = "$" + (item?.price!)!
+            timeLabel.text = str
             
         }
     }
@@ -38,6 +40,7 @@ class ItemCell: UITableViewCell{
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 24)
         label.textColor = UIColor.lightGray
+        label.textAlignment = NSTextAlignment.right
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -52,10 +55,12 @@ class ItemCell: UITableViewCell{
         profileImageView.widthAnchor.constraint(equalToConstant: 48).isActive = true
         profileImageView.heightAnchor.constraint(equalToConstant: 48).isActive = true
         
-        timeLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        timeLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -18).isActive = true
         timeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 18).isActive = true
         timeLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
         timeLabel.heightAnchor.constraint(equalTo: (textLabel?.heightAnchor)!).isActive = true
+        
+
     }
     required init?(coder aDecoder: NSCoder){
         fatalError("init(coder:) has not been implemented")

@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ic_attach_money_3x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ic_attach_money_18pt_3x.png",
       "scale" : "2x"
     },
     {

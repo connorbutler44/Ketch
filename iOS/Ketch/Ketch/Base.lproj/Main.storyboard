@@ -393,7 +393,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item List Controller-->
+        <!--Dashboard-->
         <scene sceneID="EzF-S5-zmx">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="zCX-nE-lDY" customClass="ItemListController" customModule="Ketch" customModuleProvider="target" sceneMemberID="viewController">
@@ -451,9 +451,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bFC-mU-MpW">
-                        <nil key="title"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Dashboard" id="bFC-mU-MpW"/>
                     <connections>
                         <outlet property="collectionView" destination="A21-ld-DZw" id="ffF-HE-Wop"/>
                         <segue destination="woz-4v-l8j" kind="show" identifier="showImage" id="XSt-4z-tVf"/>
@@ -768,6 +766,7 @@
                         <color key="backgroundColor" red="0.89939624070000002" green="0.89761847260000005" blue="0.93072086570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="descField" destination="Ce1-6S-GSy" id="XzO-34-Un9"/>
                         <outlet property="itemDesc" destination="Ce1-6S-GSy" id="ZtD-2m-2gR"/>
                         <outlet property="itemPrice" destination="IfK-cp-ExW" id="KxZ-NL-7LL"/>
                         <outlet property="itemTitle" destination="SdP-Oe-Ln3" id="daY-7n-Mry"/>

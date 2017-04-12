@@ -19,6 +19,11 @@ class SellingPostTableController: UITableViewController {
         super.viewDidLoad()
         tableView.register(ItemCell.self, forCellReuseIdentifier: cellID)
         updateMyItems()
+        navigationController?.navigationBar.barTintColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.white
+        ]
         
     }
     
@@ -75,10 +80,13 @@ class SellingPostTableController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = items[indexPath.row]
-        let itemID = item.itemID
-        let ref = FIRDatabase.database().reference().child("items").child(itemID!)
+        guard let itemID = item.itemID else {
+            return
+        }
+        let ref = FIRDatabase.database().reference().child("items").child(itemID)
+        
         ref.observe(.value, with: { (snapshot) in
-            guard let dictionary = snapshot.value as? [String: AnyObject] else {
+            guard let dictionary = snapshot.value as? [String: AnyObject?] else {
                 return
             }
             let itemm = Items()
@@ -98,7 +106,7 @@ class SellingPostTableController: UITableViewController {
         return cell
     }
     
-    func showItemControllerForUser(item: Items){
+    func showItemControllerForUser(item: Items){        
         let itemController = IndividualItemViewController()
         itemController.item = item
         navigationController?.pushViewController(itemController, animated: true)

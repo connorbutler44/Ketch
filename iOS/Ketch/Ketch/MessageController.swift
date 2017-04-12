@@ -19,11 +19,17 @@ class MessageController: UITableViewController {
         
         //Makes sure the user is logged in, if not return to the LoginScreen
         checkIfUserIsLoggedIn()
-        let image = UIImage(named: "editIcon1")
+        navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.white
+        ]
+        let image = UIImage(named: "plusButton")
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleNewMessage))
         tableView.register(UserCell.self, forCellReuseIdentifier: cellID)
         //observeMessages()
         observeUserMessages()
+        navigationController?.navigationBar.barTintColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
+        
     }
     var messages = [Message] ()
     var messagesDictionary = [String: Message]()
