@@ -92,6 +92,7 @@ class SellingPostTableController: UITableViewController {
             let itemm = Items()
             itemm.itemID = itemID
             itemm.setValuesForKeys(dictionary)
+            tableView.deselectRow(at: indexPath, animated: true)
             self.showItemControllerForUser(item: itemm)
         }, withCancel: nil)
         

@@ -61,6 +61,7 @@ class NewMessageController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         dismiss(animated: true){
             let user = self.users[indexPath.row]
+            tableView.deselectRow(at: indexPath, animated: true)
             self.messagesController?.showChatControllerForUser(user: user)
         }
     }

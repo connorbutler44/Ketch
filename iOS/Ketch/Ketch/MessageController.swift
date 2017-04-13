@@ -94,6 +94,7 @@ class MessageController: UITableViewController {
             let userr = user()
             userr.id = chatPartnerID
             userr.setValuesForKeys(dictionary)
+            tableView.deselectRow(at: indexPath, animated: true)
             self.showChatControllerForUser(user: userr)
         }, withCancel: nil)
     }

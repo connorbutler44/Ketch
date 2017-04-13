@@ -15,13 +15,23 @@ import FBSDKLoginKit
 
 class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
 
+
+    
+    @IBOutlet weak var editButton: UIImageView!
     @IBOutlet weak var checkButton: UIImageView!
+    
+
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var editImage: UIImageView!
     @IBOutlet weak var zipLabel: UITextField!
     @IBOutlet weak var emailLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.white
+        ]
         if FIRAuth.auth()?.currentUser?.uid == nil {
             // If user is not logged in, return to LoginScreen
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -30,7 +40,7 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
         }
         else {
             self.checkButton.isHidden = true
-            self.editImage.isHidden = false
+            self.editButton.isHidden = false
             textFieldDeactive()
             self.zipLabel.keyboardType = UIKeyboardType.numberPad
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
@@ -46,23 +56,55 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(gesture:)))
             let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(checkTapped(gesture:)))
             // add it to the image view;
-            editImage.addGestureRecognizer(tapGesture)
+            editButton.addGestureRecognizer(tapGesture)
             // make sure imageView can be interacted with by user
-            editImage.isUserInteractionEnabled = true
+            editButton.isUserInteractionEnabled = true
             
             checkButton.addGestureRecognizer(tapGesture2)
             // make sure imageView can be interacted with by user
             checkButton.isUserInteractionEnabled = true
+            navigationItem.title = "My Account"
+            
         }
         
     }
     
+    @IBAction func goToFavorites(_ sender: Any) {
+        let reviewController = FavoritesController()
+        navigationController?.pushViewController(reviewController, animated: true)
+    }
+    
+    @IBAction func goToReviews(_ sender: Any) {
+        guard let uid = FIRAuth.auth()?.currentUser?.uid else {
+            return
+        }
+        let ref = FIRDatabase.database().reference().child("users").child(uid)
+        ref.observe(.value, with: { (snapshot) in
+            guard let dictionary = snapshot.value as? [String: AnyObject] else {
+                return
+            }
+            let userr = user()
+            userr.id = uid
+            userr.setValuesForKeys(dictionary)
+            self.goToReview(user: userr)
+            
+        }, withCancel: nil)
+    }
+
+
+    func goToReview(user: user){
+        let reviewController = RatingController()
+        reviewController.user = user
+        print(user)
+        navigationController?.pushViewController(reviewController, animated: true)
+    }
+    
     func imageTapped(gesture: UIGestureRecognizer){
         if (gesture.view as? UIImageView) != nil {
-            self.editImage.isHidden = true
+            self.editButton.isHidden = true
             self.checkButton.isHidden = false
             textFieldActive()
-            self.editImage.isHidden = true
+            self.editButton.isHidden = true
         }
     }
     
@@ -80,7 +122,7 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
                 }
             })
             textFieldDeactive()
-            self.editImage.isHidden = false
+            self.editButton.isHidden = false
             self.checkButton.isHidden = true
         }
     }

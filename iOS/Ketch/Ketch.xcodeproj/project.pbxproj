@@ -44,6 +44,8 @@
 		B9CCB11A1E6D1C8800F87E30 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */; };
 		B9CCB11E1E6D21F400F87E30 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB11D1E6D21F400F87E30 /* user.swift */; };
 		B9F8488B1E57AD9A0085CC03 /* ItemListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */; };
+		B9FE3FB41E9F26A000B49461 /* IndividualReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FE3FB31E9F26A000B49461 /* IndividualReviewController.swift */; };
+		B9FE3FB81E9F3E0A00B49461 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FE3FB71E9F3E0A00B49461 /* FavoritesController.swift */; };
 		CFBDEFB2965A5754461380E7 /* Pods_Ketch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340E900FBDC56DF1A09A258B /* Pods_Ketch.framework */; };
 		D2B97ECA247CCE34ED7E5EFA /* Pods_KetchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE388E1F9DB5E9F2CF1C869 /* Pods_KetchTests.framework */; };
 		F21951801701D933720D1C92 /* Pods_KetchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F28A3A1FA0BF49DB3F3A623 /* Pods_KetchUITests.framework */; };
@@ -119,6 +121,8 @@
 		B9CCB1191E6D1C8800F87E30 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		B9CCB11D1E6D21F400F87E30 /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListController.swift; sourceTree = "<group>"; };
+		B9FE3FB31E9F26A000B49461 /* IndividualReviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualReviewController.swift; sourceTree = "<group>"; };
+		B9FE3FB71E9F3E0A00B49461 /* FavoritesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		DC06A5882FB9727108E690D8 /* Pods-KetchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,7 +214,9 @@
 				B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */,
 				B9311DB01E85155300E97547 /* ChatLogController.swift */,
 				B9338C261E9EC7E800EEA8E0 /* UserInfoController.swift */,
+				B9FE3FB71E9F3E0A00B49461 /* FavoritesController.swift */,
 				B9338C2C1E9EE26D00EEA8E0 /* RatingController.swift */,
+				B9FE3FB31E9F26A000B49461 /* IndividualReviewController.swift */,
 				B9B909181E69473900FBA550 /* Dashboard.swift */,
 				B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */,
 				B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */,
@@ -578,6 +584,7 @@
 				B924D85F1E98945E008BF92A /* UserRatingController.swift in Sources */,
 				B9311DB41E85155300E97547 /* splashScreen.swift in Sources */,
 				1526327F1E74A17E00186369 /* SellingPostController.swift in Sources */,
+				B9FE3FB81E9F3E0A00B49461 /* FavoritesController.swift in Sources */,
 				B9338C2D1E9EE26D00EEA8E0 /* RatingController.swift in Sources */,
 				B9311DB61E85155300E97547 /* ChatMessageCell.swift in Sources */,
 				B9B909191E69473900FBA550 /* Dashboard.swift in Sources */,
@@ -587,6 +594,7 @@
 				B9B909231E6962D900FBA550 /* MyAccount.swift in Sources */,
 				B98970DF1E9C6B0800EDDD23 /* ItemCell.swift in Sources */,
 				1555EBB61E8A26CA001D1C8D /* Item.swift in Sources */,
+				B9FE3FB41E9F26A000B49461 /* IndividualReviewController.swift in Sources */,
 				B98970DD1E9C694000EDDD23 /* Items.swift in Sources */,
 				B9338C271E9EC7E800EEA8E0 /* UserInfoController.swift in Sources */,
 				B9CAB8CC1E97006B00F93A07 /* PopupViewController.swift in Sources */,

@@ -14,6 +14,8 @@ class review: NSObject {
     var message: String?
     var rating: String?
     var ratingBy: String?
+    var forUser: String?
+    var ratingID: String?
     
 }
 

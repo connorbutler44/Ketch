@@ -25,9 +25,16 @@ class RatingController: UITableViewController {
     
     var user: user? {
         didSet{
-            var str = "Reviews for " + (user?.name)!
-            navigationItem.title = str
-            print("user reference set")
+            if FIRAuth.auth()?.currentUser?.uid == user?.id{
+                var str = "My reviews"
+                navigationItem.title = str
+                print("user reference set")
+            } else {
+                var str = "Reviews for " + (user?.name)!
+                navigationItem.title = str
+                print("user reference set")
+            }
+            
         }
     }
     
@@ -97,8 +104,34 @@ class RatingController: UITableViewController {
         return reviews.count
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        return
+        let review2 = reviews[indexPath.row]
+        guard let reviewID = review2.ratingID else {
+            return
+        }
+        let ref = FIRDatabase.database().reference().child("ratings").child(reviewID)
         
+        ref.observe(.value, with: { (snapshot) in
+            guard let dictionary = snapshot.value as? [String: AnyObject?] else {
+                return
+            }
+            let revieww = review()
+            revieww.ratingID = reviewID
+            revieww.setValuesForKeys(dictionary)
+            tableView.deselectRow(at: indexPath, animated: true)
+            self.showReviewController(review: revieww)
+        }, withCancel: nil)
+        
+        
+        
+        
+        
+        
+    }
+    
+    func showReviewController(review: review){
+        let reviewController = IndividualReviewController()
+        reviewController.review = review
+        navigationController?.pushViewController(reviewController, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -14,14 +14,23 @@ class ReviewCell: UITableViewCell{
         didSet{
             imageView?.image = UIImage(named: "money")
             setupNameAndProfileImage()
-            detailTextLabel?.text = review?.forItem
-            timeLabel.text = review?.rating
+            
+            detailTextLabel?.text = review?.message
+            let str = (review?.rating)! + "/5"
+            timeLabel.text = str
             
         }
     }
     private func setupNameAndProfileImage(){
+        let itemID = review?.forItem
+        let ref = FIRDatabase.database().reference().child("items").child((itemID)!)
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let dictionary = snapshot.value as? [String: AnyObject]{
+                let item = dictionary["title"] as? String
+                self.textLabel?.text = item
+            }
+        }, withCancel: nil)
         
-        self.textLabel?.text = review?.message
     }
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -57,7 +66,7 @@ class ReviewCell: UITableViewCell{
         timeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 18).isActive = true
         timeLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
         timeLabel.heightAnchor.constraint(equalTo: (textLabel?.heightAnchor)!).isActive = true
-        
+        timeLabel.font = timeLabel.font?.withSize(32)
         
     }
     required init?(coder aDecoder: NSCoder){
