@@ -170,12 +170,14 @@ SWIFT_CLASS("_TtC5Ketch11AppDelegate")
 
 SWIFT_CLASS("_TtC5Ketch17ChatLogController")
 @interface ChatLogController : UICollectionViewController <UICollectionViewDelegateFlowLayout, UITextFieldDelegate>
-@property (nonatomic, strong) user * _Nullable user;
+@property (nonatomic, strong) user * _Nullable user2;
 @property (nonatomic, copy) NSArray<Message *> * _Nonnull messages;
 - (void)observeMessages;
 @property (nonatomic, strong) UITextField * _Nonnull inputTextField;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cellID;
 - (void)viewDidLoad;
+- (void)viewUserInfo;
+- (void)showInfoControllerForUserWithUser:(user * _Nonnull)user;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) UIView * _Nonnull inputContainerView;
 @property (nonatomic, readonly, strong) UIView * _Nullable inputAccessoryView;
@@ -442,6 +444,44 @@ SWIFT_CLASS("_TtC5Ketch19PopupViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class review;
+
+SWIFT_CLASS("_TtC5Ketch16RatingController")
+@interface RatingController : UITableViewController
+@property (nonatomic, readonly, copy) NSString * _Nonnull cellID;
+@property (nonatomic, strong) user * _Nullable user;
+- (void)viewDidLoad;
+@property (nonatomic, copy) NSArray<review *> * _Nonnull reviews;
+@property (nonatomic, copy) NSDictionary<NSString *, review *> * _Nonnull ratingsDictionary;
+- (void)observeUserReviews;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
+- (void)handleReloadTable;
+- (void)handleBack;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)checkIfUserIsLoggedIn;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)showChatControllerForUserWithUser:(user * _Nonnull)user;
+- (void)handleLogout;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ketch10ReviewCell")
+@interface ReviewCell : UITableViewCell
+@property (nonatomic, strong) review * _Nullable review;
+- (void)layoutSubviews;
+@property (nonatomic, readonly, strong) UIImageView * _Nonnull profileImageView;
+@property (nonatomic, readonly, strong) UILabel * _Nonnull timeLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC5Ketch11SellingPost")
 @interface SellingPost : UIViewController
@@ -490,6 +530,23 @@ SWIFT_CLASS("_TtC5Ketch8UserCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISlider;
+
+SWIFT_CLASS("_TtC5Ketch18UserInfoController")
+@interface UserInfoController : UITableViewController <UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UITextFieldDelegate>
+@property (nonatomic, strong) user * _Nullable user;
+- (void)viewDidLoad;
+- (void)handleBack;
+@property (nonatomic, readonly, strong) UISlider * _Nonnull ratingSlider;
+- (void)setupInputComponents;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
+- (void)getUserRating;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC5Ketch20UserRatingController")
 @interface UserRatingController : UIViewController
@@ -498,6 +555,16 @@ SWIFT_CLASS("_TtC5Ketch20UserRatingController")
 - (void)dismissKeyboard;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ketch6review")
+@interface review : NSObject
+@property (nonatomic, copy) NSString * _Nullable forItem;
+@property (nonatomic, copy) NSString * _Nullable message;
+@property (nonatomic, copy) NSString * _Nullable rating;
+@property (nonatomic, copy) NSString * _Nullable ratingBy;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -518,6 +585,7 @@ SWIFT_CLASS("_TtC5Ketch4user")
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSString * _Nullable zipcode;
+@property (nonatomic, copy) NSString * _Nullable rating;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

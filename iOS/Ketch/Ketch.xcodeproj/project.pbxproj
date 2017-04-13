@@ -18,6 +18,10 @@
 		B9311DB61E85155300E97547 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9311DB11E85155300E97547 /* ChatMessageCell.swift */; };
 		B9311DB71E85155300E97547 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9311DB21E85155300E97547 /* UserCell.swift */; };
 		B9311DB81E85155300E97547 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9311DB31E85155300E97547 /* Message.swift */; };
+		B9338C271E9EC7E800EEA8E0 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9338C261E9EC7E800EEA8E0 /* UserInfoController.swift */; };
+		B9338C291E9EE0AF00EEA8E0 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9338C281E9EE0AF00EEA8E0 /* ReviewCell.swift */; };
+		B9338C2B1E9EE0F700EEA8E0 /* review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9338C2A1E9EE0F700EEA8E0 /* review.swift */; };
+		B9338C2D1E9EE26D00EEA8E0 /* RatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9338C2C1E9EE26D00EEA8E0 /* RatingController.swift */; };
 		B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385661E56E0DF0081EB69 /* AppDelegate.swift */; };
 		B963856E1E56E0DF0081EB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B963856C1E56E0DF0081EB69 /* Main.storyboard */; };
 		B96385701E56E0DF0081EB69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B963856F1E56E0DF0081EB69 /* Assets.xcassets */; };
@@ -82,6 +86,10 @@
 		B9311DB11E85155300E97547 /* ChatMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		B9311DB21E85155300E97547 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		B9311DB31E85155300E97547 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B9338C261E9EC7E800EEA8E0 /* UserInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
+		B9338C281E9EE0AF00EEA8E0 /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		B9338C2A1E9EE0F700EEA8E0 /* review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = review.swift; sourceTree = "<group>"; };
+		B9338C2C1E9EE26D00EEA8E0 /* RatingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingController.swift; sourceTree = "<group>"; };
 		B96385631E56E0DF0081EB69 /* Ketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96385661E56E0DF0081EB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B963856D1E56E0DF0081EB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +174,7 @@
 				B9311DB11E85155300E97547 /* ChatMessageCell.swift */,
 				B9311DB21E85155300E97547 /* UserCell.swift */,
 				B98970DE1E9C6B0800EDDD23 /* ItemCell.swift */,
+				B9338C281E9EE0AF00EEA8E0 /* ReviewCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -200,6 +209,8 @@
 				B96385661E56E0DF0081EB69 /* AppDelegate.swift */,
 				B9B399171E57AFA00037AA62 /* CollectionViewCell.swift */,
 				B9311DB01E85155300E97547 /* ChatLogController.swift */,
+				B9338C261E9EC7E800EEA8E0 /* UserInfoController.swift */,
+				B9338C2C1E9EE26D00EEA8E0 /* RatingController.swift */,
 				B9B909181E69473900FBA550 /* Dashboard.swift */,
 				B9B399191E57AFB10037AA62 /* IndividualItemViewController.swift */,
 				B9F8488A1E57AD9A0085CC03 /* ItemListController.swift */,
@@ -248,6 +259,7 @@
 				B9CCB11D1E6D21F400F87E30 /* user.swift */,
 				1555EBB51E8A26CA001D1C8D /* Item.swift */,
 				B98970DC1E9C694000EDDD23 /* Items.swift */,
+				B9338C2A1E9EE0F700EEA8E0 /* review.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -556,14 +568,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9CCB11E1E6D21F400F87E30 /* user.swift in Sources */,
+				B9338C291E9EE0AF00EEA8E0 /* ReviewCell.swift in Sources */,
 				15A9A96E1E80EFA9006DE688 /* NewItemController.swift in Sources */,
 				1555EBB41E8A242E001D1C8D /* SellingPostTableController.swift in Sources */,
 				B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */,
+				B9338C2B1E9EE0F700EEA8E0 /* review.swift in Sources */,
 				B9311DB81E85155300E97547 /* Message.swift in Sources */,
 				B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */,
 				B924D85F1E98945E008BF92A /* UserRatingController.swift in Sources */,
 				B9311DB41E85155300E97547 /* splashScreen.swift in Sources */,
 				1526327F1E74A17E00186369 /* SellingPostController.swift in Sources */,
+				B9338C2D1E9EE26D00EEA8E0 /* RatingController.swift in Sources */,
 				B9311DB61E85155300E97547 /* ChatMessageCell.swift in Sources */,
 				B9B909191E69473900FBA550 /* Dashboard.swift in Sources */,
 				B9311DB71E85155300E97547 /* UserCell.swift in Sources */,
@@ -573,6 +588,7 @@
 				B98970DF1E9C6B0800EDDD23 /* ItemCell.swift in Sources */,
 				1555EBB61E8A26CA001D1C8D /* Item.swift in Sources */,
 				B98970DD1E9C694000EDDD23 /* Items.swift in Sources */,
+				B9338C271E9EC7E800EEA8E0 /* UserInfoController.swift in Sources */,
 				B9CAB8CC1E97006B00F93A07 /* PopupViewController.swift in Sources */,
 				B9311DB51E85155300E97547 /* ChatLogController.swift in Sources */,
 				B988BCA21E6412FE0069CF69 /* LoginScreen.swift in Sources */,

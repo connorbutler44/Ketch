@@ -10,9 +10,9 @@ import UIKit
 import Firebase
 
 class ChatLogController: UICollectionViewController, UITextFieldDelegate, UICollectionViewDelegateFlowLayout{
-    var user: user? {
+    var user2: user? {
         didSet{
-            navigationItem.title = user?.name
+            navigationItem.title = user2?.name
             observeMessages()
         }
     }
@@ -33,7 +33,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
                 let message = Message()
                 message.setValuesForKeys(dictionary)
                 
-                if message.chatPartnerID() == self.user?.id {
+                if message.chatPartnerID() == self.user2?.id {
                     self.messages.append(message)
                     DispatchQueue.main.async {
                         //reloads the tableView with all user's name/email *MUST call async func so the app does not crash from this thread*
@@ -67,12 +67,36 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         collectionView?.register(ChatMessageCell.self, forCellWithReuseIdentifier: cellID)
         
         collectionView?.keyboardDismissMode = .interactive
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBack))
-        
+        let image = UIImage(named: "back")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleBack))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "User Rating", style: .plain, target: self, action: #selector(viewUserInfo))
         
         
     }
+    
+    func viewUserInfo(){
+        guard let chatPartnerID = user2?.id else {
+            return
+        }
+        let ref = FIRDatabase.database().reference().child("users").child(chatPartnerID)
+        ref.observe(.value, with: { (snapshot) in
+            guard let dictionary = snapshot.value as? [String: AnyObject] else {
+                return
+            }
+            let userr = user()
+            userr.id = chatPartnerID
+            userr.setValuesForKeys(dictionary)
+            self.showInfoControllerForUser(user: userr)
+        }, withCancel: nil)
+        
+    }
+    
+    func showInfoControllerForUser(user: user){
+        let userInfoController = RatingController()
+        userInfoController.user = user
+        navigationController?.pushViewController(userInfoController, animated: true)
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return messages.count
     }
@@ -272,7 +296,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     func handleSend(){
         let ref = FIRDatabase.database().reference().child("messages")
         let childRef = ref.childByAutoId()
-        let toID = user!.id!
+        let toID = user2!.id!
         let timestamp = NSNumber(value: Int(Date().timeIntervalSince1970))
         let fromID = FIRAuth.auth()?.currentUser?.uid
         let values = ["text" : inputTextField.text!, "toID": toID , "fromID": fromID ?? "", "timestamp": timestamp] as [String : Any]
@@ -294,6 +318,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
             
         }
     }
+    
     
     
     

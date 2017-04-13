@@ -199,6 +199,7 @@ depends-member:
 - !private ["Ps9AnyObject", "unfavorite"]
 - !private ["Ps9AnyObject", "updateChildValues"]
 - !private ["Ps9AnyObject", "user"]
+- !private ["Ps9AnyObject", "user2"]
 - ["Ps9AnyObject", "userInterfaceIdiom"]
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "view"]
@@ -364,6 +365,7 @@ depends-member:
 - !private ["Ps7CVarArg", "unfavorite"]
 - !private ["Ps7CVarArg", "updateChildValues"]
 - !private ["Ps7CVarArg", "user"]
+- !private ["Ps7CVarArg", "user2"]
 - ["Ps7CVarArg", "userInterfaceIdiom"]
 - !private ["Ps7CVarArg", "value"]
 - !private ["Ps7CVarArg", "view"]
@@ -377,7 +379,7 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - !private ["VSS13CharacterView", "count"]
 - !private ["C5Ketch17ChatLogController", "init"]
-- !private ["C5Ketch17ChatLogController", "user"]
+- !private ["C5Ketch17ChatLogController", "user2"]
 - !private ["Ps10Collection", "count"]
 - !private ["Ps10Comparable", "characters"]
 - !private ["Ps10Comparable", "hashValue"]
@@ -503,6 +505,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "unfavorite"]
 - !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
 - !private ["Ps28CustomDebugStringConvertible", "user"]
+- !private ["Ps28CustomDebugStringConvertible", "user2"]
 - ["Ps28CustomDebugStringConvertible", "userInterfaceIdiom"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
@@ -650,6 +653,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "unfavorite"]
 - !private ["Ps23CustomStringConvertible", "updateChildValues"]
 - !private ["Ps23CustomStringConvertible", "user"]
+- !private ["Ps23CustomStringConvertible", "user2"]
 - ["Ps23CustomStringConvertible", "userInterfaceIdiom"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "view"]
@@ -804,6 +808,7 @@ depends-member:
 - !private ["Ps9Equatable", "unfavorite"]
 - !private ["Ps9Equatable", "updateChildValues"]
 - !private ["Ps9Equatable", "user"]
+- !private ["Ps9Equatable", "user2"]
 - ["Ps9Equatable", "userInterfaceIdiom"]
 - !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "view"]
@@ -976,6 +981,7 @@ depends-member:
 - !private ["Ps8Hashable", "unfavorite"]
 - !private ["Ps8Hashable", "updateChildValues"]
 - !private ["Ps8Hashable", "user"]
+- !private ["Ps8Hashable", "user2"]
 - ["Ps8Hashable", "userInterfaceIdiom"]
 - !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "view"]
@@ -1171,6 +1177,7 @@ depends-member:
 - !private ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo8NSCoding", "unfavorite"]
 - !private ["PSo8NSCoding", "user"]
+- !private ["PSo8NSCoding", "user2"]
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
@@ -1248,6 +1255,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldReturn"]
 - !private ["PSo26NSExtensionRequestHandling", "unfavorite"]
 - !private ["PSo26NSExtensionRequestHandling", "user"]
+- !private ["PSo26NSExtensionRequestHandling", "user2"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
@@ -1389,6 +1397,7 @@ depends-member:
 - ["CSo8NSObject", "unfavorite"]
 - !private ["CSo8NSObject", "updateChildValues"]
 - ["CSo8NSObject", "user"]
+- !private ["CSo8NSObject", "user2"]
 - ["CSo8NSObject", "userInterfaceIdiom"]
 - !private ["CSo8NSObject", "value"]
 - !private ["CSo8NSObject", "view"]
@@ -1518,6 +1527,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "unfavorite"]
 - !private ["PSo16NSObjectProtocol", "updateChildValues"]
 - !private ["PSo16NSObjectProtocol", "user"]
+- !private ["PSo16NSObjectProtocol", "user2"]
 - ["PSo16NSObjectProtocol", "userInterfaceIdiom"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -1714,6 +1724,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo21UIAppearanceContainer", "unfavorite"]
 - !private ["PSo21UIAppearanceContainer", "user"]
+- !private ["PSo21UIAppearanceContainer", "user2"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
@@ -1743,9 +1754,9 @@ depends-member:
 - !private ["CSo8UIButton", "widthAnchor"]
 - !private ["OSC12UIButtonType", "system"]
 - !private ["CSo26UICollectionViewController", "init"]
-- !private ["CSo26UICollectionViewController", "user"]
+- !private ["CSo26UICollectionViewController", "user2"]
 - !private ["PSo26UICollectionViewDataSource", "init"]
-- !private ["PSo26UICollectionViewDataSource", "user"]
+- !private ["PSo26UICollectionViewDataSource", "user2"]
 - !private ["PSo24UICollectionViewDelegate", "CGRect"]
 - !private ["PSo24UICollectionViewDelegate", "ChatLogController"]
 - !private ["PSo24UICollectionViewDelegate", "DeviceType"]
@@ -1806,6 +1817,7 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "textFieldShouldReturn"]
 - !private ["PSo24UICollectionViewDelegate", "unfavorite"]
 - !private ["PSo24UICollectionViewDelegate", "user"]
+- !private ["PSo24UICollectionViewDelegate", "user2"]
 - !private ["PSo24UICollectionViewDelegate", "view"]
 - ["PSo24UICollectionViewDelegate", "viewForZooming"]
 - ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
@@ -1870,6 +1882,7 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "textFieldShouldReturn"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "unfavorite"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "user"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "user2"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "view"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZooming"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
@@ -1943,6 +1956,7 @@ depends-member:
 - ["PSo18UIContentContainer", "textFieldShouldReturn"]
 - !private ["PSo18UIContentContainer", "unfavorite"]
 - !private ["PSo18UIContentContainer", "user"]
+- !private ["PSo18UIContentContainer", "user2"]
 - !private ["PSo18UIContentContainer", "view"]
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
@@ -2119,6 +2133,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo18UIFocusEnvironment", "unfavorite"]
 - !private ["PSo18UIFocusEnvironment", "user"]
+- !private ["PSo18UIFocusEnvironment", "user2"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
@@ -2290,6 +2305,7 @@ depends-member:
 - !private ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo11UIResponder", "unfavorite"]
 - ["CSo11UIResponder", "user"]
+- !private ["CSo11UIResponder", "user2"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
@@ -2385,6 +2401,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo30UIResponderStandardEditActions", "unfavorite"]
 - !private ["PSo30UIResponderStandardEditActions", "user"]
+- !private ["PSo30UIResponderStandardEditActions", "user2"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
@@ -2464,6 +2481,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "textFieldShouldReturn"]
 - !private ["PSo20UIScrollViewDelegate", "unfavorite"]
 - !private ["PSo20UIScrollViewDelegate", "user"]
+- !private ["PSo20UIScrollViewDelegate", "user2"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
@@ -2532,6 +2550,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "textFieldShouldReturn"]
 - !private ["PSo16UIStateRestoring", "unfavorite"]
 - !private ["PSo16UIStateRestoring", "user"]
+- !private ["PSo16UIStateRestoring", "user2"]
 - !private ["PSo16UIStateRestoring", "view"]
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
@@ -2600,6 +2619,7 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "textFieldShouldReturn"]
 - !private ["PSo19UITextFieldDelegate", "unfavorite"]
 - !private ["PSo19UITextFieldDelegate", "user"]
+- !private ["PSo19UITextFieldDelegate", "user2"]
 - !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo19UITextFieldDelegate", "viewForZooming"]
 - ["PSo19UITextFieldDelegate", "viewForZoomingInScrollView"]
@@ -2727,6 +2747,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo18UITraitEnvironment", "unfavorite"]
 - !private ["PSo18UITraitEnvironment", "user"]
+- !private ["PSo18UITraitEnvironment", "user2"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
@@ -2846,6 +2867,7 @@ depends-member:
 - ["CSo16UIViewController", "textFieldShouldReturn"]
 - ["CSo16UIViewController", "unfavorite"]
 - ["CSo16UIViewController", "user"]
+- !private ["CSo16UIViewController", "user2"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
@@ -3025,6 +3047,7 @@ depends-member:
 - !private ["Ps9_Hashable", "unfavorite"]
 - !private ["Ps9_Hashable", "updateChildValues"]
 - !private ["Ps9_Hashable", "user"]
+- !private ["Ps9_Hashable", "user2"]
 - ["Ps9_Hashable", "userInterfaceIdiom"]
 - !private ["Ps9_Hashable", "value"]
 - !private ["Ps9_Hashable", "view"]
@@ -3218,40 +3241,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
@@ -3270,9 +3259,43 @@ depends-external:
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Pods/Firebase/Core/Sources/Firebase.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"

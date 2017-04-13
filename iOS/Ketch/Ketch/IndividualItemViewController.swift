@@ -395,7 +395,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
     
     func showChatControllerForUser(user: user){
         let chatLogController = ChatLogController(collectionViewLayout: UICollectionViewFlowLayout())
-        chatLogController.user = user
+        chatLogController.user2 = user
         navigationController?.pushViewController(chatLogController, animated: true)
     }
     

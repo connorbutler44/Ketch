@@ -13,4 +13,6 @@ class user: NSObject {
     var name: String?
     var email: String?
     var zipcode: String?
+    var rating: String?
+
 }
