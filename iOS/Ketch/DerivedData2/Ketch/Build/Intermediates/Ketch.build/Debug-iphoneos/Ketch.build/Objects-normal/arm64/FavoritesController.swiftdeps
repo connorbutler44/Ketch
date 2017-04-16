@@ -8,6 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 - "cellID"
 - "fetchUserAndSetupNavBarTitle"
+- "handleRefresh"
 - "handleReloadTable"
 - "items"
 - "itemsDictionary"
@@ -42,6 +43,7 @@ depends-top-level:
 - "Timer"
 - "UIBarButtonItem"
 - !private "UIColor"
+- "UIRefreshControl"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewController"
@@ -66,6 +68,7 @@ depends-member:
 - !private ["Ps9AnyObject", "database"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "deselectRow"]
+- !private ["Ps9AnyObject", "endRefreshing"]
 - !private ["Ps9AnyObject", "handleReloadTable"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "invalidate"]
@@ -107,6 +110,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "barTintColor"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
 - !private ["PSo15CALayerDelegate", "deselectRow"]
+- !private ["PSo15CALayerDelegate", "endRefreshing"]
 - !private ["PSo15CALayerDelegate", "item"]
 - !private ["PSo15CALayerDelegate", "register"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
@@ -133,6 +137,7 @@ depends-member:
 - !private ["Ps7CVarArg", "database"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "deselectRow"]
+- !private ["Ps7CVarArg", "endRefreshing"]
 - !private ["Ps7CVarArg", "handleReloadTable"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "invalidate"]
@@ -194,6 +199,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "deselectRow"]
+- !private ["Ps28CustomDebugStringConvertible", "endRefreshing"]
 - !private ["Ps28CustomDebugStringConvertible", "handleReloadTable"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "invalidate"]
@@ -255,6 +261,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "deselectRow"]
+- !private ["Ps23CustomStringConvertible", "endRefreshing"]
 - !private ["Ps23CustomStringConvertible", "handleReloadTable"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "invalidate"]
@@ -317,6 +324,7 @@ depends-member:
 - !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "deselectRow"]
+- !private ["Ps9Equatable", "endRefreshing"]
 - !private ["Ps9Equatable", "handleReloadTable"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "invalidate"]
@@ -389,11 +397,13 @@ depends-member:
 - ["C5Ketch19FavoritesController", "Timer"]
 - ["C5Ketch19FavoritesController", "UIBarButtonItem"]
 - !private ["C5Ketch19FavoritesController", "UIColor"]
+- ["C5Ketch19FavoritesController", "UIRefreshControl"]
 - ["C5Ketch19FavoritesController", "UITableView"]
 - ["C5Ketch19FavoritesController", "UITableViewCell"]
 - ["C5Ketch19FavoritesController", "cellID"]
 - ["C5Ketch19FavoritesController", "deinit"]
 - ["C5Ketch19FavoritesController", "fetchUserAndSetupNavBarTitle"]
+- ["C5Ketch19FavoritesController", "handleRefresh"]
 - ["C5Ketch19FavoritesController", "handleReloadTable"]
 - ["C5Ketch19FavoritesController", "init"]
 - ["C5Ketch19FavoritesController", "items"]
@@ -428,6 +438,7 @@ depends-member:
 - !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "deselectRow"]
+- !private ["Ps8Hashable", "endRefreshing"]
 - !private ["Ps8Hashable", "handleReloadTable"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "invalidate"]
@@ -489,6 +500,7 @@ depends-member:
 - !private ["PSo8NSCoding", "cellID"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - !private ["PSo8NSCoding", "deselectRow"]
+- !private ["PSo8NSCoding", "endRefreshing"]
 - !private ["PSo8NSCoding", "handleReloadTable"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "item"]
@@ -556,6 +568,7 @@ depends-member:
 - ["CSo8NSObject", "Timer"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UIRefreshControl"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "async"]
@@ -567,7 +580,9 @@ depends-member:
 - !private ["CSo8NSObject", "database"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "deselectRow"]
+- !private ["CSo8NSObject", "endRefreshing"]
 - ["CSo8NSObject", "fetchUserAndSetupNavBarTitle"]
+- ["CSo8NSObject", "handleRefresh"]
 - ["CSo8NSObject", "handleReloadTable"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "invalidate"]
@@ -620,6 +635,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "deselectRow"]
+- !private ["PSo16NSObjectProtocol", "endRefreshing"]
 - !private ["PSo16NSObjectProtocol", "handleReloadTable"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "invalidate"]
@@ -679,6 +695,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
 - !private ["PSo29UIAccessibilityIdentification", "deselectRow"]
+- !private ["PSo29UIAccessibilityIdentification", "endRefreshing"]
 - !private ["PSo29UIAccessibilityIdentification", "item"]
 - !private ["PSo29UIAccessibilityIdentification", "register"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
@@ -687,6 +704,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "barTintColor"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
 - !private ["PSo12UIAppearance", "deselectRow"]
+- !private ["PSo12UIAppearance", "endRefreshing"]
 - !private ["PSo12UIAppearance", "item"]
 - !private ["PSo12UIAppearance", "register"]
 - !private ["PSo12UIAppearance", "reloadData"]
@@ -707,6 +725,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "cellID"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
 - !private ["PSo21UIAppearanceContainer", "deselectRow"]
+- !private ["PSo21UIAppearanceContainer", "endRefreshing"]
 - !private ["PSo21UIAppearanceContainer", "handleReloadTable"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "item"]
@@ -762,9 +781,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "updateMyItems"]
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "endRefreshing"]
 - !private ["PSo17UICoordinateSpace", "barTintColor"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
 - !private ["PSo17UICoordinateSpace", "deselectRow"]
+- !private ["PSo17UICoordinateSpace", "endRefreshing"]
 - !private ["PSo17UICoordinateSpace", "item"]
 - !private ["PSo17UICoordinateSpace", "register"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
@@ -773,6 +794,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "barTintColor"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
 - !private ["PSo13UIDynamicItem", "deselectRow"]
+- !private ["PSo13UIDynamicItem", "endRefreshing"]
 - !private ["PSo13UIDynamicItem", "item"]
 - !private ["PSo13UIDynamicItem", "register"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
@@ -793,6 +815,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "cellID"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
 - !private ["PSo18UIFocusEnvironment", "deselectRow"]
+- !private ["PSo18UIFocusEnvironment", "endRefreshing"]
 - !private ["PSo18UIFocusEnvironment", "handleReloadTable"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "item"]
@@ -815,6 +838,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "barTintColor"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
 - !private ["PSo11UIFocusItem", "deselectRow"]
+- !private ["PSo11UIFocusItem", "endRefreshing"]
 - !private ["PSo11UIFocusItem", "item"]
 - !private ["PSo11UIFocusItem", "register"]
 - !private ["PSo11UIFocusItem", "reloadData"]
@@ -827,6 +851,7 @@ depends-member:
 - !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["CSo22UINavigationController", "pushViewController"]
 - !private ["CSo16UINavigationItem", "title"]
+- !private ["CSo16UIRefreshControl", "endRefreshing"]
 - !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "CGFloat"]
@@ -843,13 +868,16 @@ depends-member:
 - ["CSo11UIResponder", "Timer"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UIRefreshControl"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "barTintColor"]
 - ["CSo11UIResponder", "cellID"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - !private ["CSo11UIResponder", "deselectRow"]
+- !private ["CSo11UIResponder", "endRefreshing"]
 - ["CSo11UIResponder", "fetchUserAndSetupNavBarTitle"]
+- ["CSo11UIResponder", "handleRefresh"]
 - ["CSo11UIResponder", "handleReloadTable"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "item"]
@@ -885,6 +913,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "cellID"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
 - !private ["PSo30UIResponderStandardEditActions", "deselectRow"]
+- !private ["PSo30UIResponderStandardEditActions", "endRefreshing"]
 - !private ["PSo30UIResponderStandardEditActions", "handleReloadTable"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "item"]
@@ -981,10 +1010,12 @@ depends-member:
 - ["CSo21UITableViewController", "Timer"]
 - ["CSo21UITableViewController", "UIBarButtonItem"]
 - !private ["CSo21UITableViewController", "UIColor"]
+- ["CSo21UITableViewController", "UIRefreshControl"]
 - ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITableViewCell"]
 - ["CSo21UITableViewController", "cellID"]
 - ["CSo21UITableViewController", "fetchUserAndSetupNavBarTitle"]
+- ["CSo21UITableViewController", "handleRefresh"]
 - ["CSo21UITableViewController", "handleReloadTable"]
 - ["CSo21UITableViewController", "init"]
 - ["CSo21UITableViewController", "items"]
@@ -1064,6 +1095,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "cellID"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
 - !private ["PSo18UITraitEnvironment", "deselectRow"]
+- !private ["PSo18UITraitEnvironment", "endRefreshing"]
 - !private ["PSo18UITraitEnvironment", "handleReloadTable"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "item"]
@@ -1086,6 +1118,7 @@ depends-member:
 - !private ["CSo6UIView", "barTintColor"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
 - !private ["CSo6UIView", "deselectRow"]
+- !private ["CSo6UIView", "endRefreshing"]
 - !private ["CSo6UIView", "item"]
 - !private ["CSo6UIView", "register"]
 - !private ["CSo6UIView", "reloadData"]
@@ -1107,10 +1140,12 @@ depends-member:
 - ["CSo16UIViewController", "Timer"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UIRefreshControl"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - ["CSo16UIViewController", "cellID"]
 - ["CSo16UIViewController", "fetchUserAndSetupNavBarTitle"]
+- ["CSo16UIViewController", "handleRefresh"]
 - ["CSo16UIViewController", "handleReloadTable"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "item"]
@@ -1137,6 +1172,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barTintColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "deselectRow"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endRefreshing"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "item"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "register"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
@@ -1174,6 +1210,7 @@ depends-member:
 - !private ["Ps9_Hashable", "database"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "deselectRow"]
+- !private ["Ps9_Hashable", "endRefreshing"]
 - !private ["Ps9_Hashable", "handleReloadTable"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "invalidate"]
@@ -1296,6 +1333,7 @@ depends-nominal:
 - !private "PSo34UICollectionViewDelegateFlowLayout"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -1304,6 +1342,7 @@ depends-nominal:
 - !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
 - !private "CSo16UINavigationItem"
+- !private "CSo16UIRefreshControl"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
@@ -1462,4 +1501,4 @@ depends-external:
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "8fd25fedb17ed7f2372c363c70637f53"
+interface-hash: "0835ed81fb7fb1df8470841889adca56"

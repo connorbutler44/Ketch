@@ -48,7 +48,7 @@ class ItemListController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "showImage", sender: self)
+        return
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -27,6 +27,9 @@ class SellingPostTableController: UITableViewController {
         
     }
     
+    
+    
+    
     @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "AddItem")
@@ -54,7 +57,6 @@ class SellingPostTableController: UITableViewController {
                     
                     self.timer?.invalidate()
                     self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.handleReloadTable), userInfo: nil, repeats: false)
-                    
                     
                 }
             }, withCancel: nil)

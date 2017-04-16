@@ -19,7 +19,8 @@ class ChatMessageCell: UICollectionViewCell {
         return tv
     }()
     
-    static let blueColor = UIColor(red: 0/255, green: 137/255, blue: 249/255, alpha: 1)
+    //static let blueColor = UIColor(red: 0/255, green: 137/255, blue: 249/255, alpha: 1)
+    static let blueColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
     var bubbleWidthAnchor: NSLayoutConstraint?
     var bubbleViewRightAnchor: NSLayoutConstraint?
     var bubbleViewLeftAnchor: NSLayoutConstraint?
@@ -51,7 +52,8 @@ class ChatMessageCell: UICollectionViewCell {
         textView.leftAnchor.constraint(equalTo: bubbleView.leftAnchor, constant: 8).isActive = true
         textView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         textView.rightAnchor.constraint(equalTo: bubbleView.rightAnchor).isActive = true
-        textView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true;
+        textView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+        textView.isEditable = false
         
     }
     

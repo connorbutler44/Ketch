@@ -26,7 +26,14 @@ class FavoritesController: UITableViewController {
         ]
         
     }
+
     
+    func handleRefresh(refreshControl: UIRefreshControl){
+        DispatchQueue.main.async{
+            self.tableView.reloadData()
+        }
+        refreshControl.endRefreshing()
+    }
     
     var items = [Items] ()
     var itemsDictionary = [String: Items]()
@@ -114,7 +121,6 @@ class FavoritesController: UITableViewController {
         
         
     }
-    
     
     
 }

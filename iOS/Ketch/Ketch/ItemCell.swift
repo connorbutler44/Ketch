@@ -22,8 +22,19 @@ class ItemCell: UITableViewCell{
         }
     }
     private func setupNameAndProfileImage(){
+        var title = (item?.title!)!
+        let length = title.characters.count
+        print(length)
+        if(length > 30){
+            let index = title.index(title.startIndex, offsetBy: 30)
+            self.textLabel?.text = title.substring(to: index) + "..."
+            
+        } else {
+            self.textLabel?.text = title
+        }
+        print(title)
+
         
-        self.textLabel?.text = item?.title
     }
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -59,8 +70,9 @@ class ItemCell: UITableViewCell{
         timeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 18).isActive = true
         timeLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
         timeLabel.heightAnchor.constraint(equalTo: (textLabel?.heightAnchor)!).isActive = true
+        timeLabel.adjustsFontSizeToFitWidth = true
         
-
+       
     }
     required init?(coder aDecoder: NSCoder){
         fatalError("init(coder:) has not been implemented")

@@ -38,6 +38,8 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
                     DispatchQueue.main.async {
                         //reloads the tableView with all user's name/email *MUST call async func so the app does not crash from this thread*
                         self.collectionView?.reloadData()
+                        let indexPath = IndexPath(item: self.messages.count - 1, section: 0)
+                        self.collectionView?.scrollToItem(at: indexPath, at: .bottom, animated: true)
                     }
                 }
                 
@@ -70,9 +72,24 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         let image = UIImage(named: "back")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleBack))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "User Rating", style: .plain, target: self, action: #selector(viewUserInfo))
-        
-        
+        setupKeyboardObservers()
     }
+    
+    func setupKeyboardObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardDidShow), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
+        
+        //        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(handleKeyboardWillShow), name: UIKeyboardWillShowNotification, object: nil)
+        //
+        //        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(handleKeyboardWillHide), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    func handleKeyboardDidShow() {
+        if messages.count > 0 {
+            let indexPath = IndexPath(item: messages.count - 1, section: 0)
+            collectionView?.scrollToItem(at: indexPath, at: .top, animated: true)
+        }
+    }
+    
     
     func viewUserInfo(){
         guard let chatPartnerID = user2?.id else {
@@ -98,6 +115,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(messages.count)
         return messages.count
     }
     
@@ -294,6 +312,9 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     }
     
     func handleSend(){
+        if (inputTextField.text! == ""){
+            return
+        }
         let ref = FIRDatabase.database().reference().child("messages")
         let childRef = ref.childByAutoId()
         let toID = user2!.id!

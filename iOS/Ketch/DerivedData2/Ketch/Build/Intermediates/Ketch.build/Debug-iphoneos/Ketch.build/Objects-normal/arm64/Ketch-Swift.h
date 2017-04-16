@@ -176,6 +176,8 @@ SWIFT_CLASS("_TtC5Ketch17ChatLogController")
 @property (nonatomic, strong) UITextField * _Nonnull inputTextField;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cellID;
 - (void)viewDidLoad;
+- (void)setupKeyboardObservers;
+- (void)handleKeyboardDidShow;
 - (void)viewUserInfo;
 - (void)showInfoControllerForUserWithUser:(user * _Nonnull)user;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -240,6 +242,7 @@ SWIFT_CLASS("_TtC5Ketch9Dashboard")
 
 @class UITableView;
 @class UIBarButtonItem;
+@class UIRefreshControl;
 @class Items;
 @class NSTimer;
 @class UITableViewCell;
@@ -250,6 +253,7 @@ SWIFT_CLASS("_TtC5Ketch19FavoritesController")
 @property (nonatomic, strong) IBOutlet UIBarButtonItem * _Null_unspecified newItemButton;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cellID;
 - (void)viewDidLoad;
+- (void)handleRefreshWithRefreshControl:(UIRefreshControl * _Nonnull)refreshControl;
 @property (nonatomic, copy) NSArray<Items *> * _Nonnull items;
 @property (nonatomic, copy) NSDictionary<NSString *, Items *> * _Nonnull itemsDictionary;
 - (void)updateMyItems;
