@@ -271,6 +271,7 @@ SWIFT_CLASS("_TtC5Ketch19FavoritesController")
 @end
 
 @class UIImage;
+@class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC5Ketch28IndividualItemViewController")
 @interface IndividualItemViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITextFieldDelegate>
@@ -286,6 +287,7 @@ SWIFT_CLASS("_TtC5Ketch28IndividualItemViewController")
 - (void)unfavorite;
 - (void)favorite;
 - (void)setupInputComponents;
+- (void)showImageViewControllerWithGesture:(UIGestureRecognizer * _Nonnull)gesture;
 @property (nonatomic, strong) UIImageView * _Nullable bgImage;
 - (void)messageSeller;
 - (void)showChatControllerForUserWithUser:(user * _Nonnull)user;
@@ -345,6 +347,19 @@ SWIFT_CLASS("_TtC5Ketch18ItemListController")
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ketch18ItemZoomController")
+@interface ItemZoomController : UIViewController
+@property (nonatomic, strong) Items * _Nullable item;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)setupInputComponents;
+- (void)showAnimate;
+- (void)removeAnimate;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -416,7 +431,6 @@ SWIFT_CLASS("_TtC5Ketch17MessageController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC5Ketch9MyAccount")
 @interface MyAccount : UIViewController <FBSDKLoginButtonDelegate>
@@ -570,6 +584,21 @@ SWIFT_CLASS("_TtC5Ketch26SellingPostTableController")
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIImage (SWIFT_EXTENSION(Ketch))
+/// Returns the data for the specified image in PNG format
+/// If the image object’s underlying image data has been purged, calling this function forces that data to be reloaded into memory.
+///
+/// returns:
+/// A data object containing the PNG data, or nil if there was a problem generating the data. This function may return nil if the image has no data or if the underlying CGImageRef contains data in an unsupported bitmap format.
+@property (nonatomic, readonly, copy) NSData * _Nullable png;
+@end
+
+
+@interface UIImageView (SWIFT_EXTENSION(Ketch))
+- (void)loadImageUsingCacheWithURLStringWithUrlString:(NSString * _Nonnull)urlString;
 @end
 
 

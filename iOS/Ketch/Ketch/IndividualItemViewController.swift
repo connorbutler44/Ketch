@@ -298,18 +298,11 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         imageView.contentMode = .scaleAspectFit
         containerView.addSubview(imageView)
         if let itemImageURL = item?.itemImage {
-            let url = URL(string: itemImageURL)
-
-            URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
-                if error != nil {
-                    print(error)
-                    return
-                }
-                print(url)
-                imageView.image = UIImage(data: data!)
-                
-            }).resume()
+            imageView.loadImageUsingCacheWithURLString(urlString: itemImageURL)
         }
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showImageViewController(gesture:)))
+        imageView.addGestureRecognizer(tapGesture)
+        imageView.isUserInteractionEnabled = true
         
         
         let descTitle = UILabel()
@@ -384,7 +377,16 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
 
     }
     
-    
+    func showImageViewController(gesture: UIGestureRecognizer){
+        if (gesture.view as? UIImageView) != nil {
+            let itemController = ItemZoomController()
+            itemController.item = item
+            self.addChildViewController(itemController)
+            itemController.view.frame = self.view.frame
+            self.view.addSubview(itemController.view)
+        }
+        
+    }
     
     var bgImage: UIImageView?
     func messageSeller(){

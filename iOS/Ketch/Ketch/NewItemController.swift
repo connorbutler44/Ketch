@@ -49,14 +49,12 @@ class NewItem: UIViewController,
         let iDesc = itemDesc.text!
         let iPrice = itemPrice.text!
         let iZip = itemZip.text!
-        let imageURL = uuid + ".png"
+        let imageURL = uuid + ".jpg"
         
         
         let storageRef = FIRStorage.storage().reference(forURL: "gs://ketch-b8d8a.appspot.com/").child(imageURL)
 
-        
-        if let uploadData = UIImagePNGRepresentation(self.myImageView.image!){
-            
+        if let uploadData = UIImageJPEGRepresentation(self.myImageView.image!, 0.1){
             storageRef.put(uploadData, metadata: nil, completion:
                 { (metadata, error) in
                     if error != nil {
@@ -86,7 +84,6 @@ class NewItem: UIViewController,
                         
                     }
             })
-            
         }
         
         

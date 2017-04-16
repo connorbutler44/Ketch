@@ -29,6 +29,8 @@
 		B96385731E56E0DF0081EB69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */; };
 		B963857E1E56E0E00081EB69 /* KetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963857D1E56E0E00081EB69 /* KetchTests.swift */; };
 		B96385891E56E0E00081EB69 /* KetchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96385881E56E0E00081EB69 /* KetchUITests.swift */; };
+		B9816AA21EA40F94002B7803 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9816AA11EA40F94002B7803 /* extensions.swift */; };
+		B9816AA41EA41EEE002B7803 /* ItemZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9816AA31EA41EEE002B7803 /* ItemZoomController.swift */; };
 		B988BCA21E6412FE0069CF69 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B988BCA11E6412FE0069CF69 /* LoginScreen.swift */; };
 		B988BCA81E6417A70069CF69 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988BCA41E6417A70069CF69 /* Bolts.framework */; };
 		B988BCA91E6417A70069CF69 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988BCA51E6417A70069CF69 /* FBSDKCoreKit.framework */; };
@@ -106,6 +108,8 @@
 		B96385841E56E0E00081EB69 /* KetchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96385881E56E0E00081EB69 /* KetchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetchUITests.swift; sourceTree = "<group>"; };
 		B963858A1E56E0E00081EB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9816AA11EA40F94002B7803 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		B9816AA31EA41EEE002B7803 /* ItemZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemZoomController.swift; sourceTree = "<group>"; };
 		B988BCA11E6412FE0069CF69 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		B988BCA31E6415580069CF69 /* Ketch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ketch.entitlements; sourceTree = "<group>"; };
 		B988BCA41E6417A70069CF69 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../FacebookSDKs-iOS-4.19.0/Bolts.framework"; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 		B96385651E56E0DF0081EB69 /* Ketch */ = {
 			isa = PBXGroup;
 			children = (
+				B9816AA01EA40F88002B7803 /* helpers */,
 				B9CCB11C1E6D21DF00F87E30 /* model */,
 				B93D15ED1E8B43FA008F5A7B /* view */,
 				B96385661E56E0DF0081EB69 /* AppDelegate.swift */,
@@ -231,6 +236,7 @@
 				1555EBB31E8A242E001D1C8D /* SellingPostTableController.swift */,
 				B9311DAF1E85155300E97547 /* splashScreen.swift */,
 				B9CAB8CB1E97006B00F93A07 /* PopupViewController.swift */,
+				B9816AA31EA41EEE002B7803 /* ItemZoomController.swift */,
 				B963856C1E56E0DF0081EB69 /* Main.storyboard */,
 				B924D85E1E98945E008BF92A /* UserRatingController.swift */,
 				B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */,
@@ -259,6 +265,14 @@
 				B963858A1E56E0E00081EB69 /* Info.plist */,
 			);
 			path = KetchUITests;
+			sourceTree = "<group>";
+		};
+		B9816AA01EA40F88002B7803 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B9816AA11EA40F94002B7803 /* extensions.swift */,
+			);
+			name = helpers;
 			sourceTree = "<group>";
 		};
 		B9CCB11C1E6D21DF00F87E30 /* model */ = {
@@ -582,11 +596,13 @@
 				15A9A96E1E80EFA9006DE688 /* NewItemController.swift in Sources */,
 				1555EBB41E8A242E001D1C8D /* SellingPostTableController.swift in Sources */,
 				B9B399181E57AFA00037AA62 /* CollectionViewCell.swift in Sources */,
+				B9816AA21EA40F94002B7803 /* extensions.swift in Sources */,
 				B9338C2B1E9EE0F700EEA8E0 /* review.swift in Sources */,
 				B9311DB81E85155300E97547 /* Message.swift in Sources */,
 				B96385671E56E0DF0081EB69 /* AppDelegate.swift in Sources */,
 				B924D85F1E98945E008BF92A /* UserRatingController.swift in Sources */,
 				B9311DB41E85155300E97547 /* splashScreen.swift in Sources */,
+				B9816AA41EA41EEE002B7803 /* ItemZoomController.swift in Sources */,
 				1526327F1E74A17E00186369 /* SellingPostController.swift in Sources */,
 				B9FE3FB81E9F3E0A00B49461 /* FavoritesController.swift in Sources */,
 				B9338C2D1E9EE26D00EEA8E0 /* RatingController.swift in Sources */,

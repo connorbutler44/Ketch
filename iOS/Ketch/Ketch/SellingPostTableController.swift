@@ -64,7 +64,7 @@ class SellingPostTableController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 130
     }
     
     var timer: Timer?
@@ -108,19 +108,7 @@ class SellingPostTableController: UITableViewController {
         cell.item = item
         
         if let itemImageURL = item.itemImage {
-            let url = URL(string: itemImageURL)
-            
-            URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
-                if error != nil {
-                    print(error)
-                    return
-                }
-                DispatchQueue.main.async {
-                    cell.profileImageView.image = UIImage(data: data!)
-                }
-                
-                
-            }).resume()
+            cell.profileImageView.loadImageUsingCacheWithURLString(urlString: itemImageURL)
         }
         
         return cell
