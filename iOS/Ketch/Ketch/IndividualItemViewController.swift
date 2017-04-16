@@ -285,10 +285,6 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         descSeparator.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
         descSeparator.heightAnchor.constraint(equalToConstant: 1).isActive = true
         
-        
-        
-        
-        
         var imageView : UIImageView
         if DeviceType.IS_IPHONE_5 || DeviceType.IS_IPHONE_4_OR_LESS {
             imageView  = UIImageView(frame:CGRect(x: 0, y: 112, width: self.view.frame.size.width, height: 150));
@@ -296,11 +292,25 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
             imageView  = UIImageView(frame:CGRect(x: 0, y: 112, width: self.view.frame.size.width, height: 200));
         }
         
-
         
-        imageView.image = UIImage(named:"lixin.png")
+        
+        imageView.image = UIImage(named:"loading.gif")
         imageView.contentMode = .scaleAspectFit
         containerView.addSubview(imageView)
+        if let itemImageURL = item?.itemImage {
+            let url = URL(string: itemImageURL)
+
+            URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+                if error != nil {
+                    print(error)
+                    return
+                }
+                print(url)
+                imageView.image = UIImage(data: data!)
+                
+            }).resume()
+        }
+        
         
         let descTitle = UILabel()
         descTitle.text = "Description"

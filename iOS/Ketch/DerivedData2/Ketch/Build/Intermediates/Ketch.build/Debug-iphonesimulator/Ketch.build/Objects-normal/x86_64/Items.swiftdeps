@@ -8,6 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 - "desc"
 - "itemID"
+- "itemImage"
 - "price"
 - "seller"
 - "title"
@@ -34,6 +35,7 @@ depends-member:
 - ["C5Ketch5Items", "desc"]
 - ["C5Ketch5Items", "init"]
 - ["C5Ketch5Items", "itemID"]
+- ["C5Ketch5Items", "itemImage"]
 - ["C5Ketch5Items", "price"]
 - ["C5Ketch5Items", "seller"]
 - ["C5Ketch5Items", "title"]
@@ -42,6 +44,7 @@ depends-member:
 - ["CSo8NSObject", "desc"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "itemID"]
+- ["CSo8NSObject", "itemImage"]
 - ["CSo8NSObject", "price"]
 - ["CSo8NSObject", "seller"]
 - ["CSo8NSObject", "title"]
@@ -187,4 +190,4 @@ depends-external:
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/DerivedData2/Ketch/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "ecf35017124a2e677024a07220fde0a3"
+interface-hash: "2dd0a7560129fe40a8fd6a002126669d"

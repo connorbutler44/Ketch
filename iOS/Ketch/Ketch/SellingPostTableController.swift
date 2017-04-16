@@ -64,7 +64,7 @@ class SellingPostTableController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 72
+        return 100
     }
     
     var timer: Timer?
@@ -106,10 +106,27 @@ class SellingPostTableController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ItemCell
         let item = items[indexPath.row]
         cell.item = item
+        
+        if let itemImageURL = item.itemImage {
+            let url = URL(string: itemImageURL)
+            
+            URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+                if error != nil {
+                    print(error)
+                    return
+                }
+                DispatchQueue.main.async {
+                    cell.profileImageView.image = UIImage(data: data!)
+                }
+                
+                
+            }).resume()
+        }
+        
         return cell
     }
     
-    func showItemControllerForUser(item: Items){        
+    func showItemControllerForUser(item: Items){
         let itemController = IndividualItemViewController()
         itemController.item = item
         navigationController?.pushViewController(itemController, animated: true)

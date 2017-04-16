@@ -695,11 +695,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/SellingPostTableController.swift"
-            timestampString = "513762749.283399"
+            timestampString = "514010665.296267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "showItemControllerForUser(item:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -887,11 +887,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/IndividualItemViewController.swift"
-            timestampString = "513660941.953835"
+            timestampString = "514008575.298245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "428"
-            endingLineNumber = "428"
+            startingLineNumber = "438"
+            endingLineNumber = "438"
             landmarkName = "DeviceType"
             landmarkType = "14">
          </BreakpointContent>
@@ -903,11 +903,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/IndividualItemViewController.swift"
-            timestampString = "513660941.953835"
+            timestampString = "514008575.298245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "429"
-            endingLineNumber = "429"
+            startingLineNumber = "439"
+            endingLineNumber = "439"
             landmarkName = "DeviceType"
             landmarkType = "14">
          </BreakpointContent>
@@ -1079,7 +1079,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/ItemCell.swift"
-            timestampString = "513759956.291415"
+            timestampString = "514010665.296267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"

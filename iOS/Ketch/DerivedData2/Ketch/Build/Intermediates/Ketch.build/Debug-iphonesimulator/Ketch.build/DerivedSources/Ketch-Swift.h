@@ -354,6 +354,7 @@ SWIFT_CLASS("_TtC5Ketch5Items")
 @interface Items : NSObject
 @property (nonatomic, copy) NSString * _Nullable desc;
 @property (nonatomic, copy) NSString * _Nullable itemID;
+@property (nonatomic, copy) NSString * _Nullable itemImage;
 @property (nonatomic, copy) NSString * _Nullable price;
 @property (nonatomic, copy) NSString * _Nullable seller;
 @property (nonatomic, copy) NSString * _Nullable title;
@@ -441,10 +442,12 @@ SWIFT_CLASS("_TtC5Ketch9MyAccount")
 @end
 
 @class UIButton;
+@class UIImagePickerController;
 @class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC5Ketch7NewItem")
-@interface NewItem : UIViewController
+@interface NewItem : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified myImageView;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemTitle;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemDesc;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified itemPrice;
@@ -457,6 +460,7 @@ SWIFT_CLASS("_TtC5Ketch7NewItem")
 - (IBAction)postAndReturn:(id _Nonnull)sender;
 - (void)dismissKeyboard;
 - (IBAction)uploadImage:(id _Nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (IBAction)dismissKeyboard:(UITapGestureRecognizer * _Nonnull)sender;
 - (IBAction)cancelPost:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

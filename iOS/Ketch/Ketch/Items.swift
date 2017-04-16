@@ -12,6 +12,7 @@ import Firebase
 class Items: NSObject {
     var desc: String?
     var itemID: String?
+    var itemImage: String?
     var price: String?
     var seller: String?
     var title: String?
