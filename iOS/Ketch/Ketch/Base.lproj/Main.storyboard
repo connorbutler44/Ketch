@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uD3-Bf-vBf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uD3-Bf-vBf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -248,7 +248,6 @@
                                 <connections>
                                     <action selector="goToReviews:" destination="aDL-r2-AbN" eventType="touchUpInside" id="h4B-m3-uY2"/>
                                     <action selector="uploadImage:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="4Ro-pM-Qjp"/>
-                                    <action selector="uploadImageAction:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="Qld-H4-RV7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRQ-ia-rXo">
@@ -269,7 +268,6 @@
                                 <connections>
                                     <action selector="goToFavorites:" destination="aDL-r2-AbN" eventType="touchUpInside" id="VUd-bT-cdU"/>
                                     <action selector="uploadImage:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="bYd-nc-YbV"/>
-                                    <action selector="uploadImageAction:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="C0r-Gc-g7b"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRQ-7V-WP0">
@@ -688,12 +686,15 @@
                                         </state>
                                         <connections>
                                             <action selector="uploadImage:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="8fN-pn-olo"/>
-                                            <action selector="uploadImageAction:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="IMB-yC-QVc"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.36862745099999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0v-7S-Mg2">
+                                <rect key="frame" x="0.0" y="443" width="375" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -707,6 +708,7 @@
                         <outlet property="itemPrice" destination="65k-RJ-tvb" id="QoT-dH-xik"/>
                         <outlet property="itemTitle" destination="dOK-xf-mEK" id="isN-bN-wWQ"/>
                         <outlet property="itemZip" destination="zkj-y7-oi0" id="RTR-Ho-CrM"/>
+                        <outlet property="myImageView" destination="j0v-7S-Mg2" id="7DJ-5m-r2e"/>
                         <outlet property="postButton" destination="BPh-gG-nwG" id="kPV-4O-Ce1"/>
                         <outlet property="uploadImage" destination="fA7-tZ-ojS" id="4ii-9z-aA5"/>
                     </connections>

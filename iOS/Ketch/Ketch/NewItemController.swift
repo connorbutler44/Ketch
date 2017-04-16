@@ -11,9 +11,12 @@ import FirebaseDatabase
 import FirebaseAuth
 import FirebaseStorage
 
-class NewItem: UIViewController {
+class NewItem: UIViewController,
+    UIImagePickerControllerDelegate,
+    UINavigationControllerDelegate {
     
     
+    @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet var itemTitle: UITextField!
     @IBOutlet var itemDesc: UITextField!
     @IBOutlet var itemPrice: UITextField!
@@ -21,7 +24,6 @@ class NewItem: UIViewController {
     @IBOutlet weak var postButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var uploadImage: UIButton!
-    
     
     let uuid = UUID().uuidString
     
@@ -38,35 +40,60 @@ class NewItem: UIViewController {
     
     @IBAction func postAndReturn(_ sender: Any) {
         let ref = FIRDatabase.database().reference(fromURL: "https://ketch-b8d8a.firebaseio.com/")
+        let itemReference = ref.child("items").child(uuid)
+        let uid = FIRAuth.auth()?.currentUser?.uid
         
+        let userItemReference = ref.child("user-item").child(uid!)
         
         let iName = itemTitle.text!
         let iDesc = itemDesc.text!
         let iPrice = itemPrice.text!
         let iZip = itemZip.text!
-        let uid = FIRAuth.auth()?.currentUser?.uid
+        let imageURL = uuid + ".png"
         
-        let itemReference = ref.child("items").child(uuid)
-        let userItemReference = ref.child("user-item").child(uid!)
         
-        let values = ["price": iPrice, "seller": uid, "title": iName, "zipcode": iZip, "desc": iDesc, "itemID": uuid] as [String : Any]
+        let storageRef = FIRStorage.storage().reference(forURL: "gs://ketch-b8d8a.appspot.com/").child(imageURL)
+
         
-        userItemReference.updateChildValues([uuid:1])
+        if let uploadData = UIImagePNGRepresentation(self.myImageView.image!){
+            
+            storageRef.put(uploadData, metadata: nil, completion:
+                { (metadata, error) in
+                    if error != nil {
+                        return
+                    }
+                    
+                    if let itemImageUrl = metadata?.downloadURL()?.absoluteString {
+                        
+                        let values = ["price": iPrice, "seller": uid, "title": iName, "zipcode": iZip, "desc": iDesc, "itemID": self.uuid, "itemImage": itemImageUrl] as [String : Any]
+                        
+                        userItemReference.updateChildValues([self.uuid:1])
+                        
+                        itemReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                            if err != nil {
+                                print(err ?? "")
+                                return
+                            }
+                            
+                            print("Item saved successfully into Firebase")
+                            
+                            
+                            
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            let controller = storyboard.instantiateViewController(withIdentifier: "Dashboard")
+                            self.present(controller, animated: true, completion: nil)
+                        })
+                        
+                    }
+            })
+            
+        }
         
-        itemReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
-            if err != nil {
-                print(err ?? "")
-                return
-            }
-            
-            print("Item saved successfully into Firebase")
-            
-            
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "Dashboard")
-            self.present(controller, animated: true, completion: nil)
-        })
+        
+        
+        
+        
+        
     }
     
     
@@ -77,19 +104,22 @@ class NewItem: UIViewController {
     
     
     @IBAction func uploadImage(_ sender: Any) {
-        let localFile = URL(string: "path/to/image")!
-        let storageRef = FIRStorage.storage().reference(forURL: "gs://ketch-b8d8a.appspot.com/")
-        let pictureRef = storageRef.child(uuid)
-        
-        let uploadTask = pictureRef.putFile(localFile, metadata: nil) { metadata, error in
-            if let error = error {
-                // Uh-oh, an error occurred!
-            } else {
-                // Metadata contains file metadata such as size, content-type, and download URL.
-                let downloadURL = metadata!.downloadURL()
-            }
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        picker.allowsEditing = false
+        self.present(picker, animated: true){
+            
         }
-        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            myImageView.image = image        }
+        else {
+            //Error message
+        }
+        self.dismiss(animated: true, completion: nil)
     }
     
     
