@@ -272,6 +272,7 @@ SWIFT_CLASS("_TtC5Ketch19FavoritesController")
 
 @class UIImage;
 @class UIGestureRecognizer;
+@class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC5Ketch28IndividualItemViewController")
 @interface IndividualItemViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITextFieldDelegate>
@@ -286,8 +287,10 @@ SWIFT_CLASS("_TtC5Ketch28IndividualItemViewController")
 - (void)offers;
 - (void)unfavorite;
 - (void)favorite;
+@property (nonatomic, strong) UIImageView * _Nonnull imageView;
 - (void)setupInputComponents;
 - (void)showImageViewControllerWithGesture:(UIGestureRecognizer * _Nonnull)gesture;
+- (void)dismissFullscreenImage:(UITapGestureRecognizer * _Nonnull)sender;
 @property (nonatomic, strong) UIImageView * _Nullable bgImage;
 - (void)messageSeller;
 - (void)showChatControllerForUserWithUser:(user * _Nonnull)user;
@@ -457,7 +460,6 @@ SWIFT_CLASS("_TtC5Ketch9MyAccount")
 
 @class UIButton;
 @class UIImagePickerController;
-@class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC5Ketch7NewItem")
 @interface NewItem : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -569,6 +571,8 @@ SWIFT_CLASS("_TtC5Ketch26SellingPostTableController")
 @property (nonatomic, strong) IBOutlet UIBarButtonItem * _Null_unspecified newItemButton;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cellID;
 - (void)viewDidLoad;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (IBAction)addNewItem:(UIBarButtonItem * _Nonnull)sender;
 @property (nonatomic, copy) NSArray<Items *> * _Nonnull items;
 @property (nonatomic, copy) NSDictionary<NSString *, Items *> * _Nonnull itemsDictionary;

@@ -35,23 +35,23 @@ class ItemZoomController: UIViewController {
         containerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(containerView)
         containerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         containerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        containerView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: 500).isActive = true
         
         var imageView : UIImageView
-        imageView  = UIImageView(frame:CGRect(x: 0, y: self.view.frame.height/2, width: 300, height: 300))
+        imageView  = UIImageView(frame:CGRect(x: self.view.frame.width/2, y: self.view.frame.height/2, width: 350, height: 350))
+        containerView.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         if let itemImageURL = item?.itemImage {
             imageView.loadImageUsingCacheWithURLString(urlString: itemImageURL)
         }
-        containerView.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
         var exit = UIImageView()
         exit = UIImageView(frame:CGRect(x: 0, y: 0, width: 25, height: 25))
-        exit.image = UIImage(named: "minimize")
         containerView.addSubview(exit)
         exit.translatesAutoresizingMaskIntoConstraints = false
+        exit.image = UIImage(named: "minimize")
+        containerView.updateConstraints()
     }
     
     

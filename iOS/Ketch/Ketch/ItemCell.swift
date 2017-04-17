@@ -29,8 +29,11 @@ class ItemCell: UITableViewCell{
     }
     override func layoutSubviews() {
         super.layoutSubviews()
-        textLabel?.frame = CGRect(x: 115, y: textLabel!.frame.origin.y, width: textLabel!.frame.width, height: textLabel!.frame.height)
-        detailTextLabel?.frame = CGRect(x: 115, y: detailTextLabel!.frame.origin.y, width: detailTextLabel!.frame.width, height: detailTextLabel!.frame.height)
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        textLabel?.frame = CGRect(x: 115, y: textLabel!.frame.origin.y, width: screenWidth - 125, height: textLabel!.frame.height)
+        detailTextLabel?.frame = CGRect(x: 115, y: detailTextLabel!.frame.origin.y, width: screenWidth - 125, height: detailTextLabel!.frame.height)
     }
     let profileImageView: UIImageView = {
         

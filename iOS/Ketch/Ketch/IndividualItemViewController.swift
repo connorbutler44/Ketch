@@ -108,7 +108,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         
         
     }
-    
+    var imageView = UIImageView()
     func setupInputComponents(){
         let navigationBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height + self.navigationController!.navigationBar.frame.height
         let tabBarHeight: CGFloat = (self.tabBarController?.tabBar.frame.height)! * -1
@@ -285,7 +285,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         descSeparator.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
         descSeparator.heightAnchor.constraint(equalToConstant: 1).isActive = true
         
-        var imageView : UIImageView
+        
         if DeviceType.IS_IPHONE_5 || DeviceType.IS_IPHONE_4_OR_LESS {
             imageView  = UIImageView(frame:CGRect(x: 0, y: 112, width: self.view.frame.size.width, height: 150));
         } else {
@@ -378,14 +378,29 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
     }
     
     func showImageViewController(gesture: UIGestureRecognizer){
-        if (gesture.view as? UIImageView) != nil {
-            let itemController = ItemZoomController()
-            itemController.item = item
-            self.addChildViewController(itemController)
-            itemController.view.frame = self.view.frame
-            self.view.addSubview(itemController.view)
+
+        let newImageView = UIImageView()
+        let containerView = UIView()
+        if let itemImageURL = item?.itemImage {
+            newImageView.loadImageUsingCacheWithURLString(urlString: itemImageURL)
+            containerView.frame = CGRect(x: 0, y: (navigationController?.navigationBar.frame.height)!, width: view.frame.width, height: view.frame.height-(navigationController?.navigationBar.frame.height)!-(tabBarController?.tabBar.frame.size.height)!)
+            containerView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+            self.view.addSubview(containerView)
+            newImageView.frame = CGRect(x: 0, y: (navigationController?.navigationBar.frame.height)!, width: self.view.frame.width, height: self.view.frame.width)
+            newImageView.contentMode = .scaleAspectFit
+            newImageView.isUserInteractionEnabled = true
+            newImageView.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
+            let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+            containerView.addGestureRecognizer(tap)
+            containerView.addSubview(newImageView)
         }
+
         
+        
+    }
+    
+    func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        sender.view?.removeFromSuperview()
     }
     
     var bgImage: UIImageView?

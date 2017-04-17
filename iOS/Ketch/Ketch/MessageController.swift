@@ -31,6 +31,9 @@ class MessageController: UITableViewController {
         navigationController?.navigationBar.barTintColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
         
     }
+    
+    
+    
     var messages = [Message] ()
     var messagesDictionary = [String: Message]()
     func observeUserMessages(){
@@ -71,6 +74,7 @@ class MessageController: UITableViewController {
     var timer: Timer?
     
     func handleReloadTable(){
+        self.messages = Array(self.messagesDictionary.values)
         DispatchQueue.main.async {
             //reloads the tableView with all user's name/email *MUST call async func so the app does not crash from this thread*
             self.tableView.reloadData()

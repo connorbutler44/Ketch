@@ -24,6 +24,7 @@ class FavoritesController: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSForegroundColorAttributeName: UIColor.white
         ]
+        navigationItem.title = "My Favorites"
         
     }
 
@@ -64,12 +65,13 @@ class FavoritesController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 72
+        return 130
     }
     
     var timer: Timer?
     
     func handleReloadTable(){
+        self.items = Array(self.itemsDictionary.values)
         DispatchQueue.main.async {
             //reloads the tableView with all user's name/email *MUST call async func so the app does not crash from this thread*
             self.tableView.reloadData()
@@ -106,6 +108,11 @@ class FavoritesController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ItemCell
         let item = items[indexPath.row]
         cell.item = item
+        
+        if let itemImageURL = item.itemImage {
+            cell.profileImageView.loadImageUsingCacheWithURLString(urlString: itemImageURL)
+        }
+        
         return cell
     }
     

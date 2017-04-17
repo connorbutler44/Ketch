@@ -25,6 +25,31 @@ class SellingPostTableController: UITableViewController {
             NSForegroundColorAttributeName: UIColor.white
         ]
         
+        tableView.allowsSelectionDuringEditing = true
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        guard let uid = FIRAuth.auth()?.currentUser?.uid else {
+            return
+        }
+        let item = items[indexPath.row]
+        FIRDatabase.database().reference().child("user-item").child(uid).child(item.itemID!).removeValue { (error, ref) in
+            if error != nil {
+                print("Failed to delete message: ", error)
+                return
+            }
+            
+            self.itemsDictionary.removeValue(forKey: item.itemID!)
+            self.handleReloadTable()
+        }
+        
+  
+        
     }
     
     
@@ -70,6 +95,7 @@ class SellingPostTableController: UITableViewController {
     var timer: Timer?
     
     func handleReloadTable(){
+        self.items = Array(self.itemsDictionary.values)
         DispatchQueue.main.async {
             //reloads the tableView with all user's name/email *MUST call async func so the app does not crash from this thread*
             self.tableView.reloadData()
