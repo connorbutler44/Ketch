@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <title>Ketch</title>
 
     <!-- Bootstrap Core CSS -->
@@ -53,12 +53,12 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                
+
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#login">Login</a>
+                        <a class="page-scroll" href="support/index.html">Support</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +85,7 @@
                     <h2 class="section-heading">We've got what you need!</h2>
                     <hr class="light">
                     <p class="text-faded">Ketch has everything you need to start buying and selling in no time! All you have to do is download Ketch from the app store, login with Facebook and you're ready to go! </p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                    <a href="support/index.html" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -265,8 +265,8 @@
     <!-- jQuery -->
     <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
     <script>
-      // Initialize Firebase
-         var config = {
+        // Initialize Firebase
+        var config = {
             apiKey: "AIzaSyDCgqKsoq3QztLYe8Ozbrau4n80-ewpT7w",
             authDomain: "ketch-b8d8a.firebaseapp.com",
             databaseURL: "https://ketch-b8d8a.firebaseio.com",
@@ -276,17 +276,18 @@
         firebase.initializeApp(config);
         var DBRef = firebase.database();
         getCount();
-        function getCount(){
-            DBRef.ref('web/views/').once("value", function(snapshot){
+
+        function getCount() {
+            DBRef.ref('web/views/').once("value", function(snapshot) {
                 var total = snapshot.val();
                 writeUserData(total + 1);
             });
         }
-        
+
         function writeUserData(total) {
-        DBRef.ref('web/').set({
-            views: total
-         });
+            DBRef.ref('web/').set({
+                views: total
+            });
         }
         /*  FACEBOOK LOGIN FUNCTION
         
@@ -308,8 +309,8 @@
             // ...
             });
         */
-        
-        </script>
+
+    </script>
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
