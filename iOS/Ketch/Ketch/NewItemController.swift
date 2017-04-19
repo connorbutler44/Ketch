@@ -24,6 +24,7 @@ class NewItem: UIViewController,
     @IBOutlet weak var postButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var uploadImage: UIButton!
+    @IBOutlet weak var conditionLabel: UILabel!
     
     let uuid = UUID().uuidString
     
@@ -38,6 +39,27 @@ class NewItem: UIViewController,
     
     
     
+    let step: Float = 1
+    
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        let roundedValue = round(sender.value / step) * step
+        sender.value = roundedValue
+        if roundedValue == 0 {
+            conditionLabel.text = "Other"
+        } else if roundedValue == 1 {
+            conditionLabel.text = "For Parts"
+        } else if roundedValue == 2 {
+            conditionLabel.text = "Heavy Use"
+        } else if roundedValue == 3 {
+            conditionLabel.text = "Normal Wear"
+        } else if roundedValue == 4 {
+            conditionLabel.text = "Open Box"
+        } else if roundedValue == 5{
+            conditionLabel.text = "New"
+        }
+        
+    }
+    
     @IBAction func postAndReturn(_ sender: Any) {
         let ref = FIRDatabase.database().reference(fromURL: "https://ketch-b8d8a.firebaseio.com/")
         let itemReference = ref.child("items").child(uuid)
@@ -50,7 +72,7 @@ class NewItem: UIViewController,
         let iPrice = itemPrice.text!
         let iZip = itemZip.text!
         let imageURL = uuid + ".jpg"
-        
+        let iCondition = conditionLabel.text!
         
         let storageRef = FIRStorage.storage().reference(forURL: "gs://ketch-b8d8a.appspot.com/").child(imageURL)
 
@@ -63,7 +85,7 @@ class NewItem: UIViewController,
                     
                     if let itemImageUrl = metadata?.downloadURL()?.absoluteString {
                         
-                        let values = ["price": iPrice, "seller": uid, "title": iName, "zipcode": iZip, "desc": iDesc, "itemID": self.uuid, "itemImage": itemImageUrl] as [String : Any]
+                        let values = ["price": iPrice, "seller": uid, "title": iName, "zipcode": iZip, "desc": iDesc, "itemID": self.uuid, "itemImage": itemImageUrl, "condition": iCondition] as [String : Any]
                         
                         userItemReference.updateChildValues([self.uuid:1])
                         

@@ -321,7 +321,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         
         
         let descLabel = UITextView()
-        descLabel.text = item?.desc
+        descLabel.text = (item?.condition)! + "\n" + (item?.desc)!
         descLabel.font = descLabel.font?.withSize(18)
         descLabel.translatesAutoresizingMaskIntoConstraints = false
         descLabel.textColor = UIColor.darkGray

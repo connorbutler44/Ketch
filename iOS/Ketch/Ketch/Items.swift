@@ -17,5 +17,6 @@ class Items: NSObject {
     var seller: String?
     var title: String?
     var zipcode: String?
+    var condition: String?
 
 }
