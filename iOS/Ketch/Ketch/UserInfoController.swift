@@ -12,7 +12,7 @@ import Firebase
 class UserInfoController: UITableViewController, UITextFieldDelegate, UICollectionViewDelegateFlowLayout{
     var user: user? {
         didSet{
-            print("user reference set")
+
         }
     }
     

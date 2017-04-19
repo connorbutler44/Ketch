@@ -33,7 +33,6 @@ class Dashboard: UITabBarController, UIPopoverPresentationControllerDelegate{
         FIRDatabase.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let zipcode = dictionary["zipcode"] as? String
-                print(dictionary["zipcode"])
                 if(zipcode == ""){
                     self.setUserZipcode()
                 }

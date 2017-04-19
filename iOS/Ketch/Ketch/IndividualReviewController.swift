@@ -20,7 +20,7 @@ class IndividualReviewController: UIViewController, UITextFieldDelegate, UIColle
     
     var review: review? {
         didSet{
-            print("review reference set")
+            
         }
     }
     

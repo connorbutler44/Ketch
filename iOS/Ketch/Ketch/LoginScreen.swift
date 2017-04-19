@@ -25,13 +25,13 @@ class LoginScreen: UIViewController, FBSDKLoginButtonDelegate {
             loginButton.frame = CGRect(x: 0, y: yStart, width: view.frame.width, height: 75)
             loginButton.delegate = self
             loginButton.readPermissions = ["email", "public_profile"]
-            print("user is currently logged out")
+
             view.addSubview(loginButton)
                         
         }
         else
         {
-            print("User is currently logged in - go to dashboard")
+
             perform(#selector(userLoggedIn), with: nil, afterDelay: 0)
         }
     }
@@ -50,7 +50,6 @@ class LoginScreen: UIViewController, FBSDKLoginButtonDelegate {
         {
             (result, err) in
             if err != nil {
-                print("FB Login failed:")
                 return
             }
             self.loginProcess()
@@ -68,7 +67,6 @@ class LoginScreen: UIViewController, FBSDKLoginButtonDelegate {
         } catch let logoutError {
             print(logoutError)
         }
-        print("Successfully logged out of facebook")
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {

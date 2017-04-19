@@ -28,11 +28,11 @@ class RatingController: UITableViewController {
             if FIRAuth.auth()?.currentUser?.uid == user?.id{
                 var str = "My reviews"
                 navigationItem.title = str
-                print("user reference set")
+
             } else {
                 var str = "Reviews for " + (user?.name)!
                 navigationItem.title = str
-                print("user reference set")
+
             }
             
         }

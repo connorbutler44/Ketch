@@ -16,11 +16,9 @@ class splashScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if FIRAuth.auth()?.currentUser?.uid != nil {
-            print("logged in")
             loggedIn()
             
         } else {
-            print("logged out")
             loggedOut()
         }
         

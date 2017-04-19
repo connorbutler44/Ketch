@@ -163,7 +163,6 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "LoginScreen")
         self.present(controller, animated: true, completion: nil)
-        print("Successfully logged out of facebook")
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {

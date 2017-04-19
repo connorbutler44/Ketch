@@ -20,7 +20,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
     
     var item: Items? {
         didSet{
-            print("item reference set")
+            
         }
     }
     

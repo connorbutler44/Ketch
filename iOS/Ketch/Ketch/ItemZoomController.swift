@@ -13,7 +13,7 @@ class ItemZoomController: UIViewController {
     
     var item: Items? {
         didSet{
-            print("item reference set")
+
         }
     }
     
