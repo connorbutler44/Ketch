@@ -17,7 +17,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
     @IBOutlet weak var itemPrice: UILabel!
     @IBOutlet weak var itemDesc: UITextView!
     @IBOutlet weak var descField: UITextView!
-    
+    var isReported = false
     var item: Items? {
         didSet{
             
@@ -239,11 +239,16 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
 
         makeOfferButton.backgroundColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
         
+        if isReported {
+            reportButton.setTitle("Reported", for: .normal)
+        } else {
+            reportButton.setTitle("Report", for: .normal)
+            reportButton.addTarget(self, action: #selector(reportPost), for: .touchUpInside)
+        }
         
-        reportButton.setTitle("Report", for: .normal)
         reportButton.setTitleColor(UIColor.white, for: .normal)
         reportButton.translatesAutoresizingMaskIntoConstraints = false
-        reportButton.addTarget(self, action: #selector(reportPost), for: .touchUpInside)
+        
         reportButton.backgroundColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
         
         containerView.addSubview(reportButton)
@@ -408,7 +413,8 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
                 return
             }
             self.reportButton.removeTarget(self, action: #selector(self.reportPost), for: .touchUpInside)
-            self.reportButton.layoutIfNeeded()
+            self.isReported = true
+            self.reportButton.titleLabel?.text = "Reported"
         }
         
     }

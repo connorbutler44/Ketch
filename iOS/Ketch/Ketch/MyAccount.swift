@@ -47,7 +47,7 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
             
             view.addGestureRecognizer(tap)
             let loginButton = FBSDKLoginButton()
-            view.addSubview(loginButton)
+            //view.addSubview(loginButton)
             let yStart = view.frame.maxY - 98
             loginButton.frame = CGRect(x: 0, y: yStart, width: view.frame.width, height: 50)
             loginButton.delegate = self
@@ -69,12 +69,12 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
         
     }
     
-    @IBAction func goToFavorites(_ sender: Any) {
+    @IBAction func goToFavorites(_ sender: UIButton) {
         let reviewController = FavoritesController()
         navigationController?.pushViewController(reviewController, animated: true)
     }
     
-    @IBAction func goToReviews(_ sender: Any) {
+    @IBAction func goToReviews(_ sender: UIButton) {
         guard let uid = FIRAuth.auth()?.currentUser?.uid else {
             return
         }
@@ -91,11 +91,23 @@ class MyAccount: UIViewController, FBSDKLoginButtonDelegate {
         }, withCancel: nil)
     }
 
+    @IBAction func logout(_ sender: UIButton) {
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "LoginScreen")
+        self.present(controller, animated: true, completion: nil)
+    }
+    @IBAction func goToSupport(_ sender: UIButton) {
+        if let url = NSURL(string: "https://ketch-b8d8a.firebaseapp.com/support/index.html"){ UIApplication.shared.open(url as URL, options: [:], completionHandler: nil) }
+    }
 
     func goToReview(user: user){
         let reviewController = RatingController()
         reviewController.user = user
-        print(user)
         navigationController?.pushViewController(reviewController, animated: true)
     }
     

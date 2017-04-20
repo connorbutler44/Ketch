@@ -280,6 +280,7 @@ SWIFT_CLASS("_TtC5Ketch28IndividualItemViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemPrice;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified itemDesc;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descField;
+@property (nonatomic) BOOL isReported;
 @property (nonatomic, strong) Items * _Nullable item;
 @property (nonatomic, strong) UIImage * _Nonnull image;
 - (void)viewDidLoad;
@@ -447,8 +448,10 @@ SWIFT_CLASS("_TtC5Ketch9MyAccount")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified zipLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
 - (void)viewDidLoad;
-- (IBAction)goToFavorites:(id _Nonnull)sender;
-- (IBAction)goToReviews:(id _Nonnull)sender;
+- (IBAction)goToFavorites:(UIButton * _Nonnull)sender;
+- (IBAction)goToReviews:(UIButton * _Nonnull)sender;
+- (IBAction)logout:(UIButton * _Nonnull)sender;
+- (IBAction)goToSupport:(UIButton * _Nonnull)sender;
 - (void)goToReviewWithUser:(user * _Nonnull)user;
 - (void)imageTappedWithGesture:(UIGestureRecognizer * _Nonnull)gesture;
 - (void)checkTappedWithGesture:(UIGestureRecognizer * _Nonnull)gesture;

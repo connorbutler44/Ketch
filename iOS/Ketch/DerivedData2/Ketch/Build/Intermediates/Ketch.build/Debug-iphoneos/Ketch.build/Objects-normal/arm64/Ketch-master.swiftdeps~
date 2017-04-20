@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
 options: "be522f15b5ee802342f11eb09a05885e"
-build_time: [545961311, 513569000]
+build_time: [545966109, 518619000]
 inputs:
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/user.swift": [545358173, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/ReviewCell.swift": [545958587, 0]
@@ -21,8 +21,8 @@ inputs:
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/Dashboard.swift": [545954940, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/UserCell.swift": [545958396, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/MessageController.swift": [545725708, 0]
-  "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/IndividualItemViewController.swift": [545961310, 0]
-  "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/MyAccount.swift": [545954940, 0]
+  "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/IndividualItemViewController.swift": [545962021, 0]
+  "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/MyAccount.swift": !private [545966106, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/ItemCell.swift": [545722508, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/Item.swift": [544046251, 0]
   "/Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/IndividualReviewController.swift": [545954940, 0]
