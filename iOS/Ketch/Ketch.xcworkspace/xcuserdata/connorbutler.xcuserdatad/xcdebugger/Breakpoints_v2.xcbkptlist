@@ -247,11 +247,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/ChatLogController.swift"
-            timestampString = "514193373.55638"
+            timestampString = "514336901.392618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
             landmarkName = "handleBack()"
             landmarkType = "7">
          </BreakpointContent>
@@ -279,11 +279,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/ChatLogController.swift"
-            timestampString = "514193373.55638"
+            timestampString = "514336901.392618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "viewDidDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -839,23 +839,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/IndividualItemViewController.swift"
-            timestampString = "513660941.953835"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "setupInputComponents()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Ketch/IndividualItemViewController.swift"
-            timestampString = "513660941.953835"
+            timestampString = "514338410.321555"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
@@ -871,11 +855,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/IndividualItemViewController.swift"
-            timestampString = "513660941.953835"
+            timestampString = "514338410.321555"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "setupInputComponents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -887,11 +871,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/IndividualItemViewController.swift"
-            timestampString = "514099825.09495"
+            timestampString = "514338410.321555"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "455"
-            endingLineNumber = "455"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "setupInputComponents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ketch/IndividualItemViewController.swift"
+            timestampString = "514338920.038691"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "495"
+            endingLineNumber = "495"
             landmarkName = "DeviceType"
             landmarkType = "14">
          </BreakpointContent>
@@ -903,11 +903,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ketch/IndividualItemViewController.swift"
-            timestampString = "514099825.09495"
+            timestampString = "514338920.038691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "456"
-            endingLineNumber = "456"
+            startingLineNumber = "496"
+            endingLineNumber = "496"
             landmarkName = "DeviceType"
             landmarkType = "14">
          </BreakpointContent>
@@ -1086,6 +1086,147 @@
             endingLineNumber = "25"
             landmarkName = "setupNameAndProfileImage()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ketch/ChatLogController.swift"
+            timestampString = "514336901.392618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "user2"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ketch.ChatLogController.messages.getter : Swift.Array&lt;Ketch.Message&gt;"
+                  moduleName = "Ketch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/ChatLogController.swift"
+                  timestampString = "514336617.393861"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ketch.ChatLogController.messages.setter : Swift.Array&lt;Ketch.Message&gt;"
+                  moduleName = "Ketch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/ChatLogController.swift"
+                  timestampString = "514336617.395377"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ketch.ChatLogController.init (collectionViewLayout : __ObjC.UICollectionViewLayout) -&gt; Ketch.ChatLogController"
+                  moduleName = "Ketch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/ChatLogController.swift"
+                  timestampString = "514336617.396579"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ketch.ChatLogController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Ketch.ChatLogController"
+                  moduleName = "Ketch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/ChatLogController.swift"
+                  timestampString = "514336617.397778"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ketch.ChatLogController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Ketch.ChatLogController&gt;"
+                  moduleName = "Ketch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/ChatLogController.swift"
+                  timestampString = "514336617.398962"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ketch/IndividualItemViewController.swift"
+            timestampString = "514338410.321555"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "405"
+            endingLineNumber = "405"
+            landmarkName = "reportPost()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ketch.IndividualItemViewController.showImageViewController (gesture : __ObjC.UIGestureRecognizer) -&gt; ()"
+                  moduleName = "Ketch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/IndividualItemViewController.swift"
+                  timestampString = "514338285.427176"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "404"
+                  endingLineNumber = "404"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ketch.IndividualItemViewController.showImageViewController (gesture : __ObjC.UIGestureRecognizer) -&gt; ()"
+                  moduleName = "Ketch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connorbutler/Desktop/Ketch/iOS/Ketch/Ketch/IndividualItemViewController.swift"
+                  timestampString = "514338285.428345"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "404"
+                  endingLineNumber = "404"
+                  offsetFromSymbolStart = "3788">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -49,7 +49,7 @@ class NewMessageController: UITableViewController {
         cell.textLabel?.text = user.name
         cell.imageView?.contentMode = .scaleAspectFill
         cell.detailTextLabel?.text = user.email
-        cell.imageView?.image = UIImage(named: "head")
+        cell.imageView?.image = UIImage(named: "person")
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

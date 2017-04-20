@@ -12,7 +12,7 @@ import Firebase
 class ReviewCell: UITableViewCell{
     var review: review? {
         didSet{
-            imageView?.image = UIImage(named: "loading.gif")
+            //imageView?.image = UIImage(named: "loading.gif")
             setupNameAndProfileImage()
             
             detailTextLabel?.text = review?.message

@@ -12,7 +12,7 @@ import Firebase
 class UserCell: UITableViewCell{
     var message: Message? {
         didSet{
-            imageView?.image = UIImage(named: "head")
+            imageView?.image = UIImage(named: "person")
             setupNameAndProfileImage()
             detailTextLabel?.text = message?.text
             

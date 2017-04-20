@@ -12,7 +12,6 @@
 		1555EBB41E8A242E001D1C8D /* SellingPostTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555EBB31E8A242E001D1C8D /* SellingPostTableController.swift */; };
 		1555EBB61E8A26CA001D1C8D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555EBB51E8A26CA001D1C8D /* Item.swift */; };
 		15A9A96E1E80EFA9006DE688 /* NewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A9A96D1E80EFA9006DE688 /* NewItemController.swift */; };
-		B923EABF1EA3362B00494A07 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = B923EABE1EA3362B00494A07 /* loading.gif */; };
 		B924D85F1E98945E008BF92A /* UserRatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924D85E1E98945E008BF92A /* UserRatingController.swift */; };
 		B9311DB41E85155300E97547 /* splashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9311DAF1E85155300E97547 /* splashScreen.swift */; };
 		B9311DB51E85155300E97547 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9311DB01E85155300E97547 /* ChatLogController.swift */; };
@@ -85,7 +84,6 @@
 		6815679235E82CE53FF9D99F /* Pods-Ketch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ketch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ketch/Pods-Ketch.release.xcconfig"; sourceTree = "<group>"; };
 		6FE388E1F9DB5E9F2CF1C869 /* Pods_KetchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CB3A11787DF5E8DBFE41BA /* Pods-Ketch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ketch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ketch/Pods-Ketch.debug.xcconfig"; sourceTree = "<group>"; };
-		B923EABE1EA3362B00494A07 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loading.gif; path = ../../../../../Downloads/loading.gif; sourceTree = "<group>"; };
 		B924D85E1E98945E008BF92A /* UserRatingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRatingController.swift; sourceTree = "<group>"; };
 		B9311DAF1E85155300E97547 /* splashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashScreen.swift; sourceTree = "<group>"; };
 		B9311DB01E85155300E97547 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
@@ -241,7 +239,6 @@
 				B924D85E1E98945E008BF92A /* UserRatingController.swift */,
 				B96385711E56E0DF0081EB69 /* LaunchScreen.storyboard */,
 				B963856F1E56E0DF0081EB69 /* Assets.xcassets */,
-				B923EABE1EA3362B00494A07 /* loading.gif */,
 				B988BCA31E6415580069CF69 /* Ketch.entitlements */,
 				B96385741E56E0DF0081EB69 /* Info.plist */,
 				153062E51E732196001E23DF /* GoogleService-Info.plist */,
@@ -426,7 +423,6 @@
 			files = (
 				B96385731E56E0DF0081EB69 /* LaunchScreen.storyboard in Resources */,
 				B96385701E56E0DF0081EB69 /* Assets.xcassets in Resources */,
-				B923EABF1EA3362B00494A07 /* loading.gif in Resources */,
 				153062E61E732196001E23DF /* GoogleService-Info.plist in Resources */,
 				B963856E1E56E0DF0081EB69 /* Main.storyboard in Resources */,
 			);

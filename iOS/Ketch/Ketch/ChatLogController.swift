@@ -12,7 +12,13 @@ import Firebase
 class ChatLogController: UICollectionViewController, UITextFieldDelegate, UICollectionViewDelegateFlowLayout{
     var user2: user? {
         didSet{
-            navigationItem.title = user2?.name
+            let button =  UIButton(type: .custom)
+            button.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
+            button.setTitle(user2?.name, for: .normal)
+            button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+            button.addTarget(self, action: #selector(viewUserInfo), for: .touchUpInside)
+            self.navigationItem.titleView = button
+            
             observeMessages()
         }
     }
@@ -69,8 +75,12 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         
         let image = UIImage(named: "back")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleBack))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "User Rating", style: .plain, target: self, action: #selector(viewUserInfo))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Pay User", style: .plain, target: self, action: #selector(goToPaymentController))
         //setupKeyboardObservers()
+    }
+    
+    func goToPaymentController(){
+        //Add funciton to go to payment controller from here
     }
     
     func setupKeyboardObservers() {

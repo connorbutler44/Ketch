@@ -108,6 +108,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         
         
     }
+    let reportButton = UIButton(type: .system)
     var imageView = UIImageView()
     func setupInputComponents(){
         let navigationBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height + self.navigationController!.navigationBar.frame.height
@@ -231,21 +232,31 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         
         containerView.addSubview(makeOfferButton)
         
-        makeOfferButton.rightAnchor.constraint(equalTo: messageSellerButton.leftAnchor, constant: -12).isActive = true
+        makeOfferButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         makeOfferButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -12).isActive = true
-
-        
-
         makeOfferButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
         makeOfferButton.widthAnchor.constraint(equalToConstant: 125).isActive = true
 
-        
-        
         makeOfferButton.backgroundColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
         
         
+        reportButton.setTitle("Report", for: .normal)
+        reportButton.setTitleColor(UIColor.white, for: .normal)
+        reportButton.translatesAutoresizingMaskIntoConstraints = false
+        reportButton.addTarget(self, action: #selector(reportPost), for: .touchUpInside)
+        reportButton.backgroundColor = UIColor(red: 1/255, green: 112/255, blue: 111/255, alpha: 1)
+        
+        containerView.addSubview(reportButton)
+        
+        reportButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 12).isActive = true
+        reportButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -12).isActive = true
+        reportButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
+        reportButton.widthAnchor.constraint(equalToConstant: 125).isActive = true
+
         
         
+        
+        /*
         let zipcodeLabel = UILabel()
         zipcodeLabel.text = item?.zipcode
         zipcodeLabel.font = zipcodeLabel.font.withSize(22)
@@ -272,7 +283,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         zipcodeTitle.bottomAnchor.constraint(equalTo: zipcodeLabel.topAnchor, constant: -12).isActive = true
         zipcodeTitle.heightAnchor.constraint(equalToConstant: 26).isActive = true
         zipcodeTitle.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
-        
+        */
         
         let descSeparator = UIView()
         descSeparator.backgroundColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 1)
@@ -281,7 +292,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         containerView.addSubview(descSeparator)
         
         descSeparator.leftAnchor.constraint(equalTo: containerView.leftAnchor).isActive = true
-        descSeparator.bottomAnchor.constraint(equalTo: zipcodeTitle.topAnchor, constant: -12).isActive = true
+        descSeparator.bottomAnchor.constraint(equalTo: reportButton.topAnchor, constant: -12).isActive = true
         descSeparator.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
         descSeparator.heightAnchor.constraint(equalToConstant: 1).isActive = true
         
@@ -294,7 +305,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         
         
         
-        imageView.image = UIImage(named:"loading.gif")
+        //imageView.image = UIImage(named:"loading.gif")
         imageView.contentMode = .scaleAspectFit
         containerView.addSubview(imageView)
         if let itemImageURL = item?.itemImage {
@@ -321,7 +332,7 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         
         
         let descLabel = UITextView()
-        descLabel.text = (item?.condition)! + "\n" + (item?.desc)!
+        descLabel.text = (item?.condition)! + " - " + (item?.zipcode)! +  "\n" + (item?.desc)!
         descLabel.font = descLabel.font?.withSize(18)
         descLabel.translatesAutoresizingMaskIntoConstraints = false
         descLabel.textColor = UIColor.darkGray
@@ -349,6 +360,10 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
             messageSellerButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
             messageSellerButton.widthAnchor.constraint(equalToConstant: 90).isActive = true
             messageSellerButton.titleLabel?.adjustsFontSizeToFitWidth = true
+            reportButton.titleLabel?.adjustsFontSizeToFitWidth = true
+            reportButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
+            reportButton.widthAnchor.constraint(equalToConstant: 90).isActive = true
+            reportButton.titleLabel?.adjustsFontSizeToFitWidth = true
         } else if DeviceType.IS_IPHONE_4_OR_LESS {
             descLabel.font = descLabel.font?.withSize(14)
             descLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -358,6 +373,10 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
             messageSellerButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
             messageSellerButton.widthAnchor.constraint(equalToConstant: 90).isActive = true
             messageSellerButton.titleLabel?.adjustsFontSizeToFitWidth = true
+            reportButton.titleLabel?.adjustsFontSizeToFitWidth = true
+            reportButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
+            reportButton.widthAnchor.constraint(equalToConstant: 90).isActive = true
+            reportButton.titleLabel?.adjustsFontSizeToFitWidth = true
         }
         
         
@@ -370,11 +389,32 @@ class IndividualItemViewController: UIViewController, UITextFieldDelegate, UICol
         containerView.addSubview(zipSeparator)
         
         zipSeparator.leftAnchor.constraint(equalTo: containerView.leftAnchor).isActive = true
-        zipSeparator.topAnchor.constraint(equalTo: zipcodeLabel.bottomAnchor, constant: 12).isActive = true
+        zipSeparator.topAnchor.constraint(equalTo: reportButton.bottomAnchor, constant: 12).isActive = true
         zipSeparator.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
         zipSeparator.heightAnchor.constraint(equalToConstant: 1).isActive = true
         
 
+    }
+    
+    func reportPost(){
+        let ref = FIRDatabase.database().reference(fromURL: "https://ketch-b8d8a.firebaseio.com/")
+        let sellerID = item?.seller
+        let uid = FIRAuth.auth()?.currentUser?.uid
+        let values = ["itemID": item?.itemID, "sellerID": item?.seller, "reporter": uid]
+        let itemReference = ref.child("reports").child(sellerID!).child((item?.itemID)!).child(uid!)
+        itemReference.updateChildValues(values) { (err, ref) in
+            if err != nil {
+                print(err ?? "")
+                return
+            }
+            self.reportButton.removeTarget(self, action: #selector(self.reportPost), for: .touchUpInside)
+            self.reportButton.layoutIfNeeded()
+        }
+        
+    }
+    
+    func reported(){
+        
     }
     
     func showImageViewController(gesture: UIGestureRecognizer){
