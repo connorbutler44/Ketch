@@ -13,7 +13,8 @@ import FirebaseStorage
 
 class NewItem: UIViewController,
     UIImagePickerControllerDelegate,
-    UINavigationControllerDelegate {
+    UINavigationControllerDelegate ,
+    UIAlertViewDelegate {
     
     
     @IBOutlet weak var myImageView: UIImageView!
@@ -87,6 +88,24 @@ class NewItem: UIViewController,
                         
                         let values = ["price": iPrice, "seller": uid, "title": iName, "zipcode": iZip, "desc": iDesc, "itemID": self.uuid, "itemImage": itemImageUrl, "condition": iCondition] as [String : Any]
                         
+                        
+                        if (iName == "") {
+                            let alert = UIAlertController(title: "No Title Given",
+                                                          message: "Please enter a valid title for the item.",
+                                                          preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            return
+                        }
+                        
+                        if (iZip.characters.count != 5) {
+                            let alert = UIAlertController(title: "Not a Valid Zipcode",
+                                                          message: "Please enter a valid 5 number zipcode.",
+                                                          preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            return
+                        }
                         userItemReference.updateChildValues([self.uuid:1])
                         
                         itemReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
