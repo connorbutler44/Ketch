@@ -15,7 +15,7 @@ class Dashboard: UITabBarController, UIPopoverPresentationControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkIfUserHasZipcode()
+        self.checkIfUserHasZipcode()
         
         
         
@@ -38,11 +38,7 @@ class Dashboard: UITabBarController, UIPopoverPresentationControllerDelegate{
                 }
             }
         }, withCancel: nil)
-        
-        
-        
     }
-    
     
     
     func setUserZipcode(){
@@ -51,6 +47,10 @@ class Dashboard: UITabBarController, UIPopoverPresentationControllerDelegate{
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParentViewController: self)
+    }
+    
+    func alertZipCode() {
+        
     }
     
     

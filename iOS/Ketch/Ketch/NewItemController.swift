@@ -28,10 +28,11 @@ class NewItem: UIViewController,
     @IBOutlet weak var conditionLabel: UILabel!
     
     let uuid = UUID().uuidString
-    
+    var hasOwnImage = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.myImageView.image = UIImage(named: "header2")
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         self.itemPrice.keyboardType = UIKeyboardType.numberPad
@@ -100,11 +101,27 @@ class NewItem: UIViewController,
                         
                         if (iZip.characters.count != 5) {
                             let alert = UIAlertController(title: "Not a Valid Zipcode",
-                                                          message: "Please enter a valid 5 number zipcode.",
+                                                          message: "Please enter a valid 5 digit zipcode.",
                                                           preferredStyle: UIAlertControllerStyle.alert)
                             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
                             return
+                        }
+                        
+                        if (!self.hasOwnImage) {
+                            let alert = UIAlertController(title: "You have not chosen an image!",
+                                                          message: "To continue with our deault image, press 'OK', to upload you own image, press 'Cancel'.",
+                                                          preferredStyle: UIAlertControllerStyle.alert)
+                            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                                return
+                            })
+                            alert.addAction(cancelAction)
+                            
+                            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction!) in
+                                self.hasOwnImage = true
+                            }
+                            alert.addAction(OKAction)
+                            self.present(alert, animated: true, completion: nil)
                         }
                         userItemReference.updateChildValues([self.uuid:1])
                         
@@ -153,7 +170,8 @@ class NewItem: UIViewController,
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
-            myImageView.image = image        }
+            myImageView.image = image
+            self.hasOwnImage = true}
         else {
             //Error message
         }
