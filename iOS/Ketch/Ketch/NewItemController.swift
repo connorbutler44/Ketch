@@ -110,7 +110,7 @@ class NewItem: UIViewController,
                         
                         if (!self.hasOwnImage) {
                             let alert = UIAlertController(title: "You have not chosen an image!",
-                                                          message: "To continue with our deault image, press 'OK', to upload you own image, press 'Cancel'.",
+                                                          message: "To continue with our default image, press 'OK', to upload you own image, press 'Cancel'.",
                                                           preferredStyle: UIAlertControllerStyle.alert)
                             let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (action) -> Void in
                                 return

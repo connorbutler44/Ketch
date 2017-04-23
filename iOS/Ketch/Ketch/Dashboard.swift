@@ -11,14 +11,14 @@
 import UIKit
 import Firebase
 
-class Dashboard: UITabBarController, UIPopoverPresentationControllerDelegate{
+class Dashboard: UITabBarController,
+    UIPopoverPresentationControllerDelegate,
+    UIAlertViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.checkIfUserHasZipcode()
-        
-        
-        
+
         // Do any additional setup after loading the view.
     }
 
@@ -34,7 +34,7 @@ class Dashboard: UITabBarController, UIPopoverPresentationControllerDelegate{
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let zipcode = dictionary["zipcode"] as? String
                 if(zipcode == ""){
-                    self.setUserZipcode()
+                    self.alertZipCode()
                 }
             }
         }, withCancel: nil)
@@ -50,10 +50,41 @@ class Dashboard: UITabBarController, UIPopoverPresentationControllerDelegate{
     }
     
     func alertZipCode() {
-        
+        let alert = UIAlertController(title: "No zip code on file.",
+                                      message: "Please enter a valid 5 digit zip code.",
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        alert.addTextField { (zipTextField) in
+        }
+
+        let zipTextField = alert.textFields?[0]
+        zipTextField?.keyboardType = UIKeyboardType.numberPad
+        let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction!) in
+            let zipCode = zipTextField?.text
+            if (zipCode?.characters.count == 5){
+                self.submitZipcode(zipCode: (zipCode)!)
+            } else {
+                self.alertZipCode()
+            }
+        }
+        alert.addAction(OKAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
+    func submitZipcode(zipCode: String) {
+        let uid = FIRAuth.auth()?.currentUser?.uid
+        let ref = FIRDatabase.database().reference(fromURL: "https://ketch-b8d8a.firebaseio.com/")
+        //values to be put into database
+        let usersReference = ref.child("users").child(uid!)
+        let values = ["zipcode": zipCode]
+        usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+            if err != nil {
+                print(err ?? "")
+                return
+            }
+        })
+        
+    }
 
     
 
