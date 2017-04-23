@@ -45,7 +45,9 @@
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Your image is safe with us.</string>
+	<string>To upload pictures of your items.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To take pictures of your items.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

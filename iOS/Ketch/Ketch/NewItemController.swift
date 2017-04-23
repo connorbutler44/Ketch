@@ -26,7 +26,9 @@ class NewItem: UIViewController,
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var uploadImage: UIButton!
     @IBOutlet weak var conditionLabel: UILabel!
+    @IBOutlet weak var cameraButton: UIButton!
     
+    let picker = UIImagePickerController()
     let uuid = UUID().uuidString
     var hasOwnImage = false;
     
@@ -159,25 +161,31 @@ class NewItem: UIViewController,
     
     
     @IBAction func uploadImage(_ sender: Any) {
-        let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
         picker.allowsEditing = false
         self.present(picker, animated: true){
-            
+        }
+    }
+    
+    @IBAction func takePicture(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.delegate = self
+            picker.sourceType = UIImagePickerControllerSourceType.camera
+            picker.cameraCaptureMode = .photo
+            picker.modalPresentationStyle = .fullScreen
+            self.present(picker, animated: true)
         }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
             myImageView.image = image
-            self.hasOwnImage = true}
-        else {
-            //Error message
+            self.hasOwnImage = true
         }
+
         self.dismiss(animated: true, completion: nil)
     }
-    
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         itemZip.resignFirstResponder()

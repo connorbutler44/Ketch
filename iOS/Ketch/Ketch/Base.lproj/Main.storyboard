@@ -720,14 +720,14 @@
                                 <color key="backgroundColor" red="0.86266261339999994" green="0.86280471089999999" blue="0.86263245340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHV-5a-Am7">
-                                <rect key="frame" x="-2" y="389" width="378" height="35"/>
+                                <rect key="frame" x="188" y="389" width="188" height="35"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA7-tZ-ojS">
-                                        <rect key="frame" x="0.0" y="4" width="378" height="27"/>
+                                        <rect key="frame" x="0.0" y="4" width="188" height="27"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Add images">
+                                        <state key="normal" title="Photo Library">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -777,6 +777,24 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhk-VM-ANb">
+                                <rect key="frame" x="0.0" y="389" width="187" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIu-MQ-aXF" userLabel="Camera">
+                                        <rect key="frame" x="-1" y="4" width="187" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Camera">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePicture:" destination="Ucp-fi-GVc" eventType="touchUpInside" id="Tb3-lJ-TWm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12544770050000001" green="0.55633328049999997" blue="0.55633328049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -785,6 +803,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="iIu-MQ-aXF" id="OIU-Y7-8hn"/>
                         <outlet property="cancelButton" destination="8F9-yo-BSr" id="hGz-B9-opo"/>
                         <outlet property="conditionLabel" destination="BuX-JG-JqM" id="90a-k7-rCV"/>
                         <outlet property="itemDesc" destination="y0W-1a-Ahd" id="Zel-6E-w6G"/>
