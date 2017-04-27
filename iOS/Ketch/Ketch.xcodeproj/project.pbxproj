@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01E770211EB170DB00AC12FC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E770181EB170DB00AC12FC /* Accelerate.framework */; };
+		01E770221EB170DB00AC12FC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E770191EB170DB00AC12FC /* AudioToolbox.framework */; };
+		01E770231EB170DB00AC12FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E7701A1EB170DB00AC12FC /* AVFoundation.framework */; };
+		01E770241EB170DB00AC12FC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E7701B1EB170DB00AC12FC /* CoreLocation.framework */; };
+		01E770251EB170DB00AC12FC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E7701C1EB170DB00AC12FC /* CoreMedia.framework */; };
+		01E770261EB170DB00AC12FC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E7701D1EB170DB00AC12FC /* MessageUI.framework */; };
+		01E770271EB170DB00AC12FC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E7701E1EB170DB00AC12FC /* MobileCoreServices.framework */; };
+		01E770281EB170DB00AC12FC /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E7701F1EB170DB00AC12FC /* SafariServices.framework */; };
+		01E770291EB170DB00AC12FC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E770201EB170DB00AC12FC /* SystemConfiguration.framework */; };
 		1526327F1E74A17E00186369 /* SellingPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526327E1E74A17E00186369 /* SellingPostController.swift */; };
 		153062E61E732196001E23DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153062E51E732196001E23DF /* GoogleService-Info.plist */; };
 		1555EBB41E8A242E001D1C8D /* SellingPostTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555EBB31E8A242E001D1C8D /* SellingPostTableController.swift */; };
@@ -71,6 +80,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01E770181EB170DB00AC12FC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		01E770191EB170DB00AC12FC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		01E7701A1EB170DB00AC12FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		01E7701B1EB170DB00AC12FC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		01E7701C1EB170DB00AC12FC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		01E7701D1EB170DB00AC12FC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		01E7701E1EB170DB00AC12FC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		01E7701F1EB170DB00AC12FC /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		01E770201EB170DB00AC12FC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		01E7702A1EB170F300AC12FC /* Ketch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ketch-Bridging-Header.h"; sourceTree = "<group>"; };
 		05C566E4C352F44909682BCD /* Pods-KetchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetchTests/Pods-KetchTests.release.xcconfig"; sourceTree = "<group>"; };
 		1526327E1E74A17E00186369 /* SellingPostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellingPostController.swift; sourceTree = "<group>"; };
 		153062E51E732196001E23DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -135,6 +154,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E770211EB170DB00AC12FC /* Accelerate.framework in Frameworks */,
+				01E770221EB170DB00AC12FC /* AudioToolbox.framework in Frameworks */,
+				01E770231EB170DB00AC12FC /* AVFoundation.framework in Frameworks */,
+				01E770241EB170DB00AC12FC /* CoreLocation.framework in Frameworks */,
+				01E770251EB170DB00AC12FC /* CoreMedia.framework in Frameworks */,
+				01E770261EB170DB00AC12FC /* MessageUI.framework in Frameworks */,
+				01E770271EB170DB00AC12FC /* MobileCoreServices.framework in Frameworks */,
+				01E770281EB170DB00AC12FC /* SafariServices.framework in Frameworks */,
+				01E770291EB170DB00AC12FC /* SystemConfiguration.framework in Frameworks */,
 				B988BCAB1E6417A70069CF69 /* FBSDKShareKit.framework in Frameworks */,
 				B988BCA81E6417A70069CF69 /* Bolts.framework in Frameworks */,
 				B988BCA91E6417A70069CF69 /* FBSDKCoreKit.framework in Frameworks */,
@@ -165,6 +193,15 @@
 		B8C83B58834F05642A791441 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01E770181EB170DB00AC12FC /* Accelerate.framework */,
+				01E770191EB170DB00AC12FC /* AudioToolbox.framework */,
+				01E7701A1EB170DB00AC12FC /* AVFoundation.framework */,
+				01E7701B1EB170DB00AC12FC /* CoreLocation.framework */,
+				01E7701C1EB170DB00AC12FC /* CoreMedia.framework */,
+				01E7701D1EB170DB00AC12FC /* MessageUI.framework */,
+				01E7701E1EB170DB00AC12FC /* MobileCoreServices.framework */,
+				01E7701F1EB170DB00AC12FC /* SafariServices.framework */,
+				01E770201EB170DB00AC12FC /* SystemConfiguration.framework */,
 				B988BCA41E6417A70069CF69 /* Bolts.framework */,
 				B988BCA51E6417A70069CF69 /* FBSDKCoreKit.framework */,
 				B988BCA61E6417A70069CF69 /* FBSDKLoginKit.framework */,
@@ -242,6 +279,7 @@
 				B988BCA31E6415580069CF69 /* Ketch.entitlements */,
 				B96385741E56E0DF0081EB69 /* Info.plist */,
 				153062E51E732196001E23DF /* GoogleService-Info.plist */,
+				01E7702A1EB170F300AC12FC /* Ketch-Bridging-Header.h */,
 			);
 			path = Ketch;
 			sourceTree = "<group>";
@@ -375,6 +413,7 @@
 					B96385621E56E0DF0081EB69 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 43NXCQ9V3P;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -768,6 +807,7 @@
 			baseConfigurationReference = 93CB3A11787DF5E8DBFE41BA /* Pods-Ketch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ketch/Ketch.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 43NXCQ9V3P;
@@ -781,6 +821,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.Ketch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ketch/Ketch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -791,6 +833,7 @@
 			baseConfigurationReference = 6815679235E82CE53FF9D99F /* Pods-Ketch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ketch/Ketch.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 43NXCQ9V3P;
@@ -804,6 +847,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.butlerproject.Ketch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ketch/Ketch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

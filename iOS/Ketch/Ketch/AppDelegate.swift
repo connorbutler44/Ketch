@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        PayPalMobile.initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction: FirebaseAuth.FIRUserInfo, PayPalEnvironmentSandbox: "xyz"])
         
         return true
     }

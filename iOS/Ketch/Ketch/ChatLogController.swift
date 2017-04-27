@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ChatLogController: UICollectionViewController, UITextFieldDelegate, UICollectionViewDelegateFlowLayout{
+class ChatLogController: UICollectionViewController, UITextFieldDelegate, UICollectionViewDelegateFlowLayout,PayPalPaymentDelegate{
     var user2: user? {
         didSet{
             let button =  UIButton(type: .custom)
@@ -20,6 +20,16 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
             self.navigationItem.titleView = button
             
             observeMessages()
+        }
+    }
+    
+    var PayPalConfig = PayPalConfiguration()
+    
+    var environment:String = PayPalEnvironmentNoNetwork {
+        willSet(newEnvironment) {
+            if (newEnvironment != environment) {
+                PayPalMobile.preconnect(withEnvironment: newEnvironment)
+            }
         }
     }
     
@@ -77,11 +87,71 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleBack))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Pay User", style: .plain, target: self, action: #selector(goToPaymentController))
         //setupKeyboardObservers()
+        
+        //PayPal
+        PayPalConfig.acceptCreditCards = false
+        PayPalConfig.merchantName = "Ketch"
+        PayPalConfig.merchantPrivacyPolicyURL = URL(string: "https://www.paypal.com/webapps/mpp/ua/privacy-full")
+        PayPalConfig.merchantUserAgreementURL = URL(string: "https://www.paypal.com/webapps/mpp/ua/useragreement-full")
+        PayPalConfig.languageOrLocale = Locale.preferredLanguages[0]
+        PayPalConfig.payPalShippingAddressOption = .both
+        
+        PayPalMobile.preconnect(withEnvironment: environment)
+        
     }
     
+    
     func goToPaymentController(){
-        //Add funciton to go to payment controller from here
+        // Optional: include multiple items
+        let item1 = PayPalItem(name: "Old jeans with holes", withQuantity: 2, withPrice: NSDecimalNumber(string: "84.99"), withCurrency: "USD", withSku: "Hip-0037")
+        let item2 = PayPalItem(name: "Free rainbow patch", withQuantity: 1, withPrice: NSDecimalNumber(string: "0.00"), withCurrency: "USD", withSku: "Hip-00066")
+        let item3 = PayPalItem(name: "Long-sleeve plaid shirt (mustache not included)", withQuantity: 1, withPrice: NSDecimalNumber(string: "37.99"), withCurrency: "USD", withSku: "Hip-00291")
+        
+        let items = [item1, item2, item3]
+        let subtotal = PayPalItem.totalPrice(forItems: items)
+        
+        // Optional: include payment details
+        let shipping = NSDecimalNumber(string: "5.99")
+        let tax = NSDecimalNumber(string: "2.50")
+        let paymentDetails = PayPalPaymentDetails(subtotal: subtotal, withShipping: shipping, withTax: tax)
+        
+        let total = subtotal.adding(shipping).adding(tax)
+        
+        let payment = PayPalPayment(amount: total, currencyCode: "USD", shortDescription: "Hipster Clothing", intent: .sale)
+        
+        payment.items = items
+        payment.paymentDetails = paymentDetails
+        
+        if (payment.processable) {
+            let paymentViewController = PayPalPaymentViewController(payment: payment, configuration: PayPalConfig, delegate: self as! PayPalPaymentDelegate)
+            present(paymentViewController!, animated: true, completion: nil)
+        }
+        else {
+            // This particular payment will always be processable. If, for
+            // example, the amount was negative or the shortDescription was
+            // empty, this payment wouldn't be processable, and you'd want
+            // to handle that here.
+            print("Payment not processalbe: \(payment)")
+        }
+        
+        
     }
+    
+    func payPalPaymentDidCancel(_ paymentViewController: PayPalPaymentViewController) {
+        print("PayPal Payment Cancelled")
+        paymentViewController.dismiss(animated: true, completion: nil)
+    }
+    
+    func payPalPaymentViewController(_ paymentViewController: PayPalPaymentViewController, didComplete completedPayment: PayPalPayment) {
+        print("PayPal Payment Success !")
+        paymentViewController.dismiss(animated: true, completion: { () -> Void in
+            // send completed confirmaion to your server
+            print("Here is your proof of payment:\n\n\(completedPayment.confirmation)\n\nSend this to your server for confirmation and fulfillment.")
+            
+        })
+    }
+    
+    
     
     func setupKeyboardObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
@@ -203,7 +273,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         return true
     }
     
-
+    
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
@@ -215,9 +285,12 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = true
+        super.viewWillAppear(animated)
+        PayPalMobile.preconnect(withEnvironment: environment)
+        
     }
     
-   
+    
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! ChatMessageCell
